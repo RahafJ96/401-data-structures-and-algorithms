@@ -2,6 +2,6 @@
 
 ## Table of Contents
 
-| Challenge#      | README | Code |
+| Challenge #     | README | Code |
 | --------------- | ----   |------|
-| 01          | [README](challenges/array-reverse/README.md)| [Code](challenges/array-reverse/array-reverse.java)|
+| 01          | [README 1](challenges/array-reverse/README.md)| [Code 1](challenges/array-reverse/array-reverse.java)|
