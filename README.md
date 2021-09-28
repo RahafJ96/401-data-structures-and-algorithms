@@ -4,4 +4,4 @@
 
 | Challenge #     | README | Code |
 | --------------- | ----   |------|
-| 01          | [README 1](challenges/array-reverse/README.md)| [Code 1](challenges/array-reverse/array-reverse.java)|
+| 01          | [README 1](challenges/array-reverse/src/README.md)| [Code 1](challenges/array-reverse/array-reverse.java)|
