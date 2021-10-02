@@ -4,7 +4,7 @@ A method with a sorted array and a key to search for that key and returns the in
 
 
 ## Whiteboard Process
-![solution](../binarySearch/challenge03_crop.png)
+![solution](../binarySearch/challenge03_crop.PNG)
 
 ## Approach & Efficiency
 Used binary search algorithm to the position of a target value within a sorted array
