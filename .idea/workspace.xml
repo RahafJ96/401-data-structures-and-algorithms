@@ -4,19 +4,8 @@
     <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-binary-search/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/array-binary-search/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-binary-search/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/linked-list/lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/linked-list/lib/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/array-reverse/challange01.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-reverse/src/challange01.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/array-reverse/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/array-reverse/src/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +51,11 @@
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\array-reverse" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\array-reverse\src" />
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\array-insert-shift\lib\src\main\java\arrayInsertShift" />
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\array-reverse-shift\app\src\main\java\arrayShifted" />
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\out\production\401-data-structures-and-algorithms\com\company\averagefinder" />
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\array-inser-shift" />
-      <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\array-reverse\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
