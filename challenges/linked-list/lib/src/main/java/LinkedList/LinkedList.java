@@ -40,12 +40,12 @@ public class LinkedList {
             return "There is no data in the List";
         }else{
             Node current = this.head;
-            message +=current.getData()+" } -> { ";
+            message +=current.getData()+" } -> ";
             while (current.getNext() != null){
                 current = current.getNext();
-                message += String.valueOf(current.getData())+" } -> { ";
+                message += "{ "+ (current.getData())+" } -> ";
             }
-            message += " } -> NULL";
+            message += "NULL";
         }
         return message;
     }
