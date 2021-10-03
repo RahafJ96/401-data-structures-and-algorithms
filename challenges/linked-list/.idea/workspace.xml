@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca7bca28-814f-4d74-a5f3-0803970fed0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Append(2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/BeforeInserting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/after.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/main/java/LinkedList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../README.md" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
