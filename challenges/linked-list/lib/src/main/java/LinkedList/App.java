@@ -1,16 +1,23 @@
 package LinkedList;
 
 public class App {
-    private static final LinkedList list1 = new LinkedList();
 
 
     public static void main(String[] args){
-        list1.insert(1);
-        list1.insert(2);
-        list1.insert(3);
-        list1.insert(4);
-        list1.insert(5);
 
-        System.out.printf(list1.listString());
+        LinkedList list1 = new LinkedList();
+        list1.insert("1");
+        list1.insert("2");
+        list1.insert("3");
+        list1.insert("4");
+        list1.insert("5");
+        list1.insert("6");
+        list1.append("27");
+        list1.insertBefore("17","27");
+        list1.insertAfter("20","2");
+
+        System.out.println(list1.size());
+        System.out.println(list1.includes("18"));
+        System.out.println(list1);
     }
 }
