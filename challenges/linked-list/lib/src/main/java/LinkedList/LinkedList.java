@@ -3,31 +3,41 @@
  */
 package LinkedList;
 import LinkedList.Node;
+import java.util.Objects;
 
 public class LinkedList {
-    private Node head;
+    Node head;
+    Node tail;
+    private  int size = 0;
+
+    public int size(){
+        return size;
+    }
+
 
     // insert new node at the start of linked list
     public void insert(int data) {
         Node node = new Node(data);
-        if (this.head != null) {
-            Node current = this.head;
-            node.setNext(current);
+        if (size == 0) {
+            head = node;
+        } else {
+            Node current = head;
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(node);
         }
-        this.head = node;
-
+        size++;
     }
-
     // check for a node value if exists
     public boolean includes(int data) {
-        if (this.head != null) {
-            Node current = this.head;
-            while (current.getNext() != null) {
-                if (current.getData() != data) {
-                    current = current.getNext();
-                } else {
+        if (size != 0) {
+            Node current = head;
+            while (current != null) {
+                if (Objects.equals(current.getData(),data)) {
                     return true;
                 }
+                current = current.getNext();
             }
         }
         return false;
@@ -36,10 +46,10 @@ public class LinkedList {
     // convert linked list node values to string
     public String listString(){
         String message = " { ";
-        if (this.head == null){
+        if (head == null){
             return "There is no data in the List";
         }else{
-            Node current = this.head;
+            Node current = head;
             message +=current.getData()+" } -> ";
             while (current.getNext() != null){
                 current = current.getNext();
