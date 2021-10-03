@@ -92,6 +92,7 @@ public class LinkedListTest {
         MyTest.insert("9");
         MyTest.insert("7");
         MyTest.insert("33");
+
         assertTrue(MyTest.includes("8"));
     }
 

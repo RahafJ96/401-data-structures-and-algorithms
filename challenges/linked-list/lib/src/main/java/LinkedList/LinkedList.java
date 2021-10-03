@@ -86,6 +86,25 @@ public class LinkedList {
         }
     }
 
+    public void insertAfter(String ref,String data){
+
+
+        Node current = head;
+        while (current != null) {
+            if (current.data==ref) {
+                Node newNode = new Node(data);
+                newNode.next = current.next;
+                current.next = newNode;
+                break;
+
+            }
+            current = current.next;
+        }
+        if(current==null){
+            insert(data);
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder stringPrint = new StringBuilder();

@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca7bca28-814f-4d74-a5f3-0803970fed0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/LinkedList/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/LinkedList/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/LinkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/LinkedList/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/LinkedList/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/LinkedList/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/test/LinkedList/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/test/LinkedList/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

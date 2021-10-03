@@ -14,6 +14,8 @@ public class App {
         list1.insert("6");
         list1.append("27");
         list1.insertBefore("17","27");
+        list1.insertAfter("20","2");
+
         System.out.println(list1.size());
         System.out.println(list1.includes("18"));
         System.out.println(list1);
