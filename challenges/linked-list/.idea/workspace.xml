@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca7bca28-814f-4d74-a5f3-0803970fed0b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +54,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../README.md" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\linked-list\lib\src\main\java\LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LinkedListTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedList.App" />
       <module name="LinkedList.lib.main" />

@@ -2,12 +2,31 @@ package LinkedList;
 
 public class Node {
 
-     Node next;
-    int value;
-    // Node start;
-    public Node (int value){
-        this.value= value;
-        this.next = null;
+    private String data;
+    private Node next;
+
+    public boolean someLibraryMethod(){
+        return true;
+    }
+
+    public Node(String data) {
+        this.data = data;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
     }
 
 }
