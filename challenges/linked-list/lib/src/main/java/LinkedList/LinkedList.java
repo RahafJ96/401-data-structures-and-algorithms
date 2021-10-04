@@ -7,120 +7,86 @@ import LinkedList.Node;
 import java.util.Objects;
 
 public class LinkedList {
+
     Node head;
-    private  int size = 0;
 
-    public int size(){
-        return size;
-    }
-
-
-    // insert new node at the start of linked list
-    public void insert(String data) {
-        Node node = new Node(data);
-        if (size == 0) {
-            head = node;
-        } else {
-            Node current = head;
-            while (current.getNext() != null) {
-                current = current.getNext();
-            }
-            current.setNext(node);
+    public void insert(int value) {
+        Node newInsertNode = new Node(value);
+        if (head != null) {
+            newInsertNode.next = head;
         }
-        size++;
+        head = newInsertNode;
     }
-    // check for a node value if exists
-    public boolean includes(String data) {
-        if (size != 0) {
-            Node current = head;
-            while (current != null) {
-                if (Objects.equals(current.getData(),data)) {
-                    return true;
-                }
-                current = current.getNext();
-            }
+
+    public boolean includes(int value) {
+        Node current = head;
+        while (current != null) {
+            if (value == current.value) return true;
+            current = current.next;
         }
         return false;
     }
 
-    public void append(String new_data) {
-        Node new_node = new Node(new_data);
-        if (head == null) {
-            head = new Node(new_data);
-            return;
-        }
-        new_node.next = null;
-        Node last = head;
-        while (last.next != null)
-            last = last.next;
-        last.next = new_node;
-        return;
-    }
-
-    public void insertBefore(String ref,String data){
-        //Node current= insertBeforeNode.start;
-        if(head !=null){
-            if(ref == head.data){
-                Node insertBeforeNode=new Node(data);
-                insertBeforeNode.next = head;
-                head = insertBeforeNode;
-
-            }
-            else {
-                Node current = head;
-                Node previousNode = current;
-                while (current != null) {
-                    if (ref == current.data) {
-                        Node newNode = new Node(data);
-                        newNode.next = current;
-                        previousNode.next = newNode;
-                        break;
-                    }
-                    previousNode = current;
-                    current = current.next;
-                }
-            }
-        }
-        else{
-            System.out.println("This list is Empty");
-        }
-    }
-
-    public void insertAfter(String ref,String data){
-
-
+    public String toString() {
+        String result = "";
         Node current = head;
         while (current != null) {
-            if (current.data==ref) {
-                Node newNode = new Node(data);
-                newNode.next = current.next;
-                current.next = newNode;
-                break;
-
+            result = result + "{ " + current.value + " } -> ";
+            if (current.next == null) {
+                result = result + "NULL";
+                return result;
             }
             current = current.next;
         }
-        if(current==null){
-            insert(data);
-        }
+        return result;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder stringPrint = new StringBuilder();
-        if(size == 0){
-            return "The list is empty";
-        }else{
-
+    public void append(int value) {
+        Node newInsertNode = new Node(value);
+        if (head == null) {
+            head = newInsertNode;
+        } else {
             Node current = head;
-            while (current != null){
-                stringPrint.append("{ ").append(current.getData()).append(" }").append(" --> ");
-                current = current.getNext();
+            while (current.next != null) {
+                current = current.next;
             }
-            stringPrint.append("NULL");
+            current.next = newInsertNode;
         }
-        return stringPrint.toString();
     }
 
+    public void insertBefore(int value, int newValue) {
+        Node newInsertNode = new Node(newValue);
+        if (head == null) {
+            head = newInsertNode;
+        } else if (head.value == value) {
+            insert(newValue);
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                if (current.next.value == value) {
+                    newInsertNode.next = current.next;
+                    current.next = newInsertNode;
+                    break;
+                }
+                current = current.next;
+            }
+        }
+    }
+
+    public void insertAfter(int value, int newValue) {
+        Node newInsertNode = new Node(newValue);
+        if (head == null) {
+            head = newInsertNode;
+        } else {
+            Node current = head;
+            while (current != null) {
+                if (current.value == value) {
+                    newInsertNode.next = current.next;
+                    current.next = newInsertNode;
+                }
+                current = current.next;
+            }
+        }
+    }
 
 }
