@@ -3,20 +3,11 @@ package LinkedList;
 public class Node {
 
      Node next;
-    String data;
+    int value;
     // Node start;
-    public Node (String data){
-        this.data= data;
+    public Node (int value){
+        this.value= value;
+        this.next = null;
     }
-
-    public String getData(){
-        return data;
-    }
-
-    public  void setNext (Node next){
-        this.next = next ;
-    }
-
-    public Node getNext(){ return next;}
 
 }

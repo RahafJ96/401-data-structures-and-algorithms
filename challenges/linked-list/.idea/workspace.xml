@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ca7bca28-814f-4d74-a5f3-0803970fed0b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +57,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../README.md" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\linked-list\lib\src\main\java\LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.LinkedListTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedList.App" />
       <module name="LinkedList.lib.main" />
@@ -116,14 +120,37 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="LinkedListTest.propertyList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;LinkedList.LinkedListTest.propertyList&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="Gradle.LibraryTest" />
       <item itemvalue="Gradle.LinkedListTest" />
+      <item itemvalue="Gradle.LinkedListTest.propertyList" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.LinkedListTest" />
+        <item itemvalue="Gradle.LinkedListTest.propertyList" />
         <item itemvalue="Gradle.LibraryTest" />
         <item itemvalue="Application.App" />
       </list>
