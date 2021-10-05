@@ -9,3 +9,4 @@
 | 03   |[array-binary-search](challenges/array-binary-search)      | [README 3](challenges/array-binary-search/app/src/main/java/binarySearch/README.md)| [Code 3](challenges/array-binary-search/app/src/main/java/binarySearch/App.java)|
 | 04   | - - - - -       | - - - - -  | - - - - -  |
 | 05 & 06 & 07    | [linked-list](challenges/linked-list)     | [README 5,6,7](challenges/linked-list/lib/src/main/java/LinkedList/README.md)| [Code 5,6,7](challenges/linked-list/lib/src/main/java/LinkedList/LinkedList.java)|
+|  08    | [linked-list-zip](challenges/linked-list)     | [README 8](challenges/linked-list/lib/src/main/java/LinkedList/README.md)| [Code 8](challenges/linked-list/lib/src/main/java/LinkedList/LinkedList.java)|

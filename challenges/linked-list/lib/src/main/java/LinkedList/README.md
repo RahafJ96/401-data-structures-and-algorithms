@@ -22,3 +22,8 @@ Used Classes to implement the linked list with the O(1) and O(n) for it's method
 - `.insertAfter(value, newVal):` which add a new node with the given newValue immediately after the first value node 
 
 ![After Insert](../LinkedList/after.png)
+
+### Challenge 08
+
+![linkedListZip](../LinkedList/challenge08.png)
+
