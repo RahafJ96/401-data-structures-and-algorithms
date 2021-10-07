@@ -11,5 +11,5 @@
 | 05 & 06 & 07    | [linked-list](challenges/linked-list)     | [README 5,6,7](challenges/linked-list/lib/src/main/java/LinkedList/README.md)| [Code 5,6,7](challenges/linked-list/lib/src/main/java/LinkedList/LinkedList.java)|
 |  08    | [linked-list-zip](challenges/linked-list)     | [README 8](challenges/linked-list/lib/src/main/java/LinkedList/README.md)| [Code 8](challenges/linked-list/lib/src/main/java/LinkedList/LinkedList.java)|
 |  09    | - - - - -     | - - - - - | - - - - - |
-|  10    | [stack-and-queue](challenges/stack-and-queue)     | [README 10](C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\stack-and-queue\lib\src\main\java\StackAndQueue\README.md)| [Code 10](C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\stack-and-queue\lib\src\main\java\StackAndQueue\Library.java)|
+|  10    | [stack-and-queue](challenges/stack-and-queue)     | [README 10](challenges\stack-and-queue\lib\src\main\java\StackAndQueue\README.md)| [Code 10](challenges\stack-and-queue\lib\src\main\java\StackAndQueue\Library.java)|
 
