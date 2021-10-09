@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0afe3e86-d1eb-4356-b473-c4b3741745d5" name="Changes" comment="" />
+    <list default="true" id="0afe3e86-d1eb-4356-b473-c4b3741745d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/LinkedListNew.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/lib/LinkedListNew.lib.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/lib/LinkedListNew.lib.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedListNew/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedListNew/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/build/classes/java/main/LinkedList/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/build/classes/java/main/LinkedList/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/build/classes/java/main/LinkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/build/classes/java/main/LinkedList/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/build/classes/java/main/LinkedList/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/build/classes/java/main/LinkedList/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/src/main/java/LinkedList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/lib/src/test/java/LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +85,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../linked-list" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
