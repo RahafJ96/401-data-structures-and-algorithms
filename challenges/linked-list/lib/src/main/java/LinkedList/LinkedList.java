@@ -6,118 +6,63 @@ package LinkedList;
 import LinkedList.Node;
 import java.util.Objects;
 
-public class LinkedList<T> {
-    private Node head;
+public class LinkedList{
+    Node head;
+    private int size = 0;
 
-    public void insert(String addValue) {
-        int counter =0;
-        if (head == null) {
-            Node node = new Node(addValue);
-            head = node;
-        }else{
-            Node existNode = head;
-
-
-            while (existNode.getNext() != null){
-            existNode = existNode.getNext();
-        }
-        LinkedList newNode = new LinkedList(addValue);
-        existNode.setNext(newNode);
-        counter++;
-        System.out.println("Counter: "+counter);
+    public int size() {
+        return size;
     }
 
-    public String dataToString(){
-        String linkedList = "Head -> ";
-        Node node = head;
-        while (node != null){
-            linkedList += node .getData()+" -> ";
-            node =node.getNext();
+    public void insert(String value) {
+
+        Node newNode = new Node(value);
+
+        if (size == 0) {
+            head = newNode;
+        } else {
+
+            Node current = head;
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(newNode);
+
         }
-        return linkedList + "NULL";
+        size++;
+
     }
 
-    public boolean includes(String data) {
-        Node node = head;
-        while (node != null) {
-            if (node.getData() == data){ return true;}
-            else{ node = node.getNext();}
+    public boolean includes(String value) {
+
+        if (size != 0) {
+            Node current = head;
+            while (current != null) {
+                if (Objects.equals(current.getData(), value)) {
+                    return true;
+                }
+                current = current.getNext();
+            }
+
         }
+
         return false;
     }
 
-
-// adding a new node at the end
-    public void append(String addValue) {
-        int counter = 0;
-        if (head == null) {
-            Node node = new Node(addValue);
-            head = node;
-        } else {
-            Node existNode = head;
-            while (existNode.getNext() != null) {
-                existNode = existNode.getNext();
-            }
-            Node newInsertNode = new Node(addValue);
-            existNode.setNext(newInsertNode);
-            counter++;
-            System.out.println("Counter "+counter);
-
-        }
-    }
-
-    // adding a new node with the given new value before the first node
-
-    public void insertBefore(String ref, String data) {
-        Node current = head;
-        Node previous = current;
-
-        while (current != null){
-            if (current.getData().equals(ref)){
-                Node n = new Node(data);
-                n.setNext(current);
-                previous.setNext(n);
-                break;
-            }
-            previous = current;
-            current = current.getNext();
-        }
-    }
-    // adding a new node with the given new value after the first node
-    public void insertAfter(String newValue, String currentValue) {
-        Node newInsertNode = new Node(newValue);
-        Node current = head;
-
-        while (current != null) {
-            if(current.getData().equals(currentValue)){
-                newInsertNode.setNext(current.getNext());
-                current.setNext(newInsertNode);
-                break;
-            }else{ current = current.getNext();}
-
-        }
-    }
-
-    public Node printNth(int value){
-        int length = 0;
-        Node searchNode = head;
-        while (searchNode.getNext() != null){
-            searchNode = searchNode.getNext();
-            length++;
-        }
-        if (length < value){
-            System.out.println("List is Empty");
-        }
-        searchNode = head;
-        for (int i=1; i< length- value+1; i++){
-            searchNode = searchNode.getNext();
-        }
-        System.out.println(value+ " th node from the end is " +searchNode);
-        return searchNode;
-    }
-
     @Override
-    public String toString(){
-        return dataToString();
+    public String toString() {
+        StringBuilder stringPrint = new StringBuilder();
+        if (size == 0) {
+            return "This List is Empty";
+        } else {
+
+            Node current = head;
+            while (current != null) {
+                stringPrint.append("{ ").append(current.getData()).append(" }").append(" --> ");
+                current = current.getNext();
+            }
+            stringPrint.append("NULL");
+        }
+        return stringPrint.toString();
     }
 }
