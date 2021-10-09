@@ -99,12 +99,7 @@ public class LinkedList{
                         newNode.next = current;
                         previousNode.next = newNode;
                         break;
-                        // 1-> 3 -> 4
-                        // insertBefore(3,2);
-                        // current -> 3 ,previousNode -> 1
-                        // newNode = 2 -> null
-                        // newNode.next = current 1 -> 3 2-> 3 - > 4
-                        // previousNode.next = newNode 1 -> 2 -> 3 - > 4
+
                     }
                     previousNode = current;
                     current = current.next;
@@ -132,6 +127,29 @@ public class LinkedList{
 
             return current.getData();
         }
+    }
+    public String zip(LinkedList list1, LinkedList list2) {
+        LinkedList newList = new LinkedList();
+        Node first = list1.head;
+        Node second = list2.head;
+        while (first != null || second != null) {
+            if(second==null){
+                newList.insert(first.data);
+                first=first.next;
+            }
+            else if(first == null){
+                newList.insert(second.data);
+                second=second.next;
+            }
+            else{
+                newList.insert(second.data);
+                newList.insert(first.data);
+                first=first.next;
+                second=second.next;
+            }
+
+        }
+        return newList.toString();
     }
     @Override
     public String toString() {
