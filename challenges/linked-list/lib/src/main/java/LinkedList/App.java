@@ -1,16 +1,30 @@
 package LinkedList;
 
 public class App {
-    private static final LinkedList list1 = new LinkedList();
+    public static void main(String[] args) {
 
+        LinkedList list1 = new LinkedList();
+        list1.append("A");
+        list1.append("B");
+        list1.append("C");
+        list1.append("D");
+        list1.append("E");
+        list1.append("F");
 
-    public static void main(String[] args){
-        list1.insert(1);
-        list1.insert(2);
-        list1.insert(3);
-        list1.insert(4);
-        list1.insert(5);
+        list1.insertAfter("GG","C");
+        list1.insertBefore("W","B");
 
-        System.out.printf(list1.listString());
+        Node current = list1.head;
+        while (current != null) {
+            //System.out.println(current.value);
+            current = current.getNext();
+        }
+
+        System.out.println(list1.dataToString());
+        System.out.println(list1.includes(3));
+        System.out.println(list1.includes(5));
+        System.out.println(list1.includes(10));
+
+        System.out.println(list1.toString());
     }
 }
