@@ -117,9 +117,9 @@ public class LinkedList{
     }
     public String kthFromEnd(int k){
         if(size == 0)
-            return "The list is empty";
+            return "The List is Empty";
         if(k > size - 1 || k < 0)
-            return ("error in list");
+            return ("ERROR in the list");
         else{
             int numOfSteps = size - 1 - k;
             int counter = 0;
