@@ -6,20 +6,30 @@ public class App {
     }
     public static void main(String[] args) {
 
-        LinkedList linkedList = new LinkedList();
+        LinkedList linkedList1 = new LinkedList();
 
-        linkedList.insert("Hi");
-        linkedList.insert("I");
-        linkedList.insert("am");
-        linkedList.insert("Rahaf");
+        linkedList1.insert("A");
+        linkedList1.insert("B");
+        linkedList1.insert("C");
 
-        System.out.println(linkedList.size());
-        System.out.println(linkedList.includes("Rahaf"));
 
-        System.out.println(linkedList);
-        System.out.println(linkedList.kthFromEnd(3));
+        LinkedList linkedList2 = new LinkedList();
 
-        System.out.println(linkedList);
+        linkedList2.insert("1");
+        linkedList2.insert("2");
+        linkedList2.insert("3");
+
+        LinkedList zipperList = new LinkedList();
+        System.out.println(zipperList.zip(linkedList2,linkedList1));
+
+
+        //System.out.println(linkedList1.size());
+        //System.out.println(linkedList1.includes("Rahaf"));
+
+        //System.out.println(linkedList1);
+        //System.out.println(linkedList1.kthFromEnd(3));
+
+        //System.out.println(linkedList1);
 
     }
 }

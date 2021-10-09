@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ca7bca28-814f-4d74-a5f3-0803970fed0b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/LinkedList/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/LinkedList/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/out/production/classes/LinkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/LinkedList/LinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/out/test/classes/LinkedList/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/test/classes/LinkedList/LinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
     </list>
@@ -73,7 +75,20 @@
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\linked-list\lib\src\main\java\LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest.canAddAfter">
+  <component name="RunManager" selected="JUnit.LinkedListTest">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.App" />
+      <module name="LinkedList.lib.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LinkedList.lib.test" />
       <extension name="coverage">
@@ -105,38 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.canAddBefore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LinkedList.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LinkedList" />
-      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedListTest" />
-      <option name="METHOD_NAME" value="canAddBefore" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTest.includesWorkingFine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LinkedList.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LinkedList" />
-      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedListTest" />
-      <option name="METHOD_NAME" value="includesWorkingFine" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinkedListTest.kthFromEndWorkingFine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LinkedList.lib.test" />
       <extension name="coverage">
@@ -153,20 +136,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LinkedListTest.zipTwoArgs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LinkedList.lib.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedList" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedListTest" />
+      <option name="METHOD_NAME" value="zipTwoArgs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.LinkedListTest.includesWorkingFine" />
-      <item itemvalue="JUnit.LinkedListTest" />
-      <item itemvalue="JUnit.LinkedListTest.canAddBefore" />
       <item itemvalue="JUnit.LinkedListTest.canAddAfter" />
       <item itemvalue="JUnit.LinkedListTest.kthFromEndWorkingFine" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.LinkedListTest.zipTwoArgs" />
+      <item itemvalue="JUnit.LinkedListTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinkedListTest" />
+        <item itemvalue="JUnit.LinkedListTest.zipTwoArgs" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.LinkedListTest.canAddAfter" />
         <item itemvalue="JUnit.LinkedListTest.kthFromEndWorkingFine" />
-        <item itemvalue="JUnit.LinkedListTest.canAddBefore" />
-        <item itemvalue="JUnit.LinkedListTest" />
-        <item itemvalue="JUnit.LinkedListTest.includesWorkingFine" />
       </list>
     </recent_temporary>
   </component>
@@ -192,5 +191,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib/src/main/java/LinkedList/LinkedList.java</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

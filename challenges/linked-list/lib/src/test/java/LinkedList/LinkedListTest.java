@@ -135,4 +135,24 @@ class LinkedListTest {
         String expected = "C";
         assertEquals(expected, MyTest.kthFromEnd(3));
     }
+
+    @Test
+    void zipTwoArgs() {
+        LinkedList linkedList1 = new LinkedList();
+
+        linkedList1.insert("X");
+        linkedList1.insert("Y");
+        linkedList1.insert("Z");
+
+        LinkedList linkedList2 = new LinkedList();
+
+        linkedList2.insert("1");
+        linkedList2.insert("2");
+        linkedList2.insert("3");
+
+
+        LinkedList zipperList=new LinkedList();
+        String expected="{ X } --> { 1 } --> { Y } --> { 2 } --> { Z } --> { 3 } --> NULL";
+        assertEquals(expected,zipperList.zip(linkedList2,linkedList1));
+    }
 }
