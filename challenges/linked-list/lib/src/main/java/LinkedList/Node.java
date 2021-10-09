@@ -1,8 +1,8 @@
 package LinkedList;
 
 public class Node {
-    private String data; // the data
-    private Node next;   // the reference
+     String data; // the data
+     Node next;   // the reference
 
     public Node(String data) {this.data = data;}
 
