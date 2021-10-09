@@ -17,6 +17,9 @@ public class App {
         System.out.println(linkedList.includes("Rahaf"));
 
         System.out.println(linkedList);
+        System.out.println(linkedList.kthFromEnd(3));
+
+        System.out.println(linkedList);
 
     }
 }

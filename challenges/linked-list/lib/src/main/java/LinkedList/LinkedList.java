@@ -3,11 +3,11 @@
  */
 package LinkedList;
 
-import LinkedList.Node;
 import java.util.Objects;
 
 public class LinkedList{
     Node head;
+    Node tail;
     private int size = 0;
 
     public int size() {
@@ -15,7 +15,6 @@ public class LinkedList{
     }
 
     public void insert(String value) {
-
         Node newNode = new Node(value);
 
         if (size == 0) {
@@ -30,7 +29,6 @@ public class LinkedList{
 
         }
         size++;
-
     }
 
     public boolean includes(String value) {
@@ -49,15 +47,101 @@ public class LinkedList{
         return false;
     }
 
+    // Append a new node at the end  (append)
+
+    public void append(String new_data){
+        Node new_node = new Node(new_data);
+        if (head == null){
+            head = new Node(new_data);
+            return;
+        }
+        new_node.next = null;
+        Node last = head;
+        while (last.next != null)
+            last = last.next;
+            last.next = new_node;
+            return;
+    }
+    public void insertAfter(String ref,String data){
+
+
+        Node current = head;
+        while (current != null) {
+            if (current.data==ref) {
+                Node newNode = new Node(data);
+                newNode.next = current.next;
+                current.next = newNode;
+                break;
+
+            }
+            current = current.next;
+        }
+        if(current==null){
+            insert(data);
+        }
+    }
+
+    public void insertBefore(String ref,String data){
+        //Node current= insertBeforeNode.start;
+        if(head !=null){
+            if(ref== head.data){
+                Node insertBeforeNode=new Node(data);
+                insertBeforeNode.next = head;
+                head = insertBeforeNode;
+
+            }
+            else {
+                Node current = head;
+                Node previousNode = current;
+                while (current != null) {
+                    if (ref == current.data) {
+                        Node newNode = new Node(data);
+                        newNode.next = current;
+                        previousNode.next = newNode;
+                        break;
+                        // 1-> 3 -> 4
+                        // insertBefore(3,2);
+                        // current -> 3 ,previousNode -> 1
+                        // newNode = 2 -> null
+                        // newNode.next = current 1 -> 3 2-> 3 - > 4
+                        // previousNode.next = newNode 1 -> 2 -> 3 - > 4
+                    }
+                    previousNode = current;
+                    current = current.next;
+                }
+            }
+        }
+        else{
+            System.out.println("the list is empty");
+        }
+    }
+    public String kthFromEnd(int k){
+        if(size == 0)
+            return "The list is empty";
+        if(k > size - 1 || k < 0)
+            return ("error in list");
+        else{
+            int numOfSteps = size - 1 - k;
+            int counter = 0;
+            Node current = head;
+
+            while(counter < numOfSteps) {
+                current = current.getNext();
+                counter++;
+            }
+
+            return current.getData();
+        }
+    }
     @Override
     public String toString() {
         StringBuilder stringPrint = new StringBuilder();
-        if (size == 0) {
+        if(size == 0){
             return "This List is Empty";
-        } else {
+        }else{
 
             Node current = head;
-            while (current != null) {
+            while (current != null){
                 stringPrint.append("{ ").append(current.getData()).append(" }").append(" --> ");
                 current = current.getNext();
             }
@@ -65,4 +149,5 @@ public class LinkedList{
         }
         return stringPrint.toString();
     }
+
 }
