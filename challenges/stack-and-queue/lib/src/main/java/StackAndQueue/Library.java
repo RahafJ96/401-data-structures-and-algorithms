@@ -17,8 +17,8 @@ public class Library {
 
         stack.pop();
         System.out.println(stack);
-        System.out.println(stack.isEmpty());
         System.out.println(stack.peek());
+        System.out.println(stack.isEmpty());
 
 
         Queue<Integer> queue = new Queue<>();

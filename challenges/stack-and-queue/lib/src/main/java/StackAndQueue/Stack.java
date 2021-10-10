@@ -34,6 +34,7 @@ public class Stack<T> {
             throw new IllegalArgumentException("Empty");
         }else{
             return top.getData();
+
         }
     }
 
@@ -53,8 +54,7 @@ public class Stack<T> {
             stackValue += trav.getData() + " --> ";
             trav=trav.next;
         }
-        stackValue += "Null }";
+        stackValue += "NULL }";
         return stackValue;
     }
-
 }
