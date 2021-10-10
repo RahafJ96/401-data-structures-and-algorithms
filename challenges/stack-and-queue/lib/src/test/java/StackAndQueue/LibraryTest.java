@@ -3,7 +3,115 @@
  */
 package StackAndQueue;
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class LibraryTest {
 
+    @Test void pushToStackTest(){
+        Stack stackTest = new Stack();
+        stackTest.push(1);
+        stackTest.push(2);
+        assertNotEquals(0, stackTest.toString());
+    }
+
+    @Test
+    public void popStackTest(){
+        Stack stackTest = new Stack();
+        stackTest.push(1);
+        stackTest.push(2);
+        stackTest.push(3);
+
+        stackTest.pop();
+
+        assertNotEquals("0", stackTest.toString());
+    }
+
+    @Test
+    public void emptyStackTest() throws IllegalArgumentException {
+        Stack stackTest = new Stack();
+        stackTest.push(1);
+        stackTest.push(2);
+        stackTest.push(3);
+        stackTest.pop();
+        stackTest.pop();
+        stackTest.pop();
+
+        assertNotEquals("Stack { Null }",stackTest.toString());
+        assertTrue(stackTest.isEmpty());
+    }
+
+    @Test
+    public void whenExceptionThrown_thenAssertionSucceeds() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            Stack stackTest= new Stack();
+            stackTest.peek();
+        });
+
+        String expectedMessage = "Empty";
+        String actualMessage = exception.getMessage();
+
+        assertTrue(actualMessage.contains(expectedMessage));
+    }
+
+    @Test
+    public void peekStackTest(){
+        Stack stackTest = new Stack();
+        stackTest.push(1);
+        stackTest.push(2);
+        stackTest.push(3);
+
+        assertEquals(3,stackTest.peek());
+        stackTest.pop();
+        assertEquals(2,stackTest.peek());
+    }
+
+    @Test
+    public void enqueueToQueueTest(){
+        Queue queueTest = new Queue();
+        queueTest.enqueue(1);
+        queueTest.enqueue(2);
+        queueTest.enqueue(3);
+        assertEquals("Queue { 1 --> 2 --> 3 --> NULL }",queueTest.toString());
+    }
+
+    @Test
+    public void dequeueFromQueueTest(){
+        Queue queueTest = new Queue();
+        queueTest.enqueue(1);
+        queueTest.enqueue(2);
+        queueTest.enqueue(3);
+
+        queueTest.dequeue();
+        assertEquals("Queue { 2 --> 3 --> NULL }",queueTest.toString());
+    }
+
+    // (expected = IllegalArgumentException.class)
+
+    @Test
+    public void emptyQueueTest(){
+        Queue queueTest = new Queue();
+        queueTest.enqueue(1);
+        queueTest.enqueue(2);
+        queueTest.enqueue(3);
+
+        queueTest.dequeue();
+        queueTest.dequeue();
+        queueTest.dequeue();
+        assertTrue(queueTest.isEmpty());
+        assertEquals("Queue { NULL }",queueTest.toString());
+        //assertEquals( "Empty",queueTest.dequeue());
+    }
+
+    @Test
+    public void peekQueueTest(){
+        Queue queueTest = new Queue();
+        queueTest.enqueue(1);
+        queueTest.enqueue(2);
+        queueTest.enqueue(3);
+
+        assertEquals( java.util.Optional.of(1), java.util.Optional.ofNullable(queueTest.peek()));
+        queueTest.dequeue();
+        assertEquals(java.util.Optional.of(2),java.util.Optional.ofNullable(queueTest.peek()));
+    }
 }
