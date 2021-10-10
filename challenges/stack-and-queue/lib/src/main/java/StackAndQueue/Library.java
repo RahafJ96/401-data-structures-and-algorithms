@@ -5,14 +5,47 @@ package StackAndQueue;
 
 public class Library {
     public static void main(String[] args) {
+<<<<<<< HEAD
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
         stack.push(2);
         stack.push(3);
         System.out.println(stack);
+=======
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        System.out.println(stack);
+
+>>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
         stack.pop();
         System.out.println(stack);
         System.out.println(stack.isEmpty());
         System.out.println(stack.peek());
+<<<<<<< HEAD
+=======
+
+        Queue<Integer> queue = new Queue<>();
+
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+
+        System.out.println(queue);
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.peek();
+
+        System.out.println(queue);
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.peek());
+        queue.dequeue();
+
+>>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
     }
 }

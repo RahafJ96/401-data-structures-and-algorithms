@@ -17,12 +17,20 @@ public class Stack<T> {
     }
 
     public int pop(){
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
         int popped=0;
 
         if(top == null){
             throw new IllegalArgumentException("Empty");
         }else{
+<<<<<<< HEAD
             popped = top.getValue();
+=======
+            popped = top.getData();
+>>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
             top = top.next;
         }
         return popped;
@@ -32,7 +40,11 @@ public class Stack<T> {
         if(top == null){
             throw new IllegalArgumentException("Empty");
         }else{
+<<<<<<< HEAD
             return top.getValue();
+=======
+            return top.getData();
+>>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
         }
     }
 
@@ -49,10 +61,20 @@ public class Stack<T> {
         String stackValue = "Stack { ";
         Node trav = top;
         while (trav != null){
+<<<<<<< HEAD
             stackValue += trav.getValue() + " --> ";
             trav=trav.next;
         }
         stackValue += "NULL }";
         return stackValue;
     }
+=======
+            stackValue += trav.getData() + " --> ";
+            trav=trav.next;
+        }
+        stackValue += "Null }";
+        return stackValue;
+    }
+
+>>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
 }
