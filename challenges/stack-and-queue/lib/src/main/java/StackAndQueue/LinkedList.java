@@ -9,10 +9,7 @@ public class LinkedList<T> {
         this.size = 0;
     }
 
-    /**
-     *
-     * @param value we receive a value and insert it in the front.
-     */
+
     public void insert(T value){
         //define the node
         Node<T> node = new Node<>(value);
@@ -24,11 +21,6 @@ public class LinkedList<T> {
         size++;
     }
 
-    /**
-     *
-     * @param value this method checks to see if a value is in a linked list.
-     * @return boolean
-     */
     public boolean includes(T value) {
 
         //find the head
@@ -173,10 +165,6 @@ public class LinkedList<T> {
         return mergedList;
     }
 
-    /**
-     * src https://www.geeksforgeeks.org/reverse-a-linked-list/
-     * Function to reverse the linked list
-     */
     public void reverse() {
         Node<T>  prev = null;
         Node<T> current = head;
@@ -196,18 +184,6 @@ public class LinkedList<T> {
         head = prev;
     }
 
-//  public LinkedList<T> reverse() {
-//    LinkedList<T> reversedList = new LinkedList<>();
-//    Node<T> current = head;
-//    while (current != null){
-//      Node<T> node = new Node<>(current.value);
-//      node.next = reversedList.head;
-//      reversedList.head = node;
-////      reversedList.insert(current.value);
-//      current = current.next;
-//    }
-//    return reversedList;
-//  }
 
     public Node<T> getHead(){
         return head;
