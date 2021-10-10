@@ -1,10 +1,7 @@
 package StackAndQueue;
 
 public class Queue<T> {
-<<<<<<< HEAD
 
-
-=======
     Node front;
     Node rear;
 
@@ -30,7 +27,7 @@ public class Queue<T> {
         }else{
             Node temp = this.front;
             this.front = this.front.next;
-            return temp.getData();
+            return temp.getValue();
         }
     }
 
@@ -38,7 +35,7 @@ public class Queue<T> {
         if(front == null){
             throw new IllegalArgumentException("Empty");
         }else{
-            return front.getData();
+            return front.getValue();
         }
     }
 
@@ -55,11 +52,10 @@ public class Queue<T> {
         String queueValue = "Queue { ";
         Node trav = front;
         while (trav != null){
-            queueValue += trav.getData() + " --> ";
+            queueValue += trav.getValue() + " --> ";
             trav = trav.next;
         }
-        queueValue += "Null }";
+        queueValue += "NULL }";
         return queueValue;
     }
->>>>>>> 7a57f39867369397f36e448de111c0760a3c6c93
 }
