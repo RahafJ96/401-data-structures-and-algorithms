@@ -1,5 +1,6 @@
 package StackAndQueue;
 
+
 public class Stack<T> {
 
     Node top;
@@ -13,16 +14,16 @@ public class Stack<T> {
             top = newNode;
             newNode.next = temp;
         }
-        System.out.println("The value " + value + " pushed to the Stack");
     }
 
-    public int pop(){
+    public int pop() {
+
         int popped=0;
 
         if(top == null){
             throw new IllegalArgumentException("Empty");
         }else{
-            popped = top.getValue();
+            popped = top.getData();
             top = top.next;
         }
         return popped;
@@ -32,7 +33,7 @@ public class Stack<T> {
         if(top == null){
             throw new IllegalArgumentException("Empty");
         }else{
-            return top.getValue();
+            return top.getData();
 
         }
     }
@@ -50,7 +51,7 @@ public class Stack<T> {
         String stackValue = "Stack { ";
         Node trav = top;
         while (trav != null){
-            stackValue += trav.getValue() + " --> ";
+            stackValue += trav.getData() + " --> ";
             trav=trav.next;
         }
         stackValue += "NULL }";
