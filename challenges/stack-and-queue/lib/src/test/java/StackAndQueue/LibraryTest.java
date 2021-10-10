@@ -6,191 +6,188 @@ package StackAndQueue;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-//import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-//import static org.junit.Assert.*;
-
-
 public class LibraryTest {
     @Test
-    @DisplayName("test the insert and includes methods")
-    public void insertAndIncludesTest() {
-        LinkedList testList = new LinkedList<>();
+    public void canPush() {
+        Stack<Integer> stack = new Stack<Integer>();
 
-        testList.insert(3);
-        testList.insert(8);
-        testList.insert(44);
-        testList.insert(6);
-
-        Assertions.assertTrue((testList.includes(44)), "app should return true for testList, 44");
-        Assertions.assertFalse(testList.includes(45), "app should return false for testList, 45");
-        Assertions.assertTrue(testList.includes(8), "app should return true for testList, 8");
-
+        stack.push(15);
+        try {
+            assertEquals(15, stack.peek(), "Method should return the top value of the stack");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    @DisplayName("test the first value in the LinkedList")
-    public void nodeHeadTest(){
-        LinkedList testList = new LinkedList<>();
+    public void canPushMultiValue() {
+        Stack<Integer> stack = new Stack<Integer>();
 
-        testList.insert(3);
-        testList.insert(8);
-        testList.insert(44);
-        testList.insert(6);
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
 
-        Assertions.assertEquals(6,testList.getHead().value, "app should return 6 as a head for testList");
+        try {
+            assertEquals(10, stack.peek(), "Method should return the top value of the stack");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    @DisplayName("test the print all value in the LinkedList")
-    public void printAllTest(){
-        LinkedList testList = new LinkedList<>();
+    public void canPop() {
+        Stack<Integer> stack = new Stack<Integer>();
 
-        testList.insert(3);
-        testList.insert(8);
-        testList.insert(44);
-        testList.insert(6);
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
 
-        Assertions.assertEquals("{ 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL",testList.valuesToString(), "app should print { 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL");
+        try {
+            assertEquals(10, stack.pop(), "Method should return the top value of the stack");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    @DisplayName("test the order of the values in the LinkedList for append")
-    public void appendTest(){
-        LinkedList testList = new LinkedList<>();
+    public void canEmptyStack() {
+        Stack<Integer> stack = new Stack<Integer>();
 
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
-
-        Assertions.assertEquals("{ 3 } -> { 8 } -> { 44 } -> { 6 } -> NULL",testList.valuesToString(), "app should print { 3 } -> { 8 } -> { 44 } -> { 6 } -> NULL");
-    }
-    @Test
-    @DisplayName("test the order of the values in the LinkedList for insertBefore")
-    public void insertBeforeTest(){
-        LinkedList testList = new LinkedList<>();
-
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
-
-        testList.insertBefore(44,5);
-        testList.insertBefore(3,7);
-        testList.insertBefore(3,7);
-
-        Assertions.assertEquals("{ 7 } -> { 7 } -> { 3 } -> { 8 } -> { 5 } -> { 44 } -> { 6 } -> NULL",testList.valuesToString(), "app should print { 7 } -> { 7 } -> { 3 } -> { 8 } -> { 5 } -> { 44 } -> { 6 } -> NULL");
-    }
-    @Test
-    @DisplayName("test the order of the values in the LinkedList for insertAfter")
-    public void insertAfterTest(){
-        LinkedList testList = new LinkedList<>();
-
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
-
-        testList.insertAfter(44,5);
-        testList.insertAfter(3,7);
-        testList.insertAfter(3,7);
-        testList.insertAfter(6,55);
-
-        Assertions.assertEquals("{ 3 } -> { 7 } -> { 7 } -> { 8 } -> { 44 } -> { 5 } -> { 6 } -> { 55 } -> NULL",testList.valuesToString(), "app should print { 3 } -> { 7 } -> { 7 } -> { 8 } -> { 44 } -> { 5 } -> { 6 } -> { 55 } -> NULL");
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
+        try {
+            stack.pop();
+            stack.pop();
+            stack.pop();
+            assertTrue(stack.isEmpty(), "The method should return true if the stack is empty");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    public void kGreaterThanList(){
-        LinkedList testList = new LinkedList<>();
+    public void canPeekNext() {
+        Stack<Integer> stack = new Stack<Integer>();
 
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
-
-        Assertions.assertEquals("the value is greater than the length of the list",testList.kthFromEnd(5), "kthFromEnd should print the value is greater than the length of the list");
-
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
+        try {
+            assertEquals(1, stack.getTop().getNext().getData(), "The method should return the second top value");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    public void kEqualList(){
-        LinkedList testList = new LinkedList<>();
-
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
-
-        Assertions.assertEquals("3",testList.kthFromEnd(4), "kthFromEnd should print 3");
-
+    public void canInstantiate() {
+        Stack<Integer> stack = new Stack<Integer>();
+        assertTrue(stack.isEmpty(), "Method should return true if stack is empty");
     }
 
     @Test
-    public void kNotPositiveList(){
-        LinkedList testList = new LinkedList<>();
+    public void raisesExceptionStack() {
+        Stack<Integer> stack = new Stack<Integer>();
 
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
-
-        Assertions.assertEquals("Can not enter a negative number",testList.kthFromEnd(-3), "kthFromEnd should print Can not enter a negative number");
+        try {
+            stack.pop();
+        } catch (Exception e) {
+            assertEquals("sorry, empty stack!", e.getMessage(), e.getMessage());
+        }
     }
 
     @Test
-    public void ListSizeOne(){
-        LinkedList testList = new LinkedList<>();
+    public void canEnqueue() {
+        Queue<Integer> queue = new Queue<Integer>();
 
-        testList.append(3);
+        queue.enqueue(12);
 
-        Assertions.assertEquals("3",testList.kthFromEnd(0), "kthFromEnd should print 3");
-        Assertions.assertEquals("Can not enter a negative number",testList.kthFromEnd(-1), "kthFromEnd should print Can not enter a negative number");
-        Assertions.assertEquals("the value is greater than the length of the list",testList.kthFromEnd(5), "kthFromEnd should print the value is greater than the length of the list");
-
+        try {
+            assertEquals(12, queue.peek(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    public void kInBetweenList(){
-        LinkedList testList = new LinkedList<>();
+    public void canMultiEnqueue() {
+        Queue<Integer> queue = new Queue<Integer>();
 
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
 
-        Assertions.assertEquals("44",testList.kthFromEnd(1), "kthFromEnd should print 44");
+        try {
+            assertEquals(14, queue.peek(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    public void reverseTest(){
-        LinkedList testList = new LinkedList<>();
+    public void canDequeue() {
+        Queue<Integer> queue = new Queue<Integer>();
 
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
 
-        testList.reverse();
-
-        Assertions.assertEquals("{ 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL",testList.valuesToString(), "reverseTest should print { 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL");
+        try {
+            assertEquals(14, queue.dequeue(), "Method should return the first element value from the Queue after removing it from the queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    public void zipListsTest(){
-        LinkedList testList = new LinkedList<>();
+    public void canPeek() {
+        Queue<Integer> queue = new Queue<Integer>();
 
-        testList.append(3);
-        testList.append(8);
-        testList.append(44);
-        testList.append(6);
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
 
-        LinkedList testList2 = new LinkedList<>();
-
-        testList2.append(32);
-        testList2.append(82);
-
-        Assertions.assertEquals("{ 3 } -> { 32 } -> { 8 } -> { 82 } -> { 44 } -> { 6 } -> NULL",testList.zipLists(testList,testList2).valuesToString(), "zipListsTest should print { 3 } -> { 32 } -> { 8 } -> { 82 } -> { 44 } -> { 6 } -> NULL");
+        try {
+            assertEquals(14, queue.peek(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+    @Test
+    public void canEmptyQueue() {
+        Queue<Integer> queue = new Queue<Integer>();
+
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
+
+        try {
+            queue.dequeue();
+            queue.dequeue();
+            queue.dequeue();
+            assertTrue(queue.isEmpty(), "Method should return true if the queue is empty");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void canInstantiateQueue() {
+        Queue<Integer> queue = new Queue<Integer>();
+        assertTrue(queue.isEmpty(), "Method should return true if the queue is empty");
+    }
+
+    @Test
+    public void raisesExceptionQueue() {
+        Queue<Integer> queue = new Queue<Integer>();
+
+        try {
+            queue.peek();
+        } catch (Exception e) {
+            assertEquals("Can't peek empty Queue!", e.getMessage(), e.getMessage());
+        }
+    }
+
 }
