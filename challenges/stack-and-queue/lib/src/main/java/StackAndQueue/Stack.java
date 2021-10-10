@@ -14,7 +14,6 @@ public class Stack<T> {
             top = newNode;
             newNode.next = temp;
         }
-//        System.out.println("The value " + value + " pushed to the Stack");
     }
 
     public int pop() {
