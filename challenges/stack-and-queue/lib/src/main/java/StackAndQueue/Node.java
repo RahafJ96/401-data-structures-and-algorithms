@@ -1,18 +1,23 @@
 package StackAndQueue;
 
-public class Node<T>{
-    public T value;
-    public Node<T> next;
+public class Node{
 
-    public Node(T value) {
+    public int value;
+    public Node next;
+
+    public Node(int value) {
         this.value = value;
     }
 
-    public Node<T> getNext() {
-        return next;
+    public int getData(){
+        return value;
     }
 
-    public void setNext(Node<T> node) {
-        next = node;
-    }
+//    public Node getNext() {
+//        return next;
+//    }
+
+//    public void setNext(Node<T> node) {
+//        next = node;
+//    }
 }

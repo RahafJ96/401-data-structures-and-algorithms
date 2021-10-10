@@ -6,28 +6,35 @@ package StackAndQueue;
 public class Library {
     public static void main(String[] args) {
 
-        LinkedList List = new LinkedList<>();
+        Stack<Integer> stack = new Stack<>();
 
-        List.append(6);
-        List.append(5);
-        List.insert(4);
-        List.insert(8);
-        List.insertAfter(5,7);
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
 
-        LinkedList List2 = new LinkedList<>();
+        System.out.println(stack);
 
-        List2.append(62);
-        List2.append(52);
-        List2.insert(42);
-        List2.insert(82);
+        stack.pop();
+        System.out.println(stack);
+        System.out.println(stack.isEmpty());
+        System.out.println(stack.peek());
 
-        List.valuesToString();
-        System.out.println("");
-        List2.valuesToString();
-        System.out.println("");
+        Queue<Integer> queue = new Queue<>();
 
-        LinkedList List3 = new LinkedList<>();
-        List3.zipLists(List,List2).valuesToString();
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+
+        System.out.println(queue);
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.peek();
+
+        System.out.println(queue);
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.peek());
+        queue.dequeue();
 
     }
 }
