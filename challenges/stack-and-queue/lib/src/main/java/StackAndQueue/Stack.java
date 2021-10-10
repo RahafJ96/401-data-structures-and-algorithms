@@ -3,42 +3,59 @@ package StackAndQueue;
 
 public class Stack<T> {
 
-    private Node<T>top;
+    Node top;
 
-    public Stack() {
-        top=null;
-    }
-
-    public Node<T> getTop() {
-        return top;
-    }
-    public void push(T data){
-        Node<T> node=new Node<T>(data);
-        if(!isEmpty()){
-            node.setNext(top);
+    public void push(int value){
+        Node newNode = new Node(value);
+        if (top == null){
+            top = newNode;
+        }else{
+            Node temp = top;
+            top = newNode;
+            newNode.next = temp;
         }
-        top=node;
-
+//        System.out.println("The value " + value + " pushed to the Stack");
     }
 
-    public T pop() throws Exception {
-        T data;
-        if(isEmpty())
-            throw new Exception("sorry, empty stack!");
-        else{
-            data = top.getData();
-            top = top.getNext();
+    public int pop() {
+
+        int popped=0;
+
+        if(top == null){
+            throw new IllegalArgumentException("Empty");
+        }else{
+            popped = top.getData();
+            top = top.next;
         }
-        return data;
+        return popped;
     }
-    public T peek() throws Exception {
-        if(isEmpty())
-            throw new Exception("Can't peek empty Stack!");
-        else
+
+    public int peek(){
+        if(top == null){
+            throw new IllegalArgumentException("Empty");
+        }else{
             return top.getData();
+        }
     }
+
     public boolean isEmpty(){
-        return top==null;
+        if(top == null){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    @Override
+    public String toString() {
+        String stackValue = "Stack { ";
+        Node trav = top;
+        while (trav != null){
+            stackValue += trav.getData() + " --> ";
+            trav=trav.next;
+        }
+        stackValue += "Null }";
+        return stackValue;
     }
 
 }
