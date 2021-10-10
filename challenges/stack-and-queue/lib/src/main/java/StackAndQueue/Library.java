@@ -6,7 +6,7 @@ package StackAndQueue;
 public class Library {
     public static void main(String[] args) {
 
-        LinkedList<java.io.Serializable> List = new LinkedList<>();
+        LinkedList List = new LinkedList<>();
 
         List.append(6);
         List.append(5);
@@ -14,7 +14,7 @@ public class Library {
         List.insert(8);
         List.insertAfter(5,7);
 
-        LinkedList<java.io.Serializable> List2 = new LinkedList<>();
+        LinkedList List2 = new LinkedList<>();
 
         List2.append(62);
         List2.append(52);
@@ -26,7 +26,7 @@ public class Library {
         List2.valuesToString();
         System.out.println("");
 
-        LinkedList<java.io.Serializable> List3 = new LinkedList<>();
+        LinkedList List3 = new LinkedList<>();
         List3.zipLists(List,List2).valuesToString();
 
     }

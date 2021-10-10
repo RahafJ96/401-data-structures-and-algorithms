@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 //import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 //import static org.junit.Assert.*;
 
 
@@ -17,7 +16,7 @@ public class LibraryTest {
     @Test
     @DisplayName("test the insert and includes methods")
     public void insertAndIncludesTest() {
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.insert(3);
         testList.insert(8);
@@ -33,7 +32,7 @@ public class LibraryTest {
     @Test
     @DisplayName("test the first value in the LinkedList")
     public void nodeHeadTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.insert(3);
         testList.insert(8);
@@ -46,7 +45,7 @@ public class LibraryTest {
     @Test
     @DisplayName("test the print all value in the LinkedList")
     public void printAllTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.insert(3);
         testList.insert(8);
@@ -59,7 +58,7 @@ public class LibraryTest {
     @Test
     @DisplayName("test the order of the values in the LinkedList for append")
     public void appendTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -71,7 +70,7 @@ public class LibraryTest {
     @Test
     @DisplayName("test the order of the values in the LinkedList for insertBefore")
     public void insertBeforeTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -87,7 +86,7 @@ public class LibraryTest {
     @Test
     @DisplayName("test the order of the values in the LinkedList for insertAfter")
     public void insertAfterTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -104,7 +103,7 @@ public class LibraryTest {
 
     @Test
     public void kGreaterThanList(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -117,7 +116,7 @@ public class LibraryTest {
 
     @Test
     public void kEqualList(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -130,7 +129,7 @@ public class LibraryTest {
 
     @Test
     public void kNotPositiveList(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -142,7 +141,7 @@ public class LibraryTest {
 
     @Test
     public void ListSizeOne(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
 
@@ -154,7 +153,7 @@ public class LibraryTest {
 
     @Test
     public void kInBetweenList(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -166,7 +165,7 @@ public class LibraryTest {
 
     @Test
     public void reverseTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
@@ -180,14 +179,14 @@ public class LibraryTest {
 
     @Test
     public void zipListsTest(){
-        LinkedList<java.io.Serializable> testList = new LinkedList<>();
+        LinkedList testList = new LinkedList<>();
 
         testList.append(3);
         testList.append(8);
         testList.append(44);
         testList.append(6);
 
-        LinkedList<java.io.Serializable> testList2 = new LinkedList<>();
+        LinkedList testList2 = new LinkedList<>();
 
         testList2.append(32);
         testList2.append(82);
