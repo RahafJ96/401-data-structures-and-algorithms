@@ -1,6 +1,8 @@
 package StackAndQueue;
 
-public class Node<T>{
+
+public class Node{
+
     public int value;
     public Node next;
 

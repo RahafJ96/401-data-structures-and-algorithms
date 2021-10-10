@@ -33,6 +33,7 @@ public class Stack<T> {
             throw new IllegalArgumentException("Empty");
         }else{
             return top.getValue();
+
         }
     }
 
