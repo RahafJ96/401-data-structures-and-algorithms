@@ -5,29 +5,15 @@ package StackAndQueue;
 
 public class Library {
     public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
 
-        LinkedList<java.io.Serializable> List = new LinkedList<>();
-
-        List.append(6);
-        List.append(5);
-        List.insert(4);
-        List.insert(8);
-        List.insertAfter(5,7);
-
-        LinkedList<java.io.Serializable> List2 = new LinkedList<>();
-
-        List2.append(62);
-        List2.append(52);
-        List2.insert(42);
-        List2.insert(82);
-
-        List.valuesToString();
-        System.out.println("");
-        List2.valuesToString();
-        System.out.println("");
-
-        LinkedList<java.io.Serializable> List3 = new LinkedList<>();
-        List3.zipLists(List,List2).valuesToString();
-
+        System.out.println(stack);
+        stack.pop();
+        System.out.println(stack);
+        System.out.println(stack.isEmpty());
+        System.out.println(stack.peek());
     }
 }
