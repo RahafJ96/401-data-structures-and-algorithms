@@ -28,7 +28,7 @@ public class Queue<T> {
         }else{
             Node temp = this.front;
             this.front = this.front.next;
-            return temp.getValue();
+            return temp.getData();
         }
     }
 
@@ -36,7 +36,7 @@ public class Queue<T> {
         if(front == null){
             throw new IllegalArgumentException("Empty");
         }else{
-            return front.getValue();
+            return front.getData();
         }
     }
 
@@ -53,7 +53,7 @@ public class Queue<T> {
         String queueValue = "Queue { ";
         Node trav = front;
         while (trav != null){
-            queueValue += trav.getValue() + " --> ";
+            queueValue += trav.getData() + " --> ";
             trav = trav.next;
         }
         queueValue += "NULL }";
