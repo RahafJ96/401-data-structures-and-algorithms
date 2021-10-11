@@ -14,4 +14,5 @@
 |  09    | - - - - -     | - - - - - | - - - - - |
 |  10    | [stack-and-queue](challenges/stack-and-queue)     | [README 10](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README.md)| [Code 10](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/Library.java)|
 |  11    | [stack-queue-pseudo](challenges/stack-and-queue)     | [README 11](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README.md)| [Code 11](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/Library.java)|
+|  12    | [stack-queue-animal-shelter](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java)     | [README 12](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README12.md)| [Code 12](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java)|
 
