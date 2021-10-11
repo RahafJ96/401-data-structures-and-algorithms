@@ -33,3 +33,9 @@ Node class has properties for the value stored in the Node, and a pointer to the
 - **IsEmpty ->** returns true when queue is empty otherwise returns false.
 
 ## Approach & Efficiency
+```java
+Space O(n)
+Time O(1)
+```
+## WhiteBoard
+![Ch11](challenge11.png)

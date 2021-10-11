@@ -63,6 +63,13 @@ public class Library {
         stack1.enqueue(7);
         System.out.println(stack1);
 
+        //        <<<< code challenge 12 >>>
+
+        AnimalShelter dog=new AnimalShelter();
+        dog.enqueue(new Cats("nimnim"));
+        dog.enqueue(new Dogs("mishmish"));
+        dog.deeQueue("cat");
+
 
     }
 
