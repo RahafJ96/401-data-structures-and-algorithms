@@ -7,6 +7,7 @@ import Animals.AllAnimals;
 import Animals.Cats;
 import Animals.Dogs;
 
+import StackQueueBraclets.BracketValidation;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -327,4 +328,14 @@ public class LibraryTest {
         }
     }
 
+    @Test
+    void checkBracketValidation() {
+        BracketValidation bracketValidation = new BracketValidation();
+        try{
+            assertEquals(true,bracketValidation.validateBrackets(("{{}}[[]]()")));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

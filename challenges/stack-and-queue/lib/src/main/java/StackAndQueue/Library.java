@@ -6,16 +6,19 @@ package StackAndQueue;
 import Animals.Cats;
 import Animals.Dogs;
 import Animals.AllAnimals;
+import StackQueueBraclets.BracketValidation;
 
 public class Library {
     public static void main(String[] args) throws Exception {
+//
+//        stackDemo();
+//        queueDemo();
 
-        stackDemo();
-        queueDemo();
+//        pseudoQueueDemo();
 
-        pseudoQueueDemo();
+        //animalShelterDemo();
 
-        animalShelterDemo();
+        bracketValidate();
     }
 
     public static void stackDemo() throws Exception {
@@ -118,6 +121,12 @@ public class Library {
         System.out.println("\n"+"<<<<<<<<<<< Shelter Search >>>>>>>>>>>>");
 
         System.out.println("Search for Ducks in the Shelter: "+animalShelter.deQueue("duck"));
+
+    }
+    public static void bracketValidate() throws Exception{
+        BracketValidation validate=new BracketValidation();
+        System.out.println(validate.validateBrackets("([}){}{)"));
+        System.out.println(validate.validateBrackets("{{[()]}}"));
 
     }
 }

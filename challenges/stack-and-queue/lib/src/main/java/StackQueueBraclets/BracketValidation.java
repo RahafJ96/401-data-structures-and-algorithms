@@ -2,26 +2,31 @@ package StackQueueBraclets;
 
 import StackAndQueue.Stack;
 
-public class BracketValidation {
-    public boolean validateBrackets(String string) throws Exception {
+public class BracketValidation<T> {
+    public boolean validateBrackets(String bracket) throws Exception {
 
-        Stack<Character> stack = new Stack<>();
+        Stack<String> stack = new Stack<>();
+        String checkBracket;
 
-        char[] array = string.toCharArray();
-
-        for (char chr : array) {
-            if ("(){}[]".contains("" + chr)){
-                if ("({[".contains("" + chr)){
-                    stack.push(chr);
-                }else {
-                    if ((chr != ')' || !stack.peek().equals("(")) && (chr != ']' || !stack.peek().equals("["))) {
-                        if (chr == '}') {
-                            stack.peek();
-                        }
+        if (bracket.length()>1) {
+            for (String str : bracket.split("")) {
+                if (str.equals("[") || str.equals("{") || str.equals("(")) {
+                    stack.push(str);
+                } else {
+                    checkBracket = stack.pop();
+                    if (checkBracket.equals("[") && !str.equals("]")) {
+                        return false;
+                    } else if (checkBracket.equals("{") && !str.equals("}")) {
+                        return false;
+                    } else if (checkBracket.equals("(") && !str.equals(")")) {
+                        return false;
                     }
                 }
             }
+            return true;
         }
-        return stack.isEmpty();
+        else
+        { return  false;}
     }
 }
+
