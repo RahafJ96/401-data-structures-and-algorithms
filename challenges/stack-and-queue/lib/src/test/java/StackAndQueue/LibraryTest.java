@@ -3,72 +3,328 @@
  */
 package StackAndQueue;
 
+import Animals.AllAnimals;
+import Animals.Cats;
+import Animals.Dogs;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-
 public class LibraryTest {
-//    @Test
-//    public void enqueueTest(){
-//
-//        PseudoQueue pseudoQueue = new PseudoQueue();
-//
-//        pseudoQueue.enqueue(11);
-//        assertEquals("Stack { 11 --> Null }",pseudoQueue.toString());
-//        pseudoQueue.enqueue(6);
-//        pseudoQueue.enqueue(2017);
-//        assertEquals(11,pseudoQueue.stack1.peek());
-//        assertEquals("Stack { 11 --> 6 --> 2017 --> Null }",pseudoQueue.toString());
-//        assertFalse(pseudoQueue.stack1.isEmpty());
-//    }
-//
-//    @Test
-//    public void dequeueTest(){
-//        PseudoQueue pseudoQueue = new PseudoQueue();
-//        pseudoQueue.enqueue(11);
-//        pseudoQueue.enqueue(6);
-//        pseudoQueue.enqueue(2017);
-//
-//        assertEquals(11 ,pseudoQueue.dequeue());
-//        assertEquals("Stack { 6 --> 2017 --> NULL }",pseudoQueue.toString());
-//        pseudoQueue.dequeue();
-//        pseudoQueue.dequeue();
-//        assertTrue(pseudoQueue.stack1.isEmpty());
-//        assertEquals("Stack { NULL }",pseudoQueue.toString());
-//        assertEquals(new IllegalArgumentException("Empty"),pseudoQueue.dequeue());
-//    }
+    @Test
+    public void checkPushing() {
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(15);
+        try {
+            assertEquals(15, stack.peek(), "Method should return the top value of the stack");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     @Test
-    public void enqueueAnimalShelterTest(){
+    public void checkPushMultiValue() {
+        Stack<Integer> stack = new Stack<>();
 
-//        AnimalShelter shelterTest = new AnimalShelter();
-//
-//        shelterTest.enqueue(new Cat("lala"));
-//        shelterTest.enqueue(new Cat("coco"));
-//        assertEquals("AnimalShelter { catQueue = Queue { lala --> coco --> Null }, dogQueue = Queue { Null } }",shelterTest.toString());
-//        assertEquals("lala", shelterTest.catQueue.peek().toString());
-//
-//        shelterTest.enqueue(new Dog("rex"));
-//        shelterTest.enqueue(new Dog("blaze"));
-//        assertEquals("AnimalShelter { catQueue = Queue { lala --> coco --> Null }, dogQueue = Queue { rex --> blaze --> Null } }",shelterTest.toString());
-//        assertEquals("rex", shelterTest.dogQueue.peek().toString());
-//
-//        assertFalse(shelterTest.catQueue.isEmpty());
-//        assertFalse(shelterTest.dogQueue.isEmpty());
-//
-//        shelterTest.dequeue("cat");
-//        assertEquals("AnimalShelter { catQueue = Queue { coco --> Null }, dogQueue = Queue { rex --> blaze --> Null } }",shelterTest.toString());
-//
-//        shelterTest.dequeue("dog");
-//        assertEquals("AnimalShelter { catQueue = Queue { coco --> Null }, dogQueue = Queue { blaze --> Null } }",shelterTest.toString());
-//
-//        shelterTest.dequeue("cat");
-//        shelterTest.dequeue("dog");
-//        assertEquals("AnimalShelter { catQueue = Queue { Null }, dogQueue = Queue { Null } }",shelterTest.toString());
-//        assertTrue(shelterTest.catQueue.isEmpty());
-//        assertTrue(shelterTest.dogQueue.isEmpty());
-//
-//        assertNull(shelterTest.dequeue("cat"));
-//        assertNull(shelterTest.dequeue("dog"));
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
+
+        try {
+            assertEquals(10, stack.peek(), "Method should return the top value of the stack");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+    @Test
+    public void checkIfPop() {
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
+
+        try {
+            assertEquals(10, stack.pop(), "Method should return the top value of the stack");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkIfEmptyStack() {
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
+        try {
+            stack.pop();
+            stack.pop();
+            stack.pop();
+            assertTrue(stack.isEmpty(), "The method should return true if the stack is empty");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkPeekNext() {
+        Stack<Integer> stack = new Stack<Integer>();
+
+        stack.push(15);
+        stack.push(1);
+        stack.push(10);
+        try {
+            assertEquals(1, stack.getTop().getNext().getData(), "The method should return the second top value");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkInstantiate() {
+        Stack<Integer> stack = new Stack<Integer>();
+        assertTrue(stack.isEmpty(), "Method should return true if stack is empty");
+    }
+
+    @Test
+    public void raisesExceptionStack() {
+        Stack<Integer> stack = new Stack<Integer>();
+
+        try {
+            stack.pop();
+        } catch (Exception e) {
+            assertEquals("sorry, empty stack!", e.getMessage(), e.getMessage());
+        }
+    }
+
+    @Test
+    public void checkEnqueue() {
+        Queue<Integer> queue = new Queue<Integer>();
+
+        queue.enqueue(12);
+
+        try {
+            assertEquals(12, queue.peek(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkMultiEnqueue() {
+        Queue<Integer> queue = new Queue<>();
+
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
+
+        try {
+            assertEquals(14, queue.peek(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkDequeue() {
+        Queue<Integer> queue = new Queue<>();
+
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
+
+        try {
+            assertEquals(14, queue.dequeue(), "Method should return the first element value from the Queue after removing it from the queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkPeek() {
+        Queue<Integer> queue = new Queue<>();
+
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
+
+        try {
+            assertEquals(14, queue.peek(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkEmptyQueue() {
+        Queue<Integer> queue = new Queue<>();
+
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
+
+        try {
+            queue.dequeue();
+            queue.dequeue();
+            queue.dequeue();
+            assertTrue(queue.isEmpty(), "Method should return true if the queue is empty");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkInstantiateQueue() {
+        Queue<Integer> queue = new Queue<>();
+        assertTrue(queue.isEmpty(), "Method should return true if the queue is empty");
+    }
+
+    @Test
+    public void raisesExceptionQueue() {
+        Queue<Integer> queue = new Queue<>();
+
+        try {
+            queue.peek();
+        } catch (Exception e) {
+            assertEquals("Can't peek empty Queue!", e.getMessage(), e.getMessage());
+        }
+    }
+    @Test
+    public void canEnqueue2() throws Exception {
+        PseudoQueue<Integer> queue = new PseudoQueue<>();
+
+        queue.enQueue(12);
+
+        try {
+            assertEquals(12, queue.deQueue(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkMultiEnqueue2() throws Exception {
+        PseudoQueue<Integer> queue = new PseudoQueue<>();
+
+        queue.enQueue(14);
+        queue.enQueue(15);
+        queue.enQueue(1);
+
+        try {
+            assertEquals(14, queue.deQueue(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkDequeue2() {
+        Queue<Integer> queue = new Queue<>();
+
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
+
+        try {
+            assertEquals(14, queue.dequeue(), "Method should return the first element value from the Queue after removing it from the queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @Test
+    public void raisesExceptionQueueAnimal() {
+        AnimalShelter<String> queue = new AnimalShelter<>();
+
+
+        AnimalShelter animalShelter=new AnimalShelter();
+        Cats cat1=new Cats("shemsh");
+        Cats cat2=new Cats("kitkit");
+
+
+        Dogs dog1=new Dogs("Rocky");
+        Dogs dog2=new Dogs("MILO");
+
+        AllAnimals hamster1=new AllAnimals("daffy");
+        AllAnimals hamster2=new AllAnimals("Quacky");
+
+        animalShelter.enQueue(cat1);
+        animalShelter.enQueue(cat2);
+        animalShelter.enQueue(dog1);
+        animalShelter.enQueue(dog2);
+        animalShelter.enQueue(hamster1);
+        animalShelter.enQueue(hamster2);
+
+
+
+    }
+
+
+    @Test
+    public void checkMultiEnqueueAnimal() throws Exception {
+        AnimalShelter<String> queue = new AnimalShelter<String>();
+
+
+        AnimalShelter animalShelter=new AnimalShelter();
+        Cats cat1=new Cats("Oliver");
+        Cats cat2=new Cats("Loki");
+
+
+        Dogs dog1=new Dogs("Rex");
+        Dogs dog2=new Dogs("Baily");
+
+        AllAnimals hamster1=new AllAnimals("Biscuit");
+        AllAnimals hamster2=new AllAnimals("Cookie");
+
+        animalShelter.enQueue(cat1);
+        animalShelter.enQueue(cat2);
+        animalShelter.enQueue(dog1);
+        animalShelter.enQueue(dog2);
+        animalShelter.enQueue(hamster1);
+        animalShelter.enQueue(hamster2);
+
+
+        try {
+            assertEquals("All Animals in the Shelter {name='Biscuit'}", animalShelter.deQueue(dog1),
+                    "Method should return the first element value from the Queue after removing it from the queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void checkDequeueAnimal() {
+        AnimalShelter<String> queue = new AnimalShelter<>();
+
+
+        AnimalShelter animalShelter=new AnimalShelter();
+        Cats cat1=new Cats("shemsh");
+        Cats cat2=new Cats("kitkit");
+
+
+        Dogs dog1=new Dogs("Rocky");
+        Dogs dog2=new Dogs("MILO");
+
+        AllAnimals hamster1=new AllAnimals("Rex");
+        AllAnimals hamster2=new AllAnimals("Quacky");
+
+        animalShelter.enQueue(cat1);
+        animalShelter.enQueue(cat2);
+        animalShelter.enQueue(dog1);
+        animalShelter.enQueue(dog2);
+        animalShelter.enQueue(hamster1);
+        animalShelter.enQueue(hamster2);
+
+
+        try {
+            assertEquals("All Animals in the Shelter {name='Rex'}", animalShelter.deQueue(dog1),
+                    "Method should return the first element value from the Queue after removing it from the queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

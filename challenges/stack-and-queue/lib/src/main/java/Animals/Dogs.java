@@ -9,7 +9,7 @@ public class Dogs extends Animal {
 
     @Override
     public String toString() {
-        return "Dogs{" +
+        return "from Dogs{" +
                 "type='" + type + '\'' +
                 '}';
     }
