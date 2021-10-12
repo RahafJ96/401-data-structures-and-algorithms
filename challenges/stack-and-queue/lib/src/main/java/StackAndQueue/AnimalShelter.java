@@ -1,39 +1,56 @@
 package StackAndQueue;
+import Animals.Cats;
+import Animals.Dogs;
 
-import java.util.Queue;
+public class AnimalShelter<T> {
 
-public class AnimalShelter {
-    public Queue<Cat> catQueue;
-    public Queue<Dog> dogQueue;
-    public AnimalShelter(){
-        this.catQueue = new Queue<>();
-        this.dogQueue = new Queue<>();
+    Queue <T> dogs=new Queue();
+    Queue <T> cats=new Queue();
+
+    Queue <T> differentTypes= new Queue<>();
+
+    public void enQueue(T animal){
+
+        if(animal instanceof Cats){
+            cats.enqueue(animal);
+        }
+        else if(animal instanceof Dogs){
+            dogs.enqueue(animal);
+        }
+        else{
+            differentTypes.enqueue(animal);
+        }
     }
 
-    public void enqueue(Animal animal){
-        if( animal instanceof Cat){
-            catQueue.enqueue((Cat) animal);
-        }else if (animal instanceof Dog){
-            dogQueue.enqueue((Dog) animal);
+    public T deQueue(T animal) throws Exception {
+
+        try{
+            if(animal.equals("dog")){
+                return dogs.dequeue();
+            }
+            else if(animal.equals("cat")){
+                return cats.dequeue();
+            }
+            else{
+                return differentTypes.dequeue();
+            }}
+
+        catch (Exception e){
+            e.getMessage();
+        }
+        if (animal == "cat"){
+            return (T) "We are sorry, we don't have cats in the Shelter";
+
+        }else if (animal == "dog"){
+            return (T) "We are sorry, we don't have dogs in the Shelter";
         }else {
-            System.out.println("Sorry, the Shelter only for Cats and Dogs");
-        }
-    }
-    public Animal dequeue(String pref){
-        if(pref.equals("cat") && !catQueue.isEmpty()){
-            return catQueue.dequeue();
-        }else if (pref.equals("dog") && !dogQueue.isEmpty()){
-            return dogQueue.dequeue();
-        }else{
-            return null;
+            if(differentTypes.isEmpty()) {
+                return (T) "We are Sorry, our Shelter is Empty this moment";
+            }
+            else{
+                return differentTypes.dequeue();
+            }
         }
     }
 
-    @Override
-    public String toString() {
-    return "AnimalShelter { " +
-            "catQueue = " + catQueue +
-            ", dogQueue = " + dogQueue +
-            " }";
-    }
 }
