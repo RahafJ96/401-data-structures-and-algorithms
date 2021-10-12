@@ -37,4 +37,38 @@ public class LibraryTest {
 //        assertEquals("Stack { NULL }",pseudoQueue.toString());
 //        assertEquals(new IllegalArgumentException("Empty"),pseudoQueue.dequeue());
 //    }
+
+    @Test
+    public void enqueueAnimalShelterTest(){
+
+        AnimalShelter shelterTest = new AnimalShelter();
+
+        shelterTest.enqueue(new Cat("lala"));
+        shelterTest.enqueue(new Cat("coco"));
+        assertEquals("AnimalShelter { catQueue = Queue { lala --> coco --> Null }, dogQueue = Queue { Null } }",shelterTest.toString());
+        assertEquals("lala", shelterTest.catQueue.peek().toString());
+
+        shelterTest.enqueue(new Dog("rex"));
+        shelterTest.enqueue(new Dog("blaze"));
+        assertEquals("AnimalShelter { catQueue = Queue { lala --> coco --> Null }, dogQueue = Queue { rex --> blaze --> Null } }",shelterTest.toString());
+        assertEquals("rex", shelterTest.dogQueue.peek().toString());
+
+        assertFalse(shelterTest.catQueue.isEmpty());
+        assertFalse(shelterTest.dogQueue.isEmpty());
+
+        shelterTest.dequeue("cat");
+        assertEquals("AnimalShelter { catQueue = Queue { coco --> Null }, dogQueue = Queue { rex --> blaze --> Null } }",shelterTest.toString());
+
+        shelterTest.dequeue("dog");
+        assertEquals("AnimalShelter { catQueue = Queue { coco --> Null }, dogQueue = Queue { blaze --> Null } }",shelterTest.toString());
+
+        shelterTest.dequeue("cat");
+        shelterTest.dequeue("dog");
+        assertEquals("AnimalShelter { catQueue = Queue { Null }, dogQueue = Queue { Null } }",shelterTest.toString());
+        assertTrue(shelterTest.catQueue.isEmpty());
+        assertTrue(shelterTest.dogQueue.isEmpty());
+
+        assertNull(shelterTest.dequeue("cat"));
+        assertNull(shelterTest.dequeue("dog"));
+    }
 }
