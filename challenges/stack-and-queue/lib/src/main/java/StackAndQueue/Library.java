@@ -3,6 +3,7 @@
  */
 package StackAndQueue;
 
+import org.checkerframework.checker.units.qual.C;
 
 public class Library {
     public static void  main(String[] args) throws IllegalArgumentException {
@@ -36,7 +37,6 @@ public class Library {
 
         System.out.println(queue);
         System.out.println(queue.isEmpty());
-//        System.out.println(queue.peek());
         queue.dequeue();
 
 
@@ -65,10 +65,25 @@ public class Library {
 
         //        <<<< code challenge 12 >>>
 
-        AnimalShelter dog=new AnimalShelter();
-        dog.enqueue(new Cats("nimnim"));
-        dog.enqueue(new Dogs("mishmish"));
-        dog.deeQueue("cat");
+        AnimalShelter shelter =new AnimalShelter();
+        shelter.enqueue(new Cats("coco"));
+        shelter.enqueue(new Cats("lala"));
+        shelter.enqueue(new Cats("milo"));
+
+        shelter.enqueue(new Dogs("rex"));
+        shelter.enqueue(new Dogs("bailey"));
+        shelter.enqueue(new Dogs("blaze"));
+
+        System.out.println(shelter);
+        //System.out.println(shelter.catQueue.peek().toString());
+
+
+        shelter.dequeue("cat");
+        System.out.println(shelter);
+
+        shelter.dequeue("dog");
+        System.out.println(shelter);
+
 
 
     }

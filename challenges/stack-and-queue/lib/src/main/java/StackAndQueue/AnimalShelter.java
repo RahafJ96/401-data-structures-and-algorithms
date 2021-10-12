@@ -1,39 +1,39 @@
 package StackAndQueue;
 
+import java.util.Queue;
+
 public class AnimalShelter {
-    Queue dogs=new Queue();
-    Queue cats=new Queue();
+    public Queue<Cat> catQueue;
+    public Queue<Dog> dogQueue;
+    public AnimalShelter(){
+        this.catQueue = new Queue<>();
+        this.dogQueue = new Queue<>();
+    }
 
     public void enqueue(Animal animal){
-        if( animal instanceof Dogs){
-            dogs.enqueue(animal);
-        }
-        if(animal instanceof Cats){
-            cats.enqueue(animal);
+        if( animal instanceof Cat){
+            catQueue.enqueue((Cat) animal);
+        }else if (animal instanceof Dog){
+            dogQueue.enqueue((Dog) animal);
+        }else {
+            System.out.println("Sorry, the Shelter only for Cats and Dogs");
         }
     }
-    public String deeQueue(String pref){
-        if(pref=="cat"){
-            if(!this.cats.isEmpty()){
-                this.cats.dequeue();
-                return "cat";
-            }
+    public Animal dequeue(String pref){
+        if(pref.equals("cat") && !catQueue.isEmpty()){
+            return catQueue.dequeue();
+        }else if (pref.equals("dog") && !dogQueue.isEmpty()){
+            return dogQueue.dequeue();
+        }else{
+            return null;
         }
-        else if(pref=="dog"){
-            if(!this.dogs.isEmpty()){
-                this.dogs.dequeue();
-                return "dog";
-            }
-        }
-        return null;
     }
 
     @Override
-    public String toString(){
-        if(this.cats.isEmpty()&&this.dogs.isEmpty()){
-            return null;
-        }
-        System.out.println("{"+this.dogs+"}"+"{"+this.cats.show()+"}");
-        return "{"+dogs.show()+"}\n"+"{"+cats.show()+"}";
+    public String toString() {
+    return "AnimalShelter { " +
+            "catQueue = " + catQueue +
+            ", dogQueue = " + dogQueue +
+            " }";
     }
 }
