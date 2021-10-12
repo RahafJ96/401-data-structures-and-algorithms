@@ -1,22 +1,9 @@
 package StackAndQueue;
 
 public class Animal {
-    public String name;
+    public String type;
 
-    public Animal(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return name;
+    public Animal(String type) {
+        this.type = type;
     }
 }
