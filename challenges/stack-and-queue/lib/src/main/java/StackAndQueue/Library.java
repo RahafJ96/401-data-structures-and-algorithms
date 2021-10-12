@@ -10,13 +10,13 @@ import StackQueueBraclets.BracketValidation;
 
 public class Library {
     public static void main(String[] args) throws Exception {
+//
+//        stackDemo();
+//        queueDemo();
 
-        stackDemo();
-        queueDemo();
+//        pseudoQueueDemo();
 
-        pseudoQueueDemo();
-
-        animalShelterDemo();
+        //animalShelterDemo();
 
         bracketValidate();
     }
@@ -126,5 +126,7 @@ public class Library {
     public static void bracketValidate() throws Exception{
         BracketValidation validate=new BracketValidation();
         System.out.println(validate.validateBrackets("([}){}{)"));
+        System.out.println(validate.validateBrackets("{{[()]}}"));
+
     }
 }
