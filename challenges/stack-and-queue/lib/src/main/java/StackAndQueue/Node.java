@@ -1,19 +1,19 @@
 package StackAndQueue;
 
 
-public class Node{
-    public int data;
+public class Node<T>{
+    public T data;
     public Node next;
 
-    public Node(int data) {
+    public Node(T data) {
         this.data = data;
     }
 
-    public int getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(T data) {
         this.data = data;
     }
 
