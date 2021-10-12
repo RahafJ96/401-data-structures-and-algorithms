@@ -8,4 +8,4 @@ There are 3 types of brackets:
 - Square Brackets : `[]`
 - Curly Brackets : `{}`
 
-![stack-queue-brackets](challenge13.PNG)
+![stack-queue-brackets](challenge13.png)
