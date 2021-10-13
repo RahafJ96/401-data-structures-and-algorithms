@@ -2,6 +2,7 @@ package StackAndQueue;
 
 public class Queue<T> {
 
+    public int size;
     private Node<T> front;
     private Node<T> back;
 
