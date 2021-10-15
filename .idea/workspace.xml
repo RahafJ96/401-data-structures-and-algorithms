@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/challenges/array-reverse" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -135,7 +135,7 @@
       <workItem from="1634065866198" duration="340000" />
       <workItem from="1634066893341" duration="242000" />
       <workItem from="1634068867444" duration="184000" />
-      <workItem from="1634309526474" duration="529000" />
+      <workItem from="1634309526474" duration="743000" />
     </task>
     <servers />
   </component>
