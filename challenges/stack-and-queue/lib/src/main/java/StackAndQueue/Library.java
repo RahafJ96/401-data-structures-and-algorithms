@@ -6,19 +6,30 @@ package StackAndQueue;
 import Animals.Cats;
 import Animals.Dogs;
 import Animals.AllAnimals;
+import Game.DuckDuckGooseGame;
 import StackQueueBraclets.BracketValidation;
 
 public class Library {
     public static void main(String[] args) throws Exception {
-//
-//        stackDemo();
-//        queueDemo();
+        DuckDuckGooseGame game = new DuckDuckGooseGame();
 
-//        pseudoQueueDemo();
+        game.addToQueue("A");
+        game.addToQueue("B");
+        game.addToQueue("C");
+        game.addToQueue("D");
+        game.addToQueue("E");
+
+        System.out.println(""+game.DuckDuckGoose(3));
+
+
+        //stackDemo();
+        //queueDemo();
+
+        //pseudoQueueDemo();
 
         //animalShelterDemo();
 
-        bracketValidate();
+      //  bracketValidate();
     }
 
     public static void stackDemo() throws Exception {
