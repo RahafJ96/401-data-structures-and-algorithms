@@ -2,6 +2,7 @@ package StackAndQueue;
 
 public class Queue<T> {
 
+    public int size;
     private Node<T> front;
     private Node<T> back;
 
@@ -17,6 +18,7 @@ public class Queue<T> {
             back.setNext(node);
         }
         back = node;
+        size++;
     }
 
     public T dequeue() throws Exception {
@@ -27,7 +29,9 @@ public class Queue<T> {
             data = front.getData();
             front = front.getNext();
         }
+        size --;
         return data;
+
     }
 
     public T peek() throws Exception {
