@@ -2,60 +2,53 @@ package StackAndQueue;
 
 public class Queue<T> {
 
-    Node front;
-    Node rear;
+    Node<T> front;
+    Node<T> rear;
 
     public Queue(){
         this.front = this.rear = null;
     }
 
-    public void enqueue(int value){
-        Node newNode = new Node(value);
+    public void enqueue(T value){
+        Node<T> node = new Node<>(value);
 
-        if(this.rear == null){
-            this.front = this.rear = newNode;
-        }
-
-        this.rear.next = newNode;
-        this.rear = newNode;
-    }
-
-    public int dequeue() {
-
-        if(this.front == null){
-            throw new IllegalArgumentException("Empty");
+        if(isEmpty()){
+           front= node;
         }else{
-            Node temp = this.front;
-            this.front = this.front.next;
-            return temp.getValue();
+            rear.setNext(node);
         }
+
+        rear= node;
     }
 
-    public int peek(){
-        if(front == null){
-            throw new IllegalArgumentException("Empty");
+    public T dequeue() throws Exception {
+        T value;
+        if(isEmpty()){
+            throw new Exception("Empty");
+        }else{
+            value = front.getValue();
+            front = front.getNext();
+        }
+        return value;
+    }
+
+    public T peek() throws Exception {
+        if(isEmpty()){
+            throw new Exception("Empty");
         }else{
             return front.getValue();
         }
     }
 
     public boolean isEmpty(){
-        if(front == null){
-            return true;
-        }else{
-            return false;
-        }
+       return front==null;
     }
 
     @Override
     public String toString() {
-        String queueValue = "Queue { ";
-        Node trav = front;
-        while (trav != null){
-            queueValue += trav.getValue() + " --> ";
-            trav = trav.next;
-        }
-        queueValue += "NULL }";
-        return queueValue;
+        return "Queue{" +
+                "front=" + front +
+                ", rear=" + rear +
+                '}';
     }
 }

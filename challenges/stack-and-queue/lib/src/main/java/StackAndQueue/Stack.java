@@ -2,35 +2,40 @@ package StackAndQueue;
 
 public class Stack<T> {
 
-    Node top;
+    private Node<T> top;
 
-    public void push(int value){
-        Node newNode = new Node(value);
-        if (top == null){
-            top = newNode;
-        }else{
-            Node temp = top;
-            top = newNode;
-            newNode.next = temp;
+    public Stack(){
+        top=null;
+    }
+
+    public Node<T> getTop() {
+        return top;
+    }
+
+    public void push(T value){
+        Node<T> node = new Node<T>(value);
+        if (!isEmpty()){
+            node.setNext(top);
         }
+        top=node;
         System.out.println("The value " + value + " pushed to the Stack");
     }
 
-    public int pop(){
-        int popped=0;
+    public T pop() throws Exception {
+        T data;
 
-        if(top == null){
-            throw new IllegalArgumentException("Empty");
+        if(isEmpty()){
+            throw new Exception("Empty");
         }else{
-            popped = top.getValue();
-            top = top.next;
+            data = top.getValue();
+            top = top.getNext();
         }
-        return popped;
+        return data;
     }
 
-    public int peek(){
-        if(top == null){
-            throw new IllegalArgumentException("Empty");
+    public T peek() throws Exception {
+        if(isEmpty()){
+            throw new Exception("Empty");
         }else{
             return top.getValue();
 
@@ -38,22 +43,13 @@ public class Stack<T> {
     }
 
     public boolean isEmpty(){
-        if(top == null){
-            return true;
-        }else{
-            return false;
-        }
+        return top==null;
     }
 
     @Override
     public String toString() {
-        String stackValue = "Stack { ";
-        Node trav = top;
-        while (trav != null){
-            stackValue += trav.getValue() + " --> ";
-            trav=trav.next;
-        }
-        stackValue += "NULL }";
-        return stackValue;
+        return "Stack{" +
+                "top=" + top +
+                '}';
     }
 }

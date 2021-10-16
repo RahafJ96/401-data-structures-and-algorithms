@@ -4,7 +4,7 @@
 package StackAndQueue;
 
 public class Library {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Stack<Integer> stack = new Stack<>();
 
@@ -17,7 +17,7 @@ public class Library {
         stack.pop();
 
         System.out.println(stack);
-        System.out.println(stack.peek());
+        System.out.println("Peek: "+stack.peek());
         System.out.println(stack.isEmpty());
 
         Queue<Integer> queue = new Queue<>();
@@ -33,8 +33,9 @@ public class Library {
         queue.peek();
 
         System.out.println(queue);
+        System.out.println("Peek: "+queue.peek());
         System.out.println(queue.isEmpty());
-        System.out.println(queue.peek());
+
         queue.dequeue();
 
     }
