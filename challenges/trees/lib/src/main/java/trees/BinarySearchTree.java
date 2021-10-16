@@ -4,31 +4,31 @@ public class BinarySearchTree<T extends Comparable<T>>{
 
     public Node<T> root;
 
-    public void add(T data){
+    public void add(T key){
         if(isEmpty()){
-            root = new Node<>(data);
+            root = new Node<>(key);
         }else{
-            addHelper(data,root);
+            traverse(key,root);
         }
     }
 
     public boolean isEmpty(){
         return root == null;
     }
-    private void addHelper(T data, Node<T> root){
-        Node<T> node = new Node<>(data);
-        if (data.compareTo(root.getData()) < 0){
+    private void traverse(T key, Node<T> root){
+        Node<T> node = new Node<>(key);
+        if (key.compareTo(root.getData()) < 0){
             if (root.getLeftNode() == null){
                 root.setLeftNode(node);
             }else{
-                addHelper(data, root.getLeftNode());
+                traverse(key, root.getLeftNode());
             }
         }
-        if (data.compareTo(root.getData())> 0){
+        if (key.compareTo(root.getData())> 0){
             if (root.getRightNode() == null){
                 root.setRightNode(node);
             }else{
-                addHelper(data, root.getRightNode());
+                traverse(key, root.getRightNode());
             }
         }
     }
