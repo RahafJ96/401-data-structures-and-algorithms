@@ -1,41 +1,29 @@
 package StackAndQueue;
 
-public class PseudoQueue {
-    public Stack<Integer> stack1;
-    public Stack<Integer> stack2;
+public class PseudoQueue<T> {
+    Stack stack1=new Stack();
+    Stack stack2=new Stack();
 
-    public PseudoQueue() {
-        this.stack1 = new Stack<>();
-        this.stack2 = new Stack<>();
+    public  void enqueue(T data) throws Exception {
 
-    }
-
-    public void enqueue(int value){
-
-        while (stack1.top!=null){
+        while (!stack1.isEmpty()){
             stack2.push(stack1.pop());
         }
-        stack1.push(value);
-        while (stack2.top != null){
+        stack1.push(data);
+
+        while (!stack2.isEmpty()){
             stack1.push(stack2.pop());
-
         }
     }
 
-
-    public int dequeue(){
-        if (stack1.top == null){
-            throw new IllegalArgumentException("Empty");
+    public T dequeue() throws Exception {
+        if (stack1.isEmpty()){
+            System.out.println("stack is empty!");
         }
-        int popped = stack1.peek();
+        T x=(T) stack1.peek();
         stack1.pop();
-        return popped;
-    }
+        return x;
 
-    @Override
-    public String toString() {
-
-        return stack1.toString();
 
     }
 }

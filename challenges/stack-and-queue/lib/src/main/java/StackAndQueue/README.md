@@ -33,3 +33,10 @@ Node class has properties for the value stored in the Node, and a pointer to the
 - **IsEmpty ->** returns true when queue is empty otherwise returns false.
 
 ## Approach & Efficiency
+```java
+Space O(n)
+Time O(1)
+```
+### Challenge 11 - Implement a Queue using two Stacks.
+![CH11](../StackAndQueue/challenge11.png)
+
