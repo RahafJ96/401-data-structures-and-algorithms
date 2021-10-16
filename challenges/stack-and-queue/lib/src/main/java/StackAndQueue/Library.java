@@ -27,9 +27,9 @@ public class Library {
 
         pseudoQueueDemo();
 
-        animalShelterDemo();
+        //animalShelterDemo();
 
-        bracketValidate();
+        //bracketValidate();
 
 //        Stack<Integer> stack = new Stack<>();
 //
