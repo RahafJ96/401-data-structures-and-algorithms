@@ -11,7 +11,7 @@ public class Cats extends Animal {
 
     @Override
     public String toString() {
-        return "Cats {" +
+        return "Cats{" +
                 "type='" + type + '\'' +
                 '}';
     }

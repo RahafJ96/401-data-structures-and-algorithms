@@ -6,10 +6,9 @@ public class Dogs extends Animal {
         super(type);
     }
 
-
     @Override
     public String toString() {
-        return "from Dogs{" +
+        return "Dogs{" +
                 "type='" + type + '\'' +
                 '}';
     }

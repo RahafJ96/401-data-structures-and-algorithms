@@ -7,7 +7,7 @@ public class AnimalShelter<T> {
     Queue <T> dogs=new Queue();
     Queue <T> cats=new Queue();
 
-    Queue <T> differentTypes= new Queue<>();
+    Queue <T> differentTypes= new Queue<T>();
 
     public void enqueue(T animal){
 

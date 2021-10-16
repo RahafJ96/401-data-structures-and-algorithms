@@ -22,7 +22,7 @@ public class Stack<T> {
     public T pop() throws Exception {
         T data;
         if(isEmpty())
-            throw new Exception("sorry, empty stack!");
+            throw new Exception("Empty");
         else{
             data = top.getData();
             top = top.getNext();
@@ -31,7 +31,7 @@ public class Stack<T> {
     }
     public T peek() throws Exception {
         if(isEmpty())
-            throw new Exception("Can't peek empty Stack!");
+            throw new Exception("Empty");
         else
             return top.getData();
     }

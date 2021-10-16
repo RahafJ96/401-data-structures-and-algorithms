@@ -18,7 +18,7 @@ public class PseudoQueue<T> {
 
     public T dequeue() throws Exception {
         if (stack1.isEmpty()){
-            System.out.println("stack is empty!");
+            System.out.println("Empty");
         }
         T x=(T) stack1.peek();
         stack1.pop();
