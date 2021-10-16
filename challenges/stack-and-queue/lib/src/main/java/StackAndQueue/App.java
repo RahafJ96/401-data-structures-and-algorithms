@@ -47,19 +47,19 @@ public class App {
 
 
         PseudoQueue MultiStack = new PseudoQueue();
-        System.out.println("1- pushing => " + MultiStack.enqueue("H"));
-        System.out.println("2- pushing => " + MultiStack.enqueue("E"));
-        System.out.println("3- pushing => " + MultiStack.enqueue("L"));
-        System.out.println("4- pushing => " + MultiStack.enqueue("L"));
-        System.out.println("5- pushing => " + MultiStack.enqueue("O"));
+        System.out.println("enqueue => " + MultiStack.enqueue("H"));
+        System.out.println("enqueue => " + MultiStack.enqueue("E"));
+        System.out.println("enqueue => " + MultiStack.enqueue("L"));
+        System.out.println("enqueue => " + MultiStack.enqueue("L"));
+        System.out.println("enqueue => " + MultiStack.enqueue("O"));
 
         System.out.println("*************************************************");
 
-        System.out.println("1- poping => " + MultiStack.dequeue());
-        System.out.println("2- poping => " + MultiStack.dequeue());
-        System.out.println("3- poping => " + MultiStack.dequeue());
-        System.out.println("4- poping => " + MultiStack.dequeue());
-        System.out.println("5- poping => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
 
         AnimalShelter animalShelter = new AnimalShelter();
         animalShelter.enqueue(new Animal("cats"));
@@ -72,5 +72,10 @@ public class App {
         System.out.println(animalShelter.dequeue("cats"));
         System.out.println(animalShelter.dequeue("dogs"));
         System.out.println(animalShelter.dequeue("dogs"));
+
+
+
     }
+
+
 }
