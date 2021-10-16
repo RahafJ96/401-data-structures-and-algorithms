@@ -9,7 +9,7 @@ public class AnimalShelter<T> {
 
     Queue <T> differentTypes= new Queue<>();
 
-    public void enQueue(T animal){
+    public void enqueue(T animal){
 
         if(animal instanceof Cats){
             cats.enqueue(animal);
@@ -22,7 +22,7 @@ public class AnimalShelter<T> {
         }
     }
 
-    public T deQueue(T animal) throws Exception {
+    public T dequeue(T animal) throws Exception {
 
         try{
             if(animal.equals("dog")){

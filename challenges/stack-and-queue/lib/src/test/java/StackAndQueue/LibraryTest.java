@@ -3,15 +3,43 @@
  */
 package StackAndQueue;
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 import Animals.AllAnimals;
 import Animals.Cats;
 import Animals.Dogs;
-
 import StackQueueBraclets.BracketValidation;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 public class LibraryTest {
+    @Test
+    public void enqueueTest() throws Exception {
+
+        PseudoQueue pseudoQueue = new PseudoQueue();
+
+        pseudoQueue.enqueue(11);
+
+        try {
+            assertEquals(11, pseudoQueue.dequeue(), "Method should return the first element value from the Queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void dequeueTest() throws Exception {
+        PseudoQueue pseudoQueue = new PseudoQueue();
+        pseudoQueue.enqueue(11);
+        pseudoQueue.enqueue(6);
+        pseudoQueue.enqueue(2017);
+
+        try {
+            assertEquals(11, pseudoQueue.dequeue(), "Method should return the first element value from the Queue after removing it from the queue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     @Test
     public void checkPushing() {
         Stack<Integer> stack = new Stack<>();
@@ -115,20 +143,20 @@ public class LibraryTest {
         }
     }
 
-    @Test
-    public void checkMultiEnqueue() {
-        Queue<Integer> queue = new Queue<>();
-
-        queue.enqueue(14);
-        queue.enqueue(15);
-        queue.enqueue(1);
-
-        try {
-            assertEquals(14, queue.peek(), "Method should return the first element value from the Queue");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void checkMultiEnqueue() {
+//        Queue<Integer> queue = new Queue<>();
+//
+//        queue.enqueue(14);
+//        queue.enqueue(15);
+//        queue.enqueue(1);
+//
+//        try {
+//            assertEquals(14, queue.peek(), "Method should return the first element value from the Queue");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @Test
     public void checkDequeue() {
@@ -194,14 +222,15 @@ public class LibraryTest {
             assertEquals("Can't peek empty Queue!", e.getMessage(), e.getMessage());
         }
     }
+
     @Test
     public void canEnqueue2() throws Exception {
         PseudoQueue<Integer> queue = new PseudoQueue<>();
 
-        queue.enQueue(12);
+        queue.enqueue(12);
 
         try {
-            assertEquals(12, queue.deQueue(), "Method should return the first element value from the Queue");
+            assertEquals(12, queue.dequeue(), "Method should return the first element value from the Queue");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -211,12 +240,12 @@ public class LibraryTest {
     public void checkMultiEnqueue2() throws Exception {
         PseudoQueue<Integer> queue = new PseudoQueue<>();
 
-        queue.enQueue(14);
-        queue.enQueue(15);
-        queue.enQueue(1);
+        queue.enqueue(14);
+        queue.enqueue(15);
+        queue.enqueue(1);
 
         try {
-            assertEquals(14, queue.deQueue(), "Method should return the first element value from the Queue");
+            assertEquals(14, queue.dequeue(), "Method should return the first element value from the Queue");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -236,105 +265,104 @@ public class LibraryTest {
             e.printStackTrace();
         }
     }
+
     @Test
     public void raisesExceptionQueueAnimal() {
         AnimalShelter<String> queue = new AnimalShelter<>();
 
 
-        AnimalShelter animalShelter=new AnimalShelter();
-        Cats cat1=new Cats("shemsh");
-        Cats cat2=new Cats("kitkit");
+        AnimalShelter animalShelter = new AnimalShelter();
+        Cats cat1 = new Cats("shemsh");
+        Cats cat2 = new Cats("kitkit");
 
 
-        Dogs dog1=new Dogs("Rocky");
-        Dogs dog2=new Dogs("MILO");
+        Dogs dog1 = new Dogs("Rocky");
+        Dogs dog2 = new Dogs("MILO");
 
-        AllAnimals hamster1=new AllAnimals("daffy");
-        AllAnimals hamster2=new AllAnimals("Quacky");
+        AllAnimals hamster1 = new AllAnimals("daffy");
+        AllAnimals hamster2 = new AllAnimals("Quacky");
 
-        animalShelter.enQueue(cat1);
-        animalShelter.enQueue(cat2);
-        animalShelter.enQueue(dog1);
-        animalShelter.enQueue(dog2);
-        animalShelter.enQueue(hamster1);
-        animalShelter.enQueue(hamster2);
-
+        animalShelter.enqueue(cat1);
+        animalShelter.enqueue(cat2);
+        animalShelter.enqueue(dog1);
+        animalShelter.enqueue(dog2);
+        animalShelter.enqueue(hamster1);
+        animalShelter.enqueue(hamster2);
 
 
     }
 
 
-    @Test
-    public void checkMultiEnqueueAnimal() throws Exception {
-        AnimalShelter<String> queue = new AnimalShelter<String>();
+//    @Test
+//    public void checkMultiEnqueueAnimal() throws Exception {
+//        AnimalShelter<String> queue = new AnimalShelter<String>();
+//
+//
+//        AnimalShelter animalShelter = new AnimalShelter();
+//        Cats cat1 = new Cats("Oliver");
+//        Cats cat2 = new Cats("Loki");
+//
+//
+//        Dogs dog1 = new Dogs("Rex");
+//        Dogs dog2 = new Dogs("Baily");
+//
+//        AllAnimals hamster1 = new AllAnimals("Biscuit");
+//        AllAnimals hamster2 = new AllAnimals("Cookie");
+//
+//        animalShelter.enqueue(cat1);
+//        animalShelter.enqueue(cat2);
+//        animalShelter.enqueue(dog1);
+//        animalShelter.enqueue(dog2);
+//        animalShelter.enqueue(hamster1);
+//        animalShelter.enqueue(hamster2);
+//
+//
+//        try {
+//            assertEquals("All Animals in the Shelter {name='Biscuit'}", animalShelter.dequeue(dog1),
+//                    "Method should return the first element value from the Queue after removing it from the queue");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
-
-        AnimalShelter animalShelter=new AnimalShelter();
-        Cats cat1=new Cats("Oliver");
-        Cats cat2=new Cats("Loki");
-
-
-        Dogs dog1=new Dogs("Rex");
-        Dogs dog2=new Dogs("Baily");
-
-        AllAnimals hamster1=new AllAnimals("Biscuit");
-        AllAnimals hamster2=new AllAnimals("Cookie");
-
-        animalShelter.enQueue(cat1);
-        animalShelter.enQueue(cat2);
-        animalShelter.enQueue(dog1);
-        animalShelter.enQueue(dog2);
-        animalShelter.enQueue(hamster1);
-        animalShelter.enQueue(hamster2);
-
-
-        try {
-            assertEquals("All Animals in the Shelter {name='Biscuit'}", animalShelter.deQueue(dog1),
-                    "Method should return the first element value from the Queue after removing it from the queue");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void checkDequeueAnimal() {
-        AnimalShelter<String> queue = new AnimalShelter<>();
-
-
-        AnimalShelter animalShelter=new AnimalShelter();
-        Cats cat1=new Cats("shemsh");
-        Cats cat2=new Cats("kitkit");
-
-
-        Dogs dog1=new Dogs("Rocky");
-        Dogs dog2=new Dogs("MILO");
-
-        AllAnimals hamster1=new AllAnimals("Rex");
-        AllAnimals hamster2=new AllAnimals("Quacky");
-
-        animalShelter.enQueue(cat1);
-        animalShelter.enQueue(cat2);
-        animalShelter.enQueue(dog1);
-        animalShelter.enQueue(dog2);
-        animalShelter.enQueue(hamster1);
-        animalShelter.enQueue(hamster2);
-
-
-        try {
-            assertEquals("All Animals in the Shelter {name='Rex'}", animalShelter.deQueue(dog1),
-                    "Method should return the first element value from the Queue after removing it from the queue");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void checkDequeueAnimal() {
+//        AnimalShelter<String> queue = new AnimalShelter<>();
+//
+//
+//        AnimalShelter animalShelter = new AnimalShelter();
+//        Cats cat1 = new Cats("shemsh");
+//        Cats cat2 = new Cats("kitkit");
+//
+//
+//        Dogs dog1 = new Dogs("Rocky");
+//        Dogs dog2 = new Dogs("MILO");
+//
+//        AllAnimals hamster1 = new AllAnimals("Rex");
+//        AllAnimals hamster2 = new AllAnimals("Quacky");
+//
+//        animalShelter.enqueue(cat1);
+//        animalShelter.enqueue(cat2);
+//        animalShelter.enqueue(dog1);
+//        animalShelter.enqueue(dog2);
+//        animalShelter.enqueue(hamster1);
+//        animalShelter.enqueue(hamster2);
+//
+//
+//        try {
+//            assertEquals("All Animals in the Shelter {name='Rex'}", animalShelter.dequeue(dog1),
+//                    "Method should return the first element value from the Queue after removing it from the queue");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @Test
     void checkBracketValidation() {
         BracketValidation bracketValidation = new BracketValidation();
-        try{
-            assertEquals(true,bracketValidation.validateBrackets(("{{}}[[]]()")));
-        }
-        catch (Exception e){
+        try {
+            assertEquals(true, bracketValidation.validateBrackets(("{{}}[[]]()")));
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -4,7 +4,7 @@ public class PseudoQueue<T> {
     Stack stack1=new Stack();
     Stack stack2=new Stack();
 
-    public  void enQueue(T data) throws Exception {
+    public  void enqueue(T data) throws Exception {
 
         while (!stack1.isEmpty()){
             stack2.push(stack1.pop());
@@ -16,8 +16,8 @@ public class PseudoQueue<T> {
         }
     }
 
-    public T deQueue() throws Exception {
-        if(stack1.isEmpty()){
+    public T dequeue() throws Exception {
+        if (stack1.isEmpty()){
             System.out.println("stack is empty!");
         }
         T x=(T) stack1.peek();
