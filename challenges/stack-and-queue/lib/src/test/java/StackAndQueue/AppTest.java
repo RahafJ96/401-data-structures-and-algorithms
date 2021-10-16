@@ -4,11 +4,11 @@
 package StackAndQueue;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import Animals.AllAnimals;
 import Animals.Cats;
 import Animals.Dogs;
 import StackQueueBraclets.BracketValidation;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class AppTest {
@@ -307,14 +307,14 @@ public class AppTest {
         System.out.println(dog1);
 
         try {
-            assertEquals("Dogs{type='Rex'}", animalShelter.dequeue(dog1), "Method should return the first element value from the Queue after removing it from the queue");
+            assertEquals("Dogs{type='Rex'}\n", animalShelter.dequeue(dog1), "Method should return the first element value from the Queue after removing it from the queue");
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     @Test
-    public void canDequeueAnimal() {
+    public void checkDequeueAnimal() {
         AnimalShelter<String> queue = new AnimalShelter<String>();
 
 
@@ -338,7 +338,7 @@ public class AppTest {
 
 
         try {
-            assertEquals("Dogs{ name=>'Rex'}\n", animalShelter.dequeue(dog1), "Method should return the first element value from the Queue after removing it from the queue");
+            assertEquals("Dogs{type='Rex'}\n", animalShelter.dequeue(duck1), "Method should return the first element value from the Queue after removing it from the queue");
         } catch (Exception e) {
             e.printStackTrace();
         }

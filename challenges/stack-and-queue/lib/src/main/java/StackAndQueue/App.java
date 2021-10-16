@@ -23,14 +23,14 @@ public class App {
 //        System.out.println(""+game.DuckDuckGoose(3));
 
 
-        stackDemo();
-        queueDemo();
+        //stackDemo();
+        //queueDemo();
 
-        pseudoQueueDemo();
+        //pseudoQueueDemo();
 
         animalShelterDemo();
 
-        bracketValidate();
+        //bracketValidate();
     }
 
     public static void stackDemo() throws Exception {
@@ -104,12 +104,12 @@ public class App {
         AllAnimals hamster1=new AllAnimals("Biscuit");
         AllAnimals hamster2=new AllAnimals("Cookie");
 
-        animalShelter.dequeue(cat1);
-        animalShelter.dequeue(cat2);
-        animalShelter.dequeue(dog1);
-        animalShelter.dequeue(dog2);
-        animalShelter.dequeue(hamster1);
-        animalShelter.dequeue(hamster2);
+        animalShelter.enqueue(cat1);
+        animalShelter.enqueue(cat2);
+        animalShelter.enqueue(dog1);
+        animalShelter.enqueue(dog2);
+        animalShelter.enqueue(hamster1);
+        animalShelter.enqueue(hamster2);
         System.out.println("\n"+"<<<<<<<<<<<< Animal Shelter >>>>>>>>>>>>");
 
         System.out.println(animalShelter.dequeue("dog"));
@@ -133,7 +133,7 @@ public class App {
         System.out.println(animalShelter.dequeue("dog"));
         System.out.println("\n"+"<<<<<<<<<<< Shelter Search >>>>>>>>>>>>");
 
-        System.out.println("Search for Ducks in the Shelter: "+animalShelter.dequeue("duck"));
+        System.out.println(animalShelter.dequeue("duck"));
 
 
     }
