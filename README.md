@@ -13,9 +13,9 @@
 |  08    | [linked-list-zip](challenges/linked-list)     | [README 08](challenges/linked-list/lib/src/main/java/LinkedList/README.md)| [Code 08](challenges/linked-list/lib/src/main/java/LinkedList/LinkedList.java)|
 |  09    | - - - - -     | - - - - - | - - - - - |
 |  10    | [stack-and-queue](challenges/stack-and-queue)     | [README 10](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README.md)| [Code 10](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/Library.java)|
-|  11    | [stack-queue-pseudo](challenges/stack-and-queue)     | [README 11](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README.md)| [Code 11](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/Library.java)|
+|  11    | [stack-queue-pseudo](challenges/stack-and-queue)     | [README 11](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README.md)| [Code 11](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/PseudoQueue.java)|
 |  12    | [stack-queue-animal-shelter](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java)     | [README 12](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README12.md)| [Code 12](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java)|
-|  13    | [stack-queue-brackets](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java)     | [README 13](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README13.md)| [Code 13](challenges/stack-and-queue/lib/src/main/java/StackQueueBraclets/BracketValidation.java)|
+|  13    | [stack-queue-brackets](challenges/stack-and-queue/lib/src/main/java/StackQueueBraclets)     | [README 13](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README13.md)| [Code 13](challenges/stack-and-queue/lib/src/main/java/StackQueueBraclets/BracketValidation.java)|
 |  14    | - - - - -     | - - - - - | - - - - - |
 |  15    | [trees](challenges/trees/lib/src/main/java/trees)     | [README 15](challenges/trees/lib/src/main/java/trees/README.md)| [Code 15](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)|
 

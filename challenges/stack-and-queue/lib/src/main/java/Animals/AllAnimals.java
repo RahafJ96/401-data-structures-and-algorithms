@@ -11,8 +11,8 @@ public class AllAnimals extends Animal {
 
     @Override
     public String toString() {
-        return "All Animals in the Shelter {" +
-                "name='" + type + '\''
-                +'}';
+        return "All Animals{" +
+                "type='" + type + '\'' +
+                '}';
     }
 }
