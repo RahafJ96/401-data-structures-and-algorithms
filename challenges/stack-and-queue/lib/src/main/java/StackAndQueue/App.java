@@ -73,8 +73,32 @@ public class App {
         System.out.println(animalShelter.dequeue("dogs"));
         System.out.println(animalShelter.dequeue("dogs"));
 
+        System.out.println("Is Brackets Validate [[{(rahaf)}]] ? "+App.bracketsValidate("[[{(rahaf)}]]"));
+        System.out.println("Is Brackets Validate [[{() ? "+App.bracketsValidate("[[{()"));
+        System.out.println("Is Brackets Validate [[]] ? "+App.bracketsValidate("[[]]"));
 
 
+    }
+
+    public static boolean bracketsValidate(String value) throws Exception {
+        StackGen<Character> brakets = new StackGen<>();
+
+        if(value.length() == 0){
+            return false;
+        }
+
+        for(int i = 0 ; i < value.length() ; i++){
+            if(value.charAt(i) == '{' || value.charAt(i) == '(' || value.charAt(i) == '['){
+                brakets.push(value.charAt(i));
+            } else if(value.charAt(i) == '}' && brakets.peek() == '{' ){
+                brakets.pop();
+            }else if(value.charAt(i) == ')' && brakets.peek() == '(' ){
+                brakets.pop();
+            }else if(value.charAt(i) == ']' && brakets.peek() == '[' ){
+                brakets.pop();
+            }
+        }
+        return brakets.isEmpty();
     }
 
 

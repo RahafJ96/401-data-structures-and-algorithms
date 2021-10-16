@@ -207,5 +207,10 @@ class AppTest {
         assertEquals("not an animal",animalShelter.dequeue("cats"));
 
     }
-
+    @Test
+    @DisplayName("Test bracketsValidate")
+    public void testBracketsValidate() throws Exception {
+        assertFalse(App.bracketsValidate("{(})"));
+        assertTrue(App.bracketsValidate("{()}"));
+    }
 }
