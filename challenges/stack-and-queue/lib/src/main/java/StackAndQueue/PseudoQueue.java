@@ -24,7 +24,6 @@ public class PseudoQueue {
 
 
     public int dequeue(){
-
         if (stack1.top == null){
             throw new IllegalArgumentException("Empty");
         }

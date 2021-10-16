@@ -48,20 +48,20 @@ public class Library {
         stack1.enqueue(15);
         stack1.enqueue(10);
 
-        System.out.println(stack1);
+        System.out.println("PseudoQueue:  "+stack1);
 
 
         stack1.enqueue(5);
+        System.out.println("PseudoQueue(enqueue):  "+stack1);
+
+        System.out.println("deQueue: "+stack1.dequeue());
         System.out.println(stack1);
 
-        System.out.println(stack1.dequeue());
-        System.out.println(stack1);
-
-        System.out.println(stack1.dequeue());
+        System.out.println("deQueue: "+stack1.dequeue());
         System.out.println(stack1);
 
         stack1.enqueue(7);
-        System.out.println(stack1);
+        System.out.println("enQueue:  "+stack1);
 
 
     }
