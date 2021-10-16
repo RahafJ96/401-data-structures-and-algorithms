@@ -22,14 +22,14 @@ public class Library {
         System.out.println(""+game.DuckDuckGoose(3));
 
 
-        //stackDemo();
-        //queueDemo();
+        stackDemo();
+        queueDemo();
 
-        //pseudoQueueDemo();
+        pseudoQueueDemo();
 
-        //animalShelterDemo();
+        animalShelterDemo();
 
-      //  bracketValidate();
+        bracketValidate();
     }
 
     public static void stackDemo() throws Exception {
