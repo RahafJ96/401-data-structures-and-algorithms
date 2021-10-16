@@ -197,21 +197,15 @@ class AppTest {
         animalShelter.enqueue(new Animal("CaTs"));
         animalShelter.enqueue(new Animal("CAts"));
         animalShelter.enqueue(new Animal("Dogs"));
-        animalShelter.enqueue(new Animal("Lili"));
+        animalShelter.enqueue(new Animal("Rocky"));
 
-
-
-
-        assertEquals("not an animal",animalShelter.dequeue("Lili"));
+        assertEquals("not an animal",animalShelter.dequeue("Rocky"));
         assertEquals("cats",animalShelter.dequeue("cats"));
         assertEquals("cats",animalShelter.dequeue("cats"));
         assertEquals("cats",animalShelter.dequeue("cats"));
         assertEquals("dogs",animalShelter.dequeue("dogs"));
         assertEquals("not an animal",animalShelter.dequeue("cats"));
 
-
-
-
-
     }
+
 }
