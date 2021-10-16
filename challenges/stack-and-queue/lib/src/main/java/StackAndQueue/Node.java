@@ -1,33 +1,32 @@
 package StackAndQueue;
 
-public class Node<T> {
-    T data;
-    Node<T> next;
-
-    public Node(T data) {
+public class Node {
+    String data;
+    Node next;
+    public Node(String data) {
         this.data = data;
     }
 
-    public T getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(T data) {
+    public void setData(String data) {
         this.data = data;
     }
 
-    public Node<T> getNext() {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(Node<T> next) {
+    public void setNext(Node next) {
         this.next = next;
     }
 
     @Override
     public String toString() {
         return "Node{" +
-                "data=" + data +
+                "data='" + data + '\'' +
                 ", next=" + next +
                 '}';
     }

@@ -1,48 +1,51 @@
 package StackAndQueue;
 
-public class Queue<T> {
-
-    public int size;
-    private Node<T> front;
-    private Node<T> back;
+public class Queue {
+    private Node front;
+    private Node rear;
 
     public Queue() {
-        front = back = null;
     }
 
-    public void enqueue(T data) {
-        Node<T> node = new Node<>(data);
-        if (isEmpty())
+    public void enqueue(String data) {
+        if (isEmpty()) {
+            Node node = new Node(data);
             front = node;
-        else {
-            back.setNext(node);
+            rear = node;
+        } else {
+            Node node = new Node(data);
+            rear.setNext(node);
+            rear = node;
         }
-        back = node;
-        size++;
     }
 
-    public T dequeue() throws Exception {
-        T data;
-        if(isEmpty())
-            throw new Exception("Can't remove from empty Queue!");
-        else{
-            data = front.getData();
+    public String dequeue() {
+        if (isEmpty()) {
+            return "Queue is empty";
+        } else {
+            String data = front.getData();
             front = front.getNext();
+            return data;
         }
-        size --;
-        return data;
-
     }
 
-    public T peek() throws Exception {
-        if(isEmpty())
-            throw new Exception("Can't peek empty Queue!");
-        else
+    public String peek() {
+        if (isEmpty()) {
+            return "Queue is empty";
+        } else {
             return front.getData();
+        }
     }
-
     public boolean isEmpty() {
         return front == null;
+    }
+
+    @Override
+    public String toString() {
+        return "Queue{" +
+                "front=" + front +
+                ", rear=" + rear +
+                '}';
     }
 
 }
