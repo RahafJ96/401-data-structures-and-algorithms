@@ -9,85 +9,30 @@ import Animals.AllAnimals;
 import Game.DuckDuckGooseGame;
 import StackQueueBraclets.BracketValidation;
 
-public class Library {
-    public static void  main(String[] args) throws Exception {
-        DuckDuckGooseGame game = new DuckDuckGooseGame();
+public class App {
+    public static void main(String[] args) throws Exception {
 
-        game.addToQueue("A");
-        game.addToQueue("B");
-        game.addToQueue("C");
-        game.addToQueue("D");
-        game.addToQueue("E");
+//        DuckDuckGooseGame game = new DuckDuckGooseGame();
+//
+//        game.addToQueue("A");
+//        game.addToQueue("B");
+//        game.addToQueue("C");
+//        game.addToQueue("D");
+//        game.addToQueue("E");
+//
+//        System.out.println(""+game.DuckDuckGoose(3));
 
-        //System.out.println(""+game.DuckDuckGoose(3));
 
+        stackDemo();
+        queueDemo();
 
-        //stackDemo();
-        //queueDemo();
-
-        //pseudoQueueDemo();
+        pseudoQueueDemo();
 
         animalShelterDemo();
 
-        //bracketValidate();
-
-//        Stack<Integer> stack = new Stack<>();
-//
-//        stack.push(1);
-//        stack.push(2);
-//        stack.push(3);
-//
-//        System.out.println(stack);
-//
-//        stack.pop();
-//
-//        System.out.println(stack);
-//        System.out.println(stack.peek());
-//        System.out.println(stack.isEmpty());
-//
-//
-//        Queue<Integer> queue = new Queue<>();
-//
-//        queue.enqueue(1);
-//        queue.enqueue(2);
-//        queue.enqueue(3);
-//
-//        System.out.println(queue);
-//        queue.dequeue();
-//        queue.dequeue();
-//        queue.dequeue();
-//
-//        System.out.println(queue);
-//        System.out.println(queue.isEmpty());
-////        System.out.println(queue.peek());
-//        queue.dequeue();
-//
-//
-////        <<<< code challenge 11 >>>
-//
-//        PseudoQueue stack1 = new PseudoQueue();
-//
-//        stack1.enqueue(20);
-//        stack1.enqueue(15);
-//        stack1.enqueue(10);
-//
-//        System.out.println("PseudoQueue:  "+stack1);
-//
-//
-//        stack1.enqueue(5);
-//        System.out.println("PseudoQueue(enqueue):  "+stack1);
-//
-//        System.out.println("deQueue: "+stack1.dequeue());
-//        System.out.println(stack1);
-//
-//        System.out.println("deQueue: "+stack1.dequeue());
-//        System.out.println(stack1);
-//
-//        stack1.enqueue(7);
-//        System.out.println("enQueue:  "+stack1);
-
-
+        bracketValidate();
     }
+
     public static void stackDemo() throws Exception {
         Stack stack = new Stack();
 
@@ -145,6 +90,7 @@ public class Library {
         System.out.println(pseudoQueue.dequeue());
         System.out.println(pseudoQueue.dequeue());
         System.out.println(pseudoQueue.dequeue());
+
     }
     public static void animalShelterDemo()throws Exception{
         AnimalShelter animalShelter=new AnimalShelter();
@@ -158,12 +104,12 @@ public class Library {
         AllAnimals hamster1=new AllAnimals("Biscuit");
         AllAnimals hamster2=new AllAnimals("Cookie");
 
-        animalShelter.enqueue(cat1);
-        animalShelter.enqueue(cat2);
-        animalShelter.enqueue(dog1);
-        animalShelter.enqueue(dog2);
-        animalShelter.enqueue(hamster1);
-        animalShelter.enqueue(hamster2);
+        animalShelter.dequeue(cat1);
+        animalShelter.dequeue(cat2);
+        animalShelter.dequeue(dog1);
+        animalShelter.dequeue(dog2);
+        animalShelter.dequeue(hamster1);
+        animalShelter.dequeue(hamster2);
         System.out.println("\n"+"<<<<<<<<<<<< Animal Shelter >>>>>>>>>>>>");
 
         System.out.println(animalShelter.dequeue("dog"));
@@ -189,6 +135,7 @@ public class Library {
 
         System.out.println("Search for Ducks in the Shelter: "+animalShelter.dequeue("duck"));
 
+
     }
     public static void bracketValidate() throws Exception{
         BracketValidation validate=new BracketValidation();
@@ -196,5 +143,4 @@ public class Library {
         System.out.println(validate.validateBrackets("{{[()]}}"));
 
     }
-
 }

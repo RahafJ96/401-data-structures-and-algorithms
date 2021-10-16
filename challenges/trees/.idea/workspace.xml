@@ -4,12 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e3e57c73-c1bb-4322-a9ef-cbe23a233d9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" afterDir="false" />
+=======
+    <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../array-reverse/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/classes/java/main/trees/BinarySearchTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/classes/java/main/trees/Library.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/classes/java/main/trees/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/classes/java/main/trees/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/classes/java/test/trees/LibraryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/Animals/AllAnimals.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/Animals/AllAnimals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/Animals/Cats.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/Animals/Cats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/Animals/Dogs.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/Animals/Dogs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/AnimalShelter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/AnimalShelter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/PseudoQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/PseudoQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/production/classes/StackAndQueue/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/out/test/classes/StackAndQueue/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/out/test/classes/StackAndQueue/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/Animals/AllAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/Animals/AllAnimals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/Animals/Cats.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/Animals/Cats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/Animals/Dogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/Animals/Dogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/AnimalShelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/PseudoQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/PseudoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/main/java/StackAndQueue/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-and-queue/lib/src/test/java/StackAndQueue/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/lib/src/test/java/StackAndQueue/LibraryTest.java" afterDir="false" />
+>>>>>>> 6ab132d3e884c8f25079e79f8b45f521564396c6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +89,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stack-and-queue" />
+>>>>>>> 6ab132d3e884c8f25079e79f8b45f521564396c6
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager" selected="JUnit.LibraryTest">

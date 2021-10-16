@@ -11,7 +11,7 @@ import Animals.Dogs;
 import StackQueueBraclets.BracketValidation;
 
 
-public class LibraryTest {
+public class AppTest {
 
     // <<<<< code challenge 10 + 11 >>>>>
     @Test
@@ -28,7 +28,8 @@ public class LibraryTest {
 
     @Test
     public void checkPushMultiValue() {
-        Stack<Integer> stack = new Stack<Integer>();
+        Stack<Integer> stack = new Stack<>();
+
 
         stack.push(15);
         stack.push(1);
@@ -42,9 +43,9 @@ public class LibraryTest {
     }
 
     @Test
+
     public void checkPop() {
         Stack<Integer> stack = new Stack<Integer>();
-
         stack.push(15);
         stack.push(1);
         stack.push(10);
@@ -57,6 +58,7 @@ public class LibraryTest {
     }
 
     @Test
+
     public void checkEmptyStack() {
         Stack<Integer> stack = new Stack<Integer>();
 
@@ -94,12 +96,14 @@ public class LibraryTest {
     }
 
     @Test
+
     public void checkExceptionStack() {
         Stack<Integer> stack = new Stack<Integer>();
 
         try {
             stack.pop();
         } catch (Exception e) {
+
             assertEquals("Empty", e.getMessage(), e.getMessage());
         }
     }
@@ -119,7 +123,8 @@ public class LibraryTest {
 
     @Test
     public void checkMultiEnqueue() {
-        Queue<Integer> queue = new Queue<Integer>();
+        Queue<Integer> queue = new Queue<>();
+
 
         queue.enqueue(14);
         queue.enqueue(15);
@@ -134,7 +139,8 @@ public class LibraryTest {
 
     @Test
     public void checkDequeue() {
-        Queue<Integer> queue = new Queue<Integer>();
+        Queue<Integer> queue = new Queue<>();
+
 
         queue.enqueue(14);
         queue.enqueue(15);
@@ -148,8 +154,9 @@ public class LibraryTest {
     }
 
     @Test
-    public void canPeek() {
-        Queue<Integer> queue = new Queue<Integer>();
+    public void checkPeek() {
+        Queue<Integer> queue = new Queue<>();
+
 
         queue.enqueue(14);
         queue.enqueue(15);
@@ -163,6 +170,7 @@ public class LibraryTest {
     }
 
     @Test
+
     public void canEmptyQueue() {
         Queue<Integer> queue = new Queue<Integer>();
 
@@ -181,6 +189,7 @@ public class LibraryTest {
     }
 
     @Test
+
     public void canInstantiateQueue() {
         Queue<Integer> queue = new Queue<Integer>();
         assertTrue(queue.isEmpty(), "Method should return true if the queue is empty");
@@ -188,6 +197,7 @@ public class LibraryTest {
 
     @Test
     public void raisesExceptionQueue() {
+
         Queue<Integer> queue = new Queue<Integer>();
 
         try {
@@ -197,6 +207,7 @@ public class LibraryTest {
         }
     }
     @Test
+
     public void checkEnqueue2() throws Exception {
         PseudoQueue<Integer> queue = new PseudoQueue<>();
 
@@ -210,6 +221,7 @@ public class LibraryTest {
     }
 
     @Test
+
     public void canMultiEnqueue2() throws Exception {
         PseudoQueue<Integer> queue = new PseudoQueue<>();
 
@@ -225,6 +237,7 @@ public class LibraryTest {
     }
 
     @Test
+
     public void canDequeue2() {
         Queue<Integer> queue = new Queue<Integer>();
 
@@ -238,6 +251,7 @@ public class LibraryTest {
             e.printStackTrace();
         }
     }
+
     // <<<<< code challenge 12 >>>>>
 
     @Test
@@ -330,6 +344,16 @@ public class LibraryTest {
         }
     }
 
+    @Test
+    void checkBracketValidation() {
+        BracketValidation bracketValidation = new BracketValidation();
+        try{
+            assertEquals(true,bracketValidation.validateBrackets(("{{}}[[]]()")));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
 
 
