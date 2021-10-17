@@ -32,7 +32,7 @@ Depth first traversal is where we prioritize going through the height of the tre
 
 ## Whiteboard 
 *Binary search trees*
-
+![IMG](trees-max.jpg)
 
 ## API 
 [Binary Search Tree](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)

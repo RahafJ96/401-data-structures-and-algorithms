@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/trees/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/trees/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/trees/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/trees/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/trees/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/trees/LibraryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,10 +46,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.maxValueTestempty">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\trees\lib\src\main\java\trees" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LibraryTest.maxValueTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="trees.Main" />
       <module name="trees.lib.main" />
@@ -85,6 +83,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.maxValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trees.lib.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trees.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="trees" />
+      <option name="MAIN_CLASS_NAME" value="trees.LibraryTest" />
+      <option name="METHOD_NAME" value="maxValueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest.maxValueTestempty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trees.lib.test" />
       <extension name="coverage">
@@ -103,9 +117,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.maxValueTest" />
+        <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.maxValueTestempty" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +137,8 @@
       <workItem from="1634443058348" duration="52000" />
       <workItem from="1634450251941" duration="628000" />
       <workItem from="1634456481824" duration="593000" />
-      <workItem from="1634472461653" duration="2640000" />
+      <workItem from="1634472461653" duration="5405000" />
+      <workItem from="1634493927387" duration="603000" />
     </task>
     <servers />
   </component>
