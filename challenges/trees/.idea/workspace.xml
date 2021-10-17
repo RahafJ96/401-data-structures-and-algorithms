@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/trees-max.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/main/java/trees" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -142,7 +138,7 @@
       <workItem from="1634450251941" duration="628000" />
       <workItem from="1634456481824" duration="593000" />
       <workItem from="1634472461653" duration="5405000" />
-      <workItem from="1634493927387" duration="541000" />
+      <workItem from="1634493927387" duration="603000" />
     </task>
     <servers />
   </component>

@@ -18,6 +18,7 @@
 |  13    | [stack-queue-brackets](challenges/stack-and-queue/lib/src/main/java/StackQueueBraclets)     | [README 13](challenges/stack-and-queue/lib/src/main/java/StackAndQueue/README13.md)| [Code 13](challenges/stack-and-queue/lib/src/main/java/StackQueueBraclets/BracketValidation.java)|
 |  14    | - - - - -     | - - - - - | - - - - - |
 |  15    | [trees](challenges/trees/lib/src/main/java/trees)     | [README 15](challenges/trees/lib/src/main/java/trees/README.md)| [Code 15](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)|
+|  16   | [trees-max](challenges/trees/lib/src/main/java/trees)     | [README 16](challenges/trees/lib/src/main/java/trees/README.md)| [Code 16](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)|
 
 
 
