@@ -12,19 +12,25 @@ class LibraryTest {
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
 
-    @Test
-    public void maxValueTestempty() {
-        BinarySearchTree binarySearchTree = new BinarySearchTree();
-
-        assertEquals(IllegalArgumentException.class,binarySearchTree.findMaxvalue());
-
-    }
+//    @Test
+//    public void maxValueTestempty() {
+//        BinarySearchTree binarySearchTree = new BinarySearchTree();
+//
+//        assertEquals(IllegalArgumentException.class,binarySearchTree.findMaxvalue());
+//
+//    }
 
     @Test
     public void maxValueTest(){
-        BinarySearchTree binarySearchTree = new BinarySearchTree();
-
-
+        BinarySearchTree<Integer> binaryTreeTest = new BinarySearchTree<Integer>();
+        binaryTreeTest.setRoot(new Node<>(7));
+        assertEquals(7,binaryTreeTest.findMaxvalue());
+        binaryTreeTest.getRoot().setLeftNode(new Node(9));
+        binaryTreeTest.getRoot().setRightNode(new Node(11));
+        assertEquals(11,binaryTreeTest.findMaxvalue());
+        binaryTreeTest.getRoot().getLeftNode().setLeftNode(new Node(13));
+        binaryTreeTest.getRoot().getLeftNode().setRightNode(new Node((1)));
+        assertEquals(13,binaryTreeTest.findMaxvalue());
     }
 
 }

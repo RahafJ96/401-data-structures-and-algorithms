@@ -124,10 +124,18 @@ public class BinarySearchTree<T extends Comparable<T>>{
 
     }
 
+    public Node<T> getRoot() {
+        return root;
+    }
+
     @Override
     public String toString() {
         return "BinarySearchTree{" +
                 "root=" + root.getData() +
                 '}';
+    }
+
+    public void setRoot(Node<T> root) {
+        this.root = root;
     }
 }
