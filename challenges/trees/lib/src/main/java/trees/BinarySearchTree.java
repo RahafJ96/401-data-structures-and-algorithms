@@ -1,5 +1,8 @@
 package trees;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinarySearchTree<T extends Comparable<T>>{
 
     public Node<T> root;
@@ -11,6 +14,10 @@ public class BinarySearchTree<T extends Comparable<T>>{
             traverse(key,root);
         }
     }
+    List<Integer> postOrderList = new ArrayList<>(); // FOR TEST and use it in code challenge 16
+    List<Integer> inOrderList = new ArrayList<>();  // FOR TEST
+    List<Integer> preOrderList = new ArrayList<>(); // FOR TEST
+
 
     public boolean isEmpty(){
         return root == null;
@@ -38,6 +45,36 @@ public class BinarySearchTree<T extends Comparable<T>>{
         }
 
     }
+    public void postOrder(Node node){
+
+        if(node == null){
+            return;
+        }
+
+        // left
+        postOrder(node.getLeftNode());
+
+        // right
+        postOrder(node.getRightNode());
+
+        //  print the value
+        System.out.print(node.getData() + " ");
+        postOrderList.add((Integer) node.getData());
+    }
+    public void preOrder(Node node){
+
+        if(node == null){
+            return;
+        }
+
+        System.out.print(node.getData() + " ");
+        preOrderList.add((Integer) node.getData());
+
+        preOrder(node.getLeftNode());
+
+        preOrder(node.getRightNode());
+    }
+
     private void traversalInOrder(Node<T> root){
         if (root.getLeftNode() != null){
             traversalInOrder(root.getLeftNode());
@@ -67,6 +104,24 @@ public class BinarySearchTree<T extends Comparable<T>>{
         else {
             return true; // Match
         }
+    }
+    public int findMaxvalue() {
+
+        if(root == null){
+            throw new IllegalArgumentException("Empty tree");
+        }
+        System.out.println("Root: "+root.getData());
+        int max = (Integer) root.getData();
+
+        postOrder(root);
+
+        for(int i = 0; i<postOrderList.size(); i++){
+            if(max<postOrderList.get(i)){
+                max = postOrderList.get(i);
+            }
+        }
+        return max;
+
     }
 
     @Override

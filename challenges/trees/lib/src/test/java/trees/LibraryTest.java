@@ -12,4 +12,19 @@ class LibraryTest {
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
 
+    @Test
+    public void maxValueTestempty() {
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
+
+        assertEquals(IllegalArgumentException.class,binarySearchTree.findMaxvalue());
+
+    }
+
+    @Test
+    public void maxValueTest(){
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
+
+
+    }
+
 }
