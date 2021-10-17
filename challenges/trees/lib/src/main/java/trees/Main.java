@@ -22,5 +22,8 @@ public class Main {
         System.out.println("Is the BinarySearch tree contains 4: " + binarySearchTree.contains(4));
         binarySearchTree.inOrderTraversal();
         System.out.println("after testing");
+
+
+        System.out.println("\n"+"Max value is: " + binarySearchTree.findMaxvalue());
     }
 }
