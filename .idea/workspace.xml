@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/challenges/trees" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -140,7 +140,7 @@
       <workItem from="1634385608644" duration="261000" />
       <workItem from="1634494540190" duration="776000" />
       <workItem from="1634497030880" duration="367000" />
-      <workItem from="1634545869356" duration="58000" />
+      <workItem from="1634545869356" duration="159000" />
     </task>
     <servers />
   </component>
