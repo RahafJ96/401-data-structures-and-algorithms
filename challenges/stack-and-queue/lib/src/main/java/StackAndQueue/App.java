@@ -11,24 +11,8 @@ import StackQueueBraclets.BracketValidation;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
         System.out.println("Hello");
 
-<<<<<<< HEAD
-
-        //stackDemo();
-        //queueDemo();
-
-        //pseudoQueueDemo();
-
-        animalShelterDemo();
-
-        //bracketValidate();
-    }
-
-    public static void stackDemo() throws Exception {
-=======
->>>>>>> dfa807c4865b6db66f9125a3ebadc1a62c3232ae
         Stack stack = new Stack();
         stack.push("R");
         stack.push("A");
@@ -60,16 +44,6 @@ public class App {
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
 
-<<<<<<< HEAD
-        animalShelter.enqueue(cat1);
-        animalShelter.enqueue(cat2);
-        animalShelter.enqueue(dog1);
-        animalShelter.enqueue(dog2);
-        animalShelter.enqueue(hamster1);
-        animalShelter.enqueue(hamster2);
-        System.out.println("\n"+"<<<<<<<<<<<< Animal Shelter >>>>>>>>>>>>");
-=======
->>>>>>> dfa807c4865b6db66f9125a3ebadc1a62c3232ae
 
         PseudoQueue MultiStack = new PseudoQueue();
         System.out.println("enqueue => " + MultiStack.enqueue("H"));
@@ -98,13 +72,9 @@ public class App {
         System.out.println(animalShelter.dequeue("dogs"));
         System.out.println(animalShelter.dequeue("dogs"));
 
-<<<<<<< HEAD
-        System.out.println(animalShelter.dequeue("duck"));
-=======
         System.out.println("Is Brackets Validate [[{(rahaf)}]] ? "+App.bracketsValidate("[[{(rahaf)}]]"));
         System.out.println("Is Brackets Validate [[{() ? "+App.bracketsValidate("[[{()"));
         System.out.println("Is Brackets Validate [[]] ? "+App.bracketsValidate("[[]]"));
->>>>>>> dfa807c4865b6db66f9125a3ebadc1a62c3232ae
 
 
     }
