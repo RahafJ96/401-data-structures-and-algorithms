@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/trees-beadth.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/trees-max.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/trees-max.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/trees/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/trees/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/trees/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/trees/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/trees/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/trees/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/out/test/classes/trees/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/test/classes/trees/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/trees/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/trees/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.maxValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.breadthFirstEmptyTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trees.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -96,13 +109,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="trees" />
       <option name="MAIN_CLASS_NAME" value="trees.LibraryTest" />
-      <option name="METHOD_NAME" value="maxValueTest" />
+      <option name="METHOD_NAME" value="breadthFirstEmptyTreeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.maxValueTestempty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.breadthFirstValuesInTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trees.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +125,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="trees" />
       <option name="MAIN_CLASS_NAME" value="trees.LibraryTest" />
-      <option name="METHOD_NAME" value="maxValueTestempty" />
+      <option name="METHOD_NAME" value="breadthFirstValuesInTreeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.emptyTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trees.lib.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trees.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="trees" />
+      <option name="MAIN_CLASS_NAME" value="trees.LibraryTest" />
+      <option name="METHOD_NAME" value="emptyTreeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,9 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.LibraryTest.maxValueTest" />
         <item itemvalue="JUnit.LibraryTest" />
-        <item itemvalue="JUnit.LibraryTest.maxValueTestempty" />
+        <item itemvalue="JUnit.LibraryTest.emptyTreeTest" />
+        <item itemvalue="JUnit.LibraryTest.breadthFirstValuesInTreeTest" />
+        <item itemvalue="JUnit.LibraryTest.breadthFirstEmptyTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +174,10 @@
       <workItem from="1634493927387" duration="603000" />
       <workItem from="1634533826389" duration="2263000" />
       <workItem from="1634540079280" duration="601000" />
+      <workItem from="1634548362542" duration="3572000" />
+      <workItem from="1634562510905" duration="4314000" />
+      <workItem from="1634572147219" duration="397000" />
+      <workItem from="1634575341485" duration="998000" />
     </task>
     <servers />
   </component>

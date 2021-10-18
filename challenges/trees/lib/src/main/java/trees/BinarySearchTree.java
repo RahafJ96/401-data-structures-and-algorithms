@@ -1,6 +1,7 @@
 package trees;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class BinarySearchTree<T extends Comparable<T>>{
@@ -61,6 +62,21 @@ public class BinarySearchTree<T extends Comparable<T>>{
         System.out.print(node.getData() + " ");
         postOrderList.add((Integer) node.getData());
     }
+    public void inOrder(Node node ){
+
+        if(node == null){
+            return;
+        }
+
+        inOrder(node.getLeftNode());
+
+        System.out.print(node.getData()+" ");
+        inOrderList.add((Integer) node.getData());
+
+        inOrder(node.getRightNode());
+
+    }
+
     public void preOrder(Node node){
 
         if(node == null){
@@ -79,7 +95,7 @@ public class BinarySearchTree<T extends Comparable<T>>{
         if (root.getLeftNode() != null){
             traversalInOrder(root.getLeftNode());
         }
-        System.out.println("-->"+ root.getData());
+        System.out.println("->"+ root.getData());
 
         if (root.getRightNode() != null){
             traversalInOrder(root.getRightNode());
@@ -122,6 +138,33 @@ public class BinarySearchTree<T extends Comparable<T>>{
         }
         return max;
 
+    }
+
+    public ArrayList breadthFirst(BinarySearchTree tree) {
+
+        if (tree.getRoot() == null) {
+            return null;
+        }
+
+        LinkedList<Node> nodes = new LinkedList<>() ;
+        ArrayList<Integer> finalNodes = new ArrayList<>();
+
+        nodes.add(tree.getRoot());
+
+        while (!nodes.isEmpty()) {
+
+            Node node = nodes.remove();
+            finalNodes.add((Integer) node.getData());
+
+            if (node.getLeftNode() != null) {
+                nodes.add(node.getLeftNode());
+            }
+
+            if (node.getRightNode() != null) {
+                nodes.add(node.getRightNode());
+            }
+        }
+        return finalNodes;
     }
 
     public Node<T> getRoot() {

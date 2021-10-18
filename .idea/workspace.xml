@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="" />
+    <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/test/classes/trees/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/test/classes/trees/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/test/java/trees/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/test/java/trees/LibraryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,6 +156,7 @@
       <workItem from="1634494540190" duration="776000" />
       <workItem from="1634497030880" duration="367000" />
       <workItem from="1634545869356" duration="159000" />
+      <workItem from="1634572555900" duration="1933000" />
     </task>
     <servers />
   </component>
