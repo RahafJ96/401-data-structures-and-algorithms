@@ -1,40 +1,39 @@
 package StackAndQueue;
 
-public class Stack{
+public class StackGen<T> {
+    private NodeGen<T> top;
 
-    private Node top;
-
-    public Stack() {
+    public StackGen() {
 
     }
     public boolean isEmpty(){
         return top == null;
     }
 
-    public void push(String data) {
+    public void push(T data) {
         if (isEmpty()) {
-            Node newNode = new Node(data);
+            NodeGen<T> newNode = new NodeGen<T>(data);
             top = newNode;
         } else {
-            Node newNode = new Node(data);
+            NodeGen<T> newNode = new NodeGen<T>(data);
             newNode.setNext(top);
             top = newNode;
+
         }
     }
-    public String pop(){
+    public T pop() throws Exception{
         if(isEmpty()){
-            return "Stack is empty";
-
+            throw new Exception("Stack is empty");
         } else {
-            String data = top.getData();
+            T data = top.getData();
             top = top.getNext();
             return data;
         }
     }
 
-    public String peek(){
+    public T peek() throws Exception{
         if (isEmpty()){
-            return "stack is empty";
+            throw new Exception("Stack is empty");
         } else {
             return top.getData();
         }

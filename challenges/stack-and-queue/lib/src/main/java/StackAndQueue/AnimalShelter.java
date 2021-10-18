@@ -2,55 +2,46 @@ package StackAndQueue;
 import Animals.Cats;
 import Animals.Dogs;
 
-public class AnimalShelter<T> {
+public class AnimalShelter {
+    private QueueGen<Animal> dogs ;
+    private QueueGen<Animal> cats ;
 
-    Queue <T> dogs=new Queue();
-    Queue <T> cats=new Queue();
-
-    Queue <T> differentTypes= new Queue<T>();
-
-    public void enqueue(T animal){
-
-        if(animal instanceof Cats){
-            cats.enqueue(animal);
-        }
-        else if(animal instanceof Dogs){
-            dogs.enqueue(animal);
-        }
-        else{
-            differentTypes.enqueue(animal);
-        }
+    public AnimalShelter() {
+        this.dogs = new QueueGen<>();
+        this.cats = new QueueGen<>();
     }
 
-    public T dequeue(T animal) throws Exception {
+    public void enqueue(Animal animals){
 
-        try{
-            if(animal.equals("dog")){
-                return dogs.dequeue();
-            }
-            else if(animal.equals("cat")){
-                return cats.dequeue();
-            }
-            else{
-                return differentTypes.dequeue();
-            }}
-
-        catch (Exception e){
-            e.getMessage();
-        }
-        if (animal == "cat"){
-            return (T) "We are sorry, we don't have cats in the Shelter";
-
-        }else if (animal == "dog"){
-            return (T) "We are sorry, we don't have dogs in the Shelter";
+        if(animals.getType().equalsIgnoreCase("dogs")){
+            dogs.enqueue(animals);
+        } else if(animals.getType().equalsIgnoreCase("cats")){
+            cats.enqueue(animals);
         }else {
-            if(differentTypes.isEmpty()) {
-                return (T) "We are Sorry, our Shelter is Empty this moment";
-            }
-            else{
-                return differentTypes.dequeue();
-            }
+            System.out.println("is not an animal");
         }
+
     }
 
+    public String dequeue(String pref) throws Exception {
+        if(pref.equalsIgnoreCase("dogs") && !dogs.isEmpty()){
+            dogs.dequeue();
+            return pref;
+
+        } else if(pref.equalsIgnoreCase("cats") && !cats.isEmpty()){
+            cats.dequeue();
+            return pref;
+        } else {
+            return "not an animal" ;
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return "AnimalShelter{" +
+                "dogs=" + dogs +
+                ", cats=" + cats +
+                '}';
+    }
 }

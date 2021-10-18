@@ -12,16 +12,9 @@ import StackQueueBraclets.BracketValidation;
 public class App {
     public static void main(String[] args) throws Exception {
 
-//        DuckDuckGooseGame game = new DuckDuckGooseGame();
-//
-//        game.addToQueue("A");
-//        game.addToQueue("B");
-//        game.addToQueue("C");
-//        game.addToQueue("D");
-//        game.addToQueue("E");
-//
-//        System.out.println(""+game.DuckDuckGoose(3));
+        System.out.println("Hello");
 
+<<<<<<< HEAD
 
         //stackDemo();
         //queueDemo();
@@ -34,76 +27,40 @@ public class App {
     }
 
     public static void stackDemo() throws Exception {
+=======
+>>>>>>> dfa807c4865b6db66f9125a3ebadc1a62c3232ae
         Stack stack = new Stack();
-
+        stack.push("R");
         stack.push("A");
-        stack.push("B");
-        stack.push("C");
-        stack.push("D");
-        stack.push("E");
+        stack.push("H");
+        stack.push("A");
+        stack.push("F");
 
-        System.out.println("<<<<<<<< Stack >>>>>>>>");
-
-        System.out.println("The Top of the stack is => " + stack.peek());
-
+        System.out.println(stack);
+        System.out.println("top element of Stack :" +stack.peek());
         System.out.println(stack.pop());
-
-        System.out.println("The Top of the stack is => " + stack.peek());
-
+        System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
 
-    }
-
-    public static void queueDemo() throws Exception {
         Queue queue = new Queue();
-
-        queue.enqueue("R");
         queue.enqueue("A");
-        queue.enqueue("H");
-        queue.enqueue("A");
-        queue.enqueue("F");
-
-
-        System.out.println("<<<<<<<<<<<< Queue >>>>>>>>>>>>");
-
+        queue.enqueue("B");
+        queue.enqueue("C");
+        queue.enqueue("D");
+        queue.enqueue("E");
+        System.out.println(queue);
+        System.out.println("top element of Queue :" + queue.peek());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
-        System.out.println("The front of the Queue is => " + queue.peek());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
-    }
+        System.out.println(queue.dequeue());
 
-
-
-    public static void pseudoQueueDemo() throws Exception {
-        PseudoQueue pseudoQueue=new PseudoQueue();
-        pseudoQueue.enqueue("Pseudo");
-        pseudoQueue.enqueue(0);
-        pseudoQueue.enqueue(20);
-
-        System.out.println("<<<<<<<<<<<< Pseudo >>>>>>>>>>>>");
-
-        System.out.println(pseudoQueue.dequeue());
-        System.out.println(pseudoQueue.dequeue());
-        System.out.println(pseudoQueue.dequeue());
-
-    }
-    public static void animalShelterDemo()throws Exception{
-        AnimalShelter animalShelter=new AnimalShelter();
-        Cats cat1=new Cats("Oliver");
-        Cats cat2=new Cats("Loki");
-
-
-        Dogs dog1=new Dogs("Rex");
-        Dogs dog2=new Dogs("Baily");
-
-        AllAnimals hamster1=new AllAnimals("Biscuit");
-        AllAnimals hamster2=new AllAnimals("Cookie");
-
+<<<<<<< HEAD
         animalShelter.enqueue(cat1);
         animalShelter.enqueue(cat2);
         animalShelter.enqueue(dog1);
@@ -111,36 +68,67 @@ public class App {
         animalShelter.enqueue(hamster1);
         animalShelter.enqueue(hamster2);
         System.out.println("\n"+"<<<<<<<<<<<< Animal Shelter >>>>>>>>>>>>");
+=======
+>>>>>>> dfa807c4865b6db66f9125a3ebadc1a62c3232ae
 
-        System.out.println(animalShelter.dequeue("dog"));
-        System.out.println(animalShelter.dequeue("cat"));
-        System.out.println("\n"+"<<<<<<<<<<<<< All Animals >>>>>>>>>>>>>>");
+        PseudoQueue MultiStack = new PseudoQueue();
+        System.out.println("enqueue => " + MultiStack.enqueue("H"));
+        System.out.println("enqueue => " + MultiStack.enqueue("E"));
+        System.out.println("enqueue => " + MultiStack.enqueue("L"));
+        System.out.println("enqueue => " + MultiStack.enqueue("L"));
+        System.out.println("enqueue => " + MultiStack.enqueue("O"));
 
-        System.out.println(animalShelter.dequeue("Ace"));
-        System.out.println("\n"+"<<<<<<<<<<<<<<<<< Cats >>>>>>>>>>>>>>>>>>");
+        System.out.println("*************************************************");
 
-        System.out.println(animalShelter.dequeue("cat"));
-        System.out.println(animalShelter.dequeue("cat"));
-        System.out.println(animalShelter.dequeue("cat"));
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
+        System.out.println("dequeue => " + MultiStack.dequeue());
 
-        System.out.println("\n"+"<<<<<<<<<<<<<< Hamsters >>>>>>>>>>>>>>>");
+        AnimalShelter animalShelter = new AnimalShelter();
+        animalShelter.enqueue(new Animal("cats"));
+        animalShelter.enqueue(new Animal("dogs"));
 
-        System.out.println(animalShelter.dequeue("Angel"));
-        System.out.println("\n"+"<<<<<<<<<<<<<<<< Dogs >>>>>>>>>>>>>>>>>");
+        animalShelter.enqueue(new Animal("cats"));
 
-        System.out.println(animalShelter.dequeue("dog"));
-        System.out.println(animalShelter.dequeue("dog"));
-        System.out.println(animalShelter.dequeue("dog"));
-        System.out.println("\n"+"<<<<<<<<<<< Shelter Search >>>>>>>>>>>>");
+        System.out.println(animalShelter.dequeue("cats"));
+        System.out.println(animalShelter.dequeue("cats"));
+        System.out.println(animalShelter.dequeue("cats"));
+        System.out.println(animalShelter.dequeue("dogs"));
+        System.out.println(animalShelter.dequeue("dogs"));
 
+<<<<<<< HEAD
         System.out.println(animalShelter.dequeue("duck"));
+=======
+        System.out.println("Is Brackets Validate [[{(rahaf)}]] ? "+App.bracketsValidate("[[{(rahaf)}]]"));
+        System.out.println("Is Brackets Validate [[{() ? "+App.bracketsValidate("[[{()"));
+        System.out.println("Is Brackets Validate [[]] ? "+App.bracketsValidate("[[]]"));
+>>>>>>> dfa807c4865b6db66f9125a3ebadc1a62c3232ae
 
 
     }
-    public static void bracketValidate() throws Exception{
-        BracketValidation validate=new BracketValidation();
-        System.out.println(validate.validateBrackets("([}){}{)"));
-        System.out.println(validate.validateBrackets("{{[()]}}"));
 
+    public static boolean bracketsValidate(String value) throws Exception {
+        StackGen<Character> brakets = new StackGen<>();
+
+        if(value.length() == 0){
+            return false;
+        }
+
+        for(int i = 0 ; i < value.length() ; i++){
+            if(value.charAt(i) == '{' || value.charAt(i) == '(' || value.charAt(i) == '['){
+                brakets.push(value.charAt(i));
+            } else if(value.charAt(i) == '}' && brakets.peek() == '{' ){
+                brakets.pop();
+            }else if(value.charAt(i) == ')' && brakets.peek() == '(' ){
+                brakets.pop();
+            }else if(value.charAt(i) == ']' && brakets.peek() == '[' ){
+                brakets.pop();
+            }
+        }
+        return brakets.isEmpty();
     }
+
+
 }
