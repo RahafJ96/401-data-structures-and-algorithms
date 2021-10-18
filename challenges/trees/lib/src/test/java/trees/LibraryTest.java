@@ -7,18 +7,105 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
+    @Test
+    public void emptyTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+        assertEquals("BinaryTree{  root = null }",binaryTreeTest.toString());
+    }
+
+    @Test
+    public void singleRootTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+        binaryTreeTest.setRoot(new Node(7));
+
+        assertEquals("BinaryTree{  root = 7 left = null right = null }",binaryTreeTest.toString());
+    }
+
+    @Test
+    public void addSingleLeftNodeRootTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+        binaryTreeTest.setRoot(new Node(7));
+        binaryTreeTest.getRoot().setLeftNode(new Node(9));
+
+        assertEquals("BinaryTree{  root = 7 left = 9 right = null }",binaryTreeTest.toString());
+    }
+
+    @Test
+    public void addSingleRightNodeRootTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+        binaryTreeTest.setRoot(new Node(7));
+        binaryTreeTest.getRoot().setRightNode(new Node(11));
+
+        assertEquals("BinaryTree{  root = 7 left = null right = 11 }",binaryTreeTest.toString());
+
+    }
+
+    @Test
+    public void addSingleNodeRootTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+        binaryTreeTest.setRoot(new Node(7));
+        binaryTreeTest.getRoot().setLeftNode(new Node(9));
+        binaryTreeTest.getRoot().setRightNode(new Node(11));
+
+        assertEquals("BinaryTree{  root = 7 left = 9 right = 11 }",binaryTreeTest.toString());
+
+    }
+
+    @Test
+    public void preOrderTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+
+        binaryTreeTest.setRoot(new Node(7));
+        binaryTreeTest.getRoot().setLeftNode(new Node(9));
+        binaryTreeTest.getRoot().setRightNode(new Node(11));
+        binaryTreeTest.getRoot().getLeftNode().setLeftNode(new Node(13));
+        binaryTreeTest.getRoot().getLeftNode().setRightNode(new Node((1)));
+        binaryTreeTest.preOrder(binaryTreeTest.getRoot());
+
+        assertEquals("[7, 9, 13, 1, 11]",binaryTreeTest.preOrderList.toString());
+
+    }
+
+    @Test
+    public void inOrderTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+
+        binaryTreeTest.setRoot(new Node(7));
+        binaryTreeTest.getRoot().setLeftNode(new Node(9));
+        binaryTreeTest.getRoot().setRightNode(new Node(11));
+        binaryTreeTest.getRoot().getLeftNode().setLeftNode(new Node(13));
+        binaryTreeTest.getRoot().getLeftNode().setRightNode(new Node((1)));
+        binaryTreeTest.inOrder(binaryTreeTest.getRoot());
+
+        assertEquals("[13, 9, 1, 7, 11]",binaryTreeTest.inOrderList.toString());
+
+    }
+
+    @Test
+    public void postOrderTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+
+        binaryTreeTest.setRoot(new Node(7));
+        binaryTreeTest.getRoot().setLeftNode(new Node(9));
+        binaryTreeTest.getRoot().setRightNode(new Node(11));
+        binaryTreeTest.getRoot().getLeftNode().setLeftNode(new Node(13));
+        binaryTreeTest.getRoot().getLeftNode().setRightNode(new Node((1)));
+        binaryTreeTest.postOrder(binaryTreeTest.getRoot());
+
+        assertEquals("[13, 1, 9, 11, 7]",binaryTreeTest.postOrderList.toString());
+
+    }
+
     @Test void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
 
-//    @Test
-//    public void maxValueTestempty() {
-//        BinarySearchTree binarySearchTree = new BinarySearchTree();
-//
-//        assertEquals(IllegalArgumentException.class,binarySearchTree.findMaxvalue());
-//
-//    }
+
 
     @Test
     public void maxValueTest(){
@@ -32,5 +119,36 @@ class LibraryTest {
         binaryTreeTest.getRoot().getLeftNode().setRightNode(new Node((1)));
         assertEquals(13,binaryTreeTest.findMaxvalue());
     }
+    @Test
+    public void breadthFirstEmptyTreeTest(){
+
+        BinarySearchTree binarySearchTreeTest = new BinarySearchTree();
+
+        assertNull(binarySearchTreeTest.breadthFirst(binarySearchTreeTest));
+    }
+
+    @Test
+    public void breadthFirstValuesInTreeTest(){
+        BinarySearchTree binarySearchTreeTest = new BinarySearchTree();
+
+        binarySearchTreeTest.setRoot(new Node(7));
+        assertEquals("[7]",binarySearchTreeTest.breadthFirst(binarySearchTreeTest).toString());
+
+        binarySearchTreeTest.getRoot().setLeftNode(new Node(9));
+        binarySearchTreeTest.getRoot().setRightNode(new Node(11));
+        assertEquals("[7, 9, 11]",binarySearchTreeTest.breadthFirst(binarySearchTreeTest).toString());
+
+        binarySearchTreeTest.getRoot().getLeftNode().setLeftNode(new Node(13));
+        assertEquals("[7, 9, 11, 13]",binarySearchTreeTest.breadthFirst(binarySearchTreeTest).toString());
+
+        binarySearchTreeTest.getRoot().getLeftNode().getLeftNode().setLeftNode(new Node(20));
+        assertEquals("[7, 9, 11, 13, 20]",binarySearchTreeTest.breadthFirst(binarySearchTreeTest).toString());
+
+        binarySearchTreeTest.getRoot().getRightNode().setLeftNode(new Node(90));
+        assertEquals("[7, 9, 11, 13, 90, 20]",binarySearchTreeTest.breadthFirst(binarySearchTreeTest).toString());
+
+    }
+
+
 
 }

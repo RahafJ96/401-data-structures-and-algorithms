@@ -2,9 +2,10 @@ package trees;
 
 public class Node<T> {
 
-    private T data;
-    private  Node<T> leftNode;
-    private  Node<T> rightNode;
+     T data;
+     Node<T> leftNode=null;
+     Node<T> rightNode=null;
+    Node<T> next;
 
     public Node(T data){
         this.data=data;
@@ -44,5 +45,9 @@ public class Node<T> {
                 ", leftNode=" + leftNode +
                 ", rightNode=" + rightNode +
                 '}';
+    }
+
+
+    public void setLeftNode() {
     }
 }

@@ -25,16 +25,30 @@ Depth first traversal is where we prioritize going through the height of the tre
 2. Implement a binary search tree
 
 ## Approach & Efficiency
+
+*Tree Max (16)*
+
 - **Time**
     - insertion and search operations is O(n)
 - **Space**
     - O(1)
 
+*Trees Breadth First (17)*
+- **Time**
+  - insertion and search operations is O(n)
+- **Space**
+  - O(n)
+
 ## Whiteboard 
-*Binary search trees*
+*Tree Max (16)*
 ![IMG](trees-max.jpg)
+
+
+*Trees Breadth First (17)*
+![IMG1](trees-beadth.jpg)
 
 ## API 
 [Binary Search Tree](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)
 - **add: *input integer:*** to add a new node to the tree and if the number was larger than the root go to the right and if smaller go to the left
 - **contain: *input integer:*** search the tree if the value exists and return true if it does or false if it doesn't
+
