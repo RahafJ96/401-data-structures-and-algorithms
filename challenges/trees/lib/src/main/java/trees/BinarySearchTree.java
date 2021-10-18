@@ -14,9 +14,9 @@ public class BinarySearchTree<T extends Comparable<T>>{
             traverse(key,root);
         }
     }
-    List<Integer> postOrderList = new ArrayList<>(); // FOR TEST and use it in code challenge 16
-    List<Integer> inOrderList = new ArrayList<>();  // FOR TEST
-    List<Integer> preOrderList = new ArrayList<>(); // FOR TEST
+    List<Integer> postOrderList = new ArrayList<>();
+    List<Integer> inOrderList = new ArrayList<>();
+    List<Integer> preOrderList = new ArrayList<>();
 
 
     public boolean isEmpty(){
