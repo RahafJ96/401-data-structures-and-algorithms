@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +167,7 @@
       <workItem from="1634562510905" duration="4314000" />
       <workItem from="1634572147219" duration="397000" />
       <workItem from="1634575341485" duration="1611000" />
-      <workItem from="1634732349461" duration="544000" />
+      <workItem from="1634732349461" duration="1540000" />
     </task>
     <servers />
   </component>
