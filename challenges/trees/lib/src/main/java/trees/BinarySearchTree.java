@@ -166,6 +166,28 @@ public class BinarySearchTree<T extends Comparable<T>>{
         }
         return finalNodes;
     }
+    List total = new ArrayList();
+
+    public  void checkNodes(Node node){
+        if(node == null){return;}
+
+        if(node.getLeftNode() == null && node.getRightNode() == null){
+            total.add(1);
+        }
+        checkNodes(node.getLeftNode());
+        checkNodes(node.getRightNode());
+    }
+
+    public boolean isEqual(BinarySearchTree tree1, BinarySearchTree tree2){
+        checkNodes(tree1.getRoot());
+        checkNodes(tree2.getRoot());
+        if (total.size() % 2 == 0){
+            return true;
+        }else{
+
+            return false;
+        }
+    }
 
     public Node<T> getRoot() {
         return root;

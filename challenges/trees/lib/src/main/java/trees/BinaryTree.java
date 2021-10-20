@@ -13,9 +13,9 @@ public class BinaryTree {
         root = null;
     }
 
-    List<Integer> postOrderList = new ArrayList<>(); // FOR TEST and use it in code challenge 16
-    List<Integer> inOrderList = new ArrayList<>();  // FOR TEST
-    List<Integer> preOrderList = new ArrayList<>(); // FOR TEST
+    List<Integer> postOrderList = new ArrayList<>();
+    List<Integer> inOrderList = new ArrayList<>();
+    List<Integer> preOrderList = new ArrayList<>();
 
 
     public void postOrder(Node node) {
@@ -65,9 +65,7 @@ public class BinaryTree {
     }
 
 
-    //        <<< Code Challenge 16 >>>
-
-
+    // Code Challenge 16
     public int findMaxvalue() {
 
         if (root == null) {
@@ -87,7 +85,7 @@ public class BinaryTree {
     }
 
 
-    //        <<< Code Challenge 17 >>>
+    // Code Challenge 17
 
     public ArrayList breadthFirst(BinaryTree tree) {
 
@@ -115,6 +113,34 @@ public class BinaryTree {
         }
         return finalNodes;
     }
+    // Code Challenge 18
+
+
+
+    // Code Challenge 19
+    List total = new ArrayList();
+
+    public  void checkNodes(Node node){
+        if(node == null){return;}
+
+        if(node.getLeftNode() == null && node.getRightNode() == null){
+            total.add(1);
+        }
+        checkNodes(node.getLeftNode());
+        checkNodes(node.getRightNode());
+    }
+
+    public boolean isEqual(BinaryTree tree1, BinaryTree tree2){
+        checkNodes(tree1.getRoot());
+        checkNodes(tree2.getRoot());
+        if (total.size() % 2 == 0){
+            return true;
+        }else{
+
+            return false;
+        }
+    }
+
 
 
     public Node getRoot() {
@@ -162,6 +188,8 @@ public class BinaryTree {
             }
 
         }
+
+
 }
 
 
