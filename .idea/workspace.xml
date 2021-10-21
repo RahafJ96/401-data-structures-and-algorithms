@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/trees/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/kTree/README19.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/kTree/kTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/kTree/kTreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challenges/trees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/BinarySearchTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/test/classes/trees/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/test/classes/trees/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/test/java/trees/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/test/java/trees/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +33,10 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/BinarySearchTree.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yghxcNEtlvLA7T31t161WwAYLz" />
   <component name="ProjectLevelVcsManager">
@@ -157,6 +158,7 @@
       <workItem from="1634497030880" duration="367000" />
       <workItem from="1634545869356" duration="159000" />
       <workItem from="1634572555900" duration="1933000" />
+      <workItem from="1634795840512" duration="787000" />
     </task>
     <servers />
   </component>

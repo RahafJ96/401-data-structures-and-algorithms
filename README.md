@@ -20,6 +20,8 @@
 |  15    | [trees](challenges/trees/lib/src/main/java/trees)     | [README 15](challenges/trees/lib/src/main/java/trees/README.md)| [Code 15](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)|
 |  16   | [trees-max](challenges/trees/lib/src/main/java/trees)     | [README 16](challenges/trees/lib/src/main/java/trees/README.md)| [Code 16](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)|
 |  17   | [trees-breadth](challenges/trees/lib/src/main/java/trees)     | [README 17](challenges/trees/lib/src/main/java/trees/README17.md)| [Code 17](challenges/trees/lib/src/main/java/trees/Main.java)|
+|  18   | [trees-fizz-buzz](challenges/trees/lib/src/main/java/trees/kTree)     | [README 18](challenges/trees/lib/src/main/java/trees/README.md)| [Code 18](challenges/trees/lib/src/main/java/trees/Main.java)|
+|  19   | [trees-node-check](challenges/trees/lib/src/main/java/trees)     | [README 19](challenges/trees/lib/src/main/java/trees/README.md)| [Code 19](challenges/trees/lib/src/main/java/trees/kTree/kTree.java)|
 
 
 

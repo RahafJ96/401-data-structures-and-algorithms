@@ -4,6 +4,8 @@
 package trees;
 
 import org.junit.jupiter.api.Test;
+import trees.kTree.kTree;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -149,6 +151,43 @@ class LibraryTest {
 
     }
 
+    @Test
+    public void kTreeFizzBuzzTest(){
+
+        kTree ktree = new kTree(2);
+
+        ktree.add(1);
+        ktree.add(2);
+        assertEquals("K-ary tree (K=2): {\n" +
+                " root={ value = 1 Children: [\n" +
+                " child: { value = 2 Children: []]\n" +
+                "nodes=2}",ktree.fizzBuzzTree(ktree).toString() );
+
+        ktree.add(3);
+        assertEquals("K-ary tree (K=2): {\n" +
+                " root={ value = 1 Children: [\n" +
+                " child: { value = 2 Children: []\n" +
+                " child: { value = Fizz Children: []]\n" +
+                "nodes=3}", ktree.fizzBuzzTree(ktree).toString());
+
+        ktree.add(5);
+        assertEquals("K-ary tree (K=2): {\n" +
+                " root={ value = 1 Children: [\n" +
+                " child: { value = 2 Children: [\n" +
+                " child: { value = Buzz Children: []]\n" +
+                " child: { value = Fizz Children: []]\n" +
+                "nodes=4}", ktree.fizzBuzzTree(ktree).toString());
+
+        ktree.add(15);
+        assertEquals("K-ary tree (K=2): {\n" +
+                " root={ value = 1 Children: [\n" +
+                " child: { value = 2 Children: [\n" +
+                " child: { value = Buzz Children: []\n" +
+                " child: { value = FizzBuzz Children: []]\n" +
+                " child: { value = Fizz Children: []]\n" +
+                "nodes=5}", ktree.fizzBuzzTree(ktree).toString());
+
+    }
 
 
 }
