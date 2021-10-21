@@ -47,8 +47,14 @@ Depth first traversal is where we prioritize going through the height of the tre
 *Trees Breadth First (17)*
 ![IMG1](trees-beadth.jpg)
 
+*Trees node check*
+![IMG2](trees-node-check.jpg)
+
+*Tree Fizz Buzz (18)*
+![IMG3](cc18.jpg)
 ## API 
 [Binary Search Tree](challenges/trees/lib/src/main/java/trees/BinarySearchTree.java)
 - **add: *input integer:*** to add a new node to the tree and if the number was larger than the root go to the right and if smaller go to the left
 - **contain: *input integer:*** search the tree if the value exists and return true if it does or false if it doesn't
 
+[Binary Trees](challenges/trees/lib/src/main/java/trees/BinaryTree.java)

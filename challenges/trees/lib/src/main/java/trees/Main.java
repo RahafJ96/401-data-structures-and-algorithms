@@ -1,5 +1,7 @@
 package trees;
 
+import trees.kTree.kTree;
+
 public class Main {
     public boolean someLibraryMethod() {
         return true;
@@ -132,6 +134,21 @@ public class Main {
         binaryTree2.getRoot().getRightNode().getRightNode().setRightNode(new Node(101));
         binaryTree2.getRoot().getRightNode().setLeftNode(new Node((2)));
         System.out.println(binaryTree.isEqual(binaryTree2,binaryTree));
+
+        System.out.println("________________________________________________________________________");
+
+        System.out.println("K-Tree");
+        System.out.println("  ");
+        kTree kTree = new kTree(1);
+
+        kTree.add(1);
+        kTree.add(2);
+        kTree.add(3);
+        kTree.add(5);
+        kTree.add(15);
+
+        System.out.println(kTree);
+        System.out.println(kTree.fizzBuzzTree(kTree));
 
     }
 }
