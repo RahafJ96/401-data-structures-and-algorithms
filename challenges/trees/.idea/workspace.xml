@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="714cc1f2-4738-4fe9-b759-f8353bc524da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/cc18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/kTree/README19.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/kTree/kTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/kTree/kTreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/trees/trees-node-check.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/out/production/classes/trees/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/production/classes/trees/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/out/test/classes/trees/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/out/test/classes/trees/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/trees/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/trees/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/trees/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/main/java/trees" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../codefellows" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -182,7 +169,8 @@
       <workItem from="1634732349461" duration="9396000" />
       <workItem from="1634786883724" duration="621000" />
       <workItem from="1634795983617" duration="4657000" />
-      <workItem from="1634839579427" duration="928000" />
+      <workItem from="1634839579427" duration="1166000" />
+      <workItem from="1634841789588" duration="621000" />
     </task>
     <servers />
   </component>
