@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/challenges/trees/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/kTree/README19.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/kTree/kTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/kTree/kTreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/sort/lib/src/main/java/sort/BLOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/sort/lib/src/main/java/sort/codechallenge26.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/production/classes/trees/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/out/test/classes/trees/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/out/test/classes/trees/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/main/java/trees/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/trees/lib/src/test/java/trees/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/trees/lib/src/test/java/trees/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/sort/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/challenges/trees" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -159,6 +153,7 @@
       <workItem from="1634545869356" duration="159000" />
       <workItem from="1634572555900" duration="1933000" />
       <workItem from="1634795840512" duration="787000" />
+      <workItem from="1635696049907" duration="241000" />
     </task>
     <servers />
   </component>

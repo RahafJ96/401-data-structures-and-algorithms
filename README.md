@@ -22,6 +22,8 @@
 |  17   | [trees-breadth](challenges/trees/lib/src/main/java/trees)     | [README 17](challenges/trees/lib/src/main/java/trees/README17.md)| [Code 17](challenges/trees/lib/src/main/java/trees/Main.java)|
 |  18   | [trees-fizz-buzz](challenges/trees/lib/src/main/java/trees/kTree)     | [README 18](challenges/trees/lib/src/main/java/trees/README.md)| [Code 18](challenges/trees/lib/src/main/java/trees/Main.java)|
 |  19   | [trees-node-check](challenges/trees/lib/src/main/java/trees)     | [README 19](challenges/trees/lib/src/main/java/trees/README.md)| [Code 19](challenges/trees/lib/src/main/java/trees/kTree/kTree.java)|
+|  --   | midterm-project-week    | - - - - - | - - - - -|
+|  26      | [insertion-sort](challenges/trees/lib/src/main/java/trees)     | [BLOG 26](challenges/sort/lib/src/main/java/sort/BLOG.md)| [Code 26](challenges/sort/lib/src/main/java/sort/InsertionSort.java)|
 
 
 
