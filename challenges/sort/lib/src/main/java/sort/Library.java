@@ -4,18 +4,29 @@
 package sort;
 
 import java.util.Arrays;
+
+import merge.Merge;
 import sort.InsertionSort;
 
 public class Library {
 
     public static void main(String[] args) {
 
+        // Code challenge 26
         int[] arr = {8, 4, 23, 42, 16, 15};
 
         InsertionSort sort = new InsertionSort();
         sort.selectionSort(arr);
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Insertion Sort: "+Arrays.toString(arr));
+
+        // Code challenge 27
+        int [] mergeArr = {8, 4, 23, 42, 16, 15};
+
+        Merge mergeSort = new Merge();
+        mergeSort.mergeSort(mergeArr);
+
+        System.out.println("Merge Sort: " + Arrays.toString(mergeArr));
 
     }
 }
