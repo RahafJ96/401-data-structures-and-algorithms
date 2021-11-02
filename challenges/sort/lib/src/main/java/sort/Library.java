@@ -6,6 +6,7 @@ package sort;
 import java.util.Arrays;
 
 import merge.Merge;
+import quick.Quick;
 import sort.InsertionSort;
 
 public class Library {
@@ -27,6 +28,13 @@ public class Library {
         mergeSort.mergeSort(mergeArr);
 
         System.out.println("Merge Sort: " + Arrays.toString(mergeArr));
+
+        // Code challenge 28
+        int[] quickSortArr = {8, 4, 23, 42, 16, 15};
+        Quick quickSort = new Quick();
+
+        quickSort.quickSort(quickSortArr,0,5);
+        System.out.println("Quick sort" + Arrays.toString(quickSortArr));
 
     }
 }
