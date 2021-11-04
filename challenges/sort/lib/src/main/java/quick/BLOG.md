@@ -4,7 +4,7 @@ Quicksort algorithm repeatedly divides an un-sorted section into a lower order s
 
 ## Pseudocode
 
-```java
+```
 ALGORITHM QuickSort(arr, left, right)
     if left < right
         // Partition the array by setting the position of the pivot value
@@ -41,6 +41,14 @@ ALGORITHM Swap(arr, i, low)
 <!-- Embedded whiteboard image -->
 ![](./codechallenge28.jpg)
 
+## Trace
+![](./trace.PNG)
+1. Write a method that takes an array of integers and two integer parameters as an argument.
+2. Partition the array by setting the pivot value.
+3. Create a variable to track the values which are smaller than the pivot after that we have to swap them.
+4. sort the left side at the beginning and then the right side. And swap the values for the left and the right.
+5. In the swap function declared temp = array[i] and make it equal to array[low] after that make it equal temp
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 **- Time Complexity:** for average and worst case `log(n)` The basic operation algorithm is comparison
@@ -52,5 +60,5 @@ ALGORITHM Swap(arr, i, low)
 
 - While the length of the array is greater than 0, will call partition method to find position value.
 - Will call the quick sort method using position and left value and call the partition and find the new position, then call quick sort first with position and left value, then with position and right value.
-- call the quick sort method using position and right value, call the partition and find the new position, then call quick sort first with position and right value.
-- Will get the sorted array return it. 
+- Call the quick sort method using position and right value, call the partition and find the new position, then call quick sort first with position and right value.
+- Will get the sorted array return it.
