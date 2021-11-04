@@ -26,6 +26,8 @@
 |  26      | [insertion-sort](challenges/sort/lib/src/main/java/sort)     | [BLOG 26](challenges/sort/lib/src/main/java/sort/BLOG.md)| [Code 26](challenges/sort/lib/src/main/java/sort/InsertionSort.java)|
 |  27      | [merge-sort](challenges/sort/lib/src/main/java/merge)     | [BLOG 27](challenges/sort/lib/src/main/java/merge/BLOG.md)| [Code 27](challenges/sort/lib/src/main/java/merge/Merge.java)|
 |  28      | [quick-sort](challenges/sort/lib/src/main/java/quick)     | [BLOG 28](challenges/sort/lib/src/main/java/quick/BLOG.md)| [Code 28](challenges/sort/lib/src/main/java/quick/Quick.java)|
+|  29    | - - - - -     | - - - - - | - - - - - |
+|  30      | [hashtable](challenges/hashtable)     | [BLOG 28](challenges/hashtable/app/src/main/java/hashtable/README.md)| [Code 28](cchallenges/hashtable/app/src/main/java/hashtable/App.java)|
 
 
 
