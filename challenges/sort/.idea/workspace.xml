@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69f04f0d-1c1c-421c-84b5-4e6685b1f86a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/quick/BLOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/quick/Quick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/quick/codechallenge28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/sort/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/sort/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/sort/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/sort/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/quick/BLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/quick/BLOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -65,7 +62,7 @@
       <recent name="C:\Users\AB\401course\401-data-structures-and-algorithms\challenges\sort\lib\src\main\java\sort" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest">
+  <component name="RunManager" selected="Application.Library">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sort.Library" />
       <module name="sort.lib.main" />
@@ -138,6 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635689286510</updated>
       <workItem from="1635689293803" duration="2139000" />
+      <workItem from="1636058841809" duration="1023000" />
     </task>
     <servers />
   </component>
