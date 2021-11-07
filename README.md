@@ -28,3 +28,4 @@
 |  28      | [quick-sort](challenges/sort/lib/src/main/java/quick)     | [BLOG 28](challenges/sort/lib/src/main/java/quick/BLOG.md)| [Code 28](challenges/sort/lib/src/main/java/quick/Quick.java)|
 |  29    | - - - - -     | - - - - - | - - - - - |
 |  30      | [hashtable](challenges/hashtable)     | [README 30](challenges/hashtable/app/src/main/java/hashtable/README.md)| [Code 30](challenges/hashtable/app/src/main/java/hashtable/App.java)|
+|  31      | [hashmap-repeated-word](challenges/hashtable)     | [README 31](challenges/hashtable/app/src/main/java/hashtable/README.md)| [Code 31](challenges/hashtable/app/src/main/java/hashtable/App.java)|
