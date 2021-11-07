@@ -1,6 +1,7 @@
 package hashtable;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Objects;
 
 public class HashTable<K, V> {
@@ -81,8 +82,6 @@ public class HashTable<K, V> {
         }
     }
 
-
-
     public V remove(K key) {
         // Apply hash function to find index for given key
         int bucketIndex = hash(key);
@@ -118,7 +117,6 @@ public class HashTable<K, V> {
         return head.getData();
     }
 
-
     public V get(K key) {
         int bucketIndex = hash(key);
         int hashCode = hashCode(key);
@@ -136,5 +134,26 @@ public class HashTable<K, V> {
 
         // key not found
         return null;
+    }
+    public String  repeatedWord(String strings){
+
+        String allWords = strings.toLowerCase(Locale.ROOT);
+        String [] token = allWords.split(" ");
+        HashTable<String, Integer> hashMap = new HashTable<String, Integer>();
+
+
+        for (String word : token){
+
+            if(word.contains(",")){
+                word = word.substring(0, word.length()-1);
+            }
+            if(!word.equals("")){
+                int count = hashMap.get(word) != null ? hashMap.get(word) : 0;
+                if (count == 1){ return word;}
+
+                hashMap.add(word, count + 1);
+            }
+        }
+        return "no repeated words";
     }
 }

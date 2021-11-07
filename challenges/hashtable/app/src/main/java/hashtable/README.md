@@ -41,3 +41,9 @@ Implement a Hashtable Class with the following methods:
 6. `remove:` to remove the node of the given key
 7. `get:` to get the value of the given key
 8. `contains:` to check if the key is in the hash table
+
+# Hashmap-repeated-word
+Write a function that accepted a string parameter which finds the first word to occur more than once in a string and return a string.
+
+## Whiteboard
+![31](images/cc31.jpg)

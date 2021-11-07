@@ -10,6 +10,7 @@ public class App {
 
     public static void main(String[] args) {
 
+        // code challenge 30
         HashTable<Integer,String> hashTable = new HashTable<>();
 
         System.out.println(hashTable.getSize());
@@ -19,13 +20,27 @@ public class App {
         hashTable.add(5,"roaa");
         hashTable.add(3,"ola");
 
-        System.out.println(hashTable.isEmpty());
+        System.out.println("Is it Empty? : "+hashTable.isEmpty());
 
-        System.out.println(hashTable.getSize());
+        System.out.println("Size : "+hashTable.getSize());
+
+        System.out.println("<<<<<<< Code Challenge 30 >>>>>>");
+
 
         System.out.println(hashTable.get(5));
 
         System.out.println(hashTable.contains(7));
         System.out.println(hashTable.contains(9));
+
+        // code challenge 31
+        System.out.println("   ");
+        System.out.println("<<<<<<< Code Challenge 31 >>>>>>");
+        String paragraph1 = "Once upon a time, there was a brave princess who...";
+        String paragraph2 = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only";
+        String paragraph3= "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York";
+        System.out.println("Paragraph 1: "+hashTable.repeatedWord(paragraph1));
+        System.out.println("Paragraph 2: "+hashTable.repeatedWord(paragraph2));
+        System.out.println("Paragraph 3: "+hashTable.repeatedWord(paragraph3));
+
     }
 }
