@@ -3,6 +3,9 @@
  */
 package hashtable;
 
+import hashtable.binarytree.BinaryTree;
+import hashtable.binarytree.Node;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -41,6 +44,41 @@ public class App {
         System.out.println("Paragraph 1: "+hashTable.repeatedWord(paragraph1));
         System.out.println("Paragraph 2: "+hashTable.repeatedWord(paragraph2));
         System.out.println("Paragraph 3: "+hashTable.repeatedWord(paragraph3));
+
+
+        // code challenge 32
+        HashTable<Integer,Integer> trees = new HashTable<Integer, Integer>();
+
+        BinaryTree tree1 = new BinaryTree();
+        BinaryTree tree2 = new BinaryTree();
+
+        tree1.setRoot(new Node(150));
+        tree1.getRoot().setLeft(new Node(100));
+        tree1.getRoot().setRight(new Node(250));
+        tree1.getRoot().getRight().setLeft(new Node(200));
+        tree1.getRoot().getRight().setRight(new Node(350));
+        tree1.getRoot().getRight().getRight().setLeft(new Node(300));
+        tree1.getRoot().getRight().getRight().setRight(new Node(500));
+        tree1.getRoot().getLeft().setLeft(new Node(75));
+        tree1.getRoot().getLeft().setRight(new Node(160));
+        tree1.getRoot().getLeft().getRight().setLeft(new Node(125));
+        tree1.getRoot().getLeft().getRight().setRight(new Node(175));
+
+        tree2.setRoot(new Node(42));
+        tree2.getRoot().setLeft(new Node(100));
+        tree2.getRoot().setRight(new Node(600));
+        tree2.getRoot().getRight().setLeft(new Node(200));
+        tree2.getRoot().getRight().setRight(new Node(350));
+        tree2.getRoot().getRight().getRight().setLeft(new Node(4));
+        tree2.getRoot().getRight().getRight().setRight(new Node(500));
+        tree2.getRoot().getLeft().setLeft(new Node(15));
+        tree2.getRoot().getLeft().setRight(new Node(160));
+        tree2.getRoot().getLeft().getRight().setLeft(new Node(125));
+        tree2.getRoot().getLeft().getRight().setRight(new Node(175));
+
+        System.out.println("   ");
+        System.out.println("<<<<<<< Code Challenge 32 >>>>>>");
+        System.out.println(trees.treeIntersection(tree1,tree2));
 
     }
 }

@@ -47,3 +47,9 @@ Write a function that accepted a string parameter which finds the first word to 
 
 ## Whiteboard
 ![31](images/cc31.jpg)
+
+# Hashmap-tree-intersection
+Create a method that takes two binary trees as a parameter and return an array of nodes that are similar in two trees.
+
+## Whiteboard
+![32](images/cc32.jpg)
