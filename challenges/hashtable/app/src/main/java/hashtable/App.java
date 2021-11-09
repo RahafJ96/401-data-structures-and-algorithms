@@ -6,9 +6,27 @@ package hashtable;
 import hashtable.binarytree.BinaryTree;
 import hashtable.binarytree.Node;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
+    }
+
+    public static List<String> leftJoin(HashMap h1, HashMap h2){
+
+        List<String> list = new ArrayList<>();
+        for(Object k : h1.keySet()){
+            if(h1.containsKey(k)){
+                list.add(k +  ": " +"[ " + h1.get(k)+ ", " + h2.get(k) +" ]");
+            } else{
+                list.add(k + ": " + h1.get(k) + ", " + null);
+            }
+        }
+
+        return list;
     }
 
     public static void main(String[] args) {
@@ -80,5 +98,24 @@ public class App {
         System.out.println("<<<<<<< Code Challenge 32 >>>>>>");
         System.out.println(trees.treeIntersection(tree1,tree2));
 
+
+        // code challenge 33
+        HashMap<String, String> firstHashMap = new HashMap<>();
+        HashMap<String, String> secondHashMap = new HashMap<>();
+        System.out.println("   ");
+        System.out.println("<<<<<<< Code Challenge 33 >>>>>>");
+        firstHashMap.put("fond", "enamored");
+        firstHashMap.put("wrath", "anger");
+        firstHashMap.put("diligent", "employed");
+        firstHashMap.put("outfit", "garb");
+        firstHashMap.put("guide", "usher");
+
+        secondHashMap.put("fond", "averse");
+        secondHashMap.put("wrath", "delight");
+        secondHashMap.put("diligent", "idle");
+        secondHashMap.put("guide", "follow");
+        secondHashMap.put("flow", "jam");
+
+        System.out.println(leftJoin(firstHashMap, secondHashMap));
     }
 }
