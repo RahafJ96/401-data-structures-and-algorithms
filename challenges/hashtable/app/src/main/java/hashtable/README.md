@@ -53,3 +53,14 @@ Create a method that takes two binary trees as a parameter and return an array o
 
 ## Whiteboard
 ![32](images/cc32.jpg)
+
+# Hashmap-left-join
+Implement a simplified LEFT JOIN for 2 Hashmaps
+
+Write a method called leftJoin accepts two hash maps as a parameters and return a single data structure. It will add the first hash map to the list and then loop through second hash map to check if the key is in the list, if it exist in the list it will add the value of the key to the same key in the list.
+
+## Whiteboard
+![33](images/cc33.jpg)
+
+
+
