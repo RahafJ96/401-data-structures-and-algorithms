@@ -1,6 +1,5 @@
 # Graphs
-
-A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
+A graph is data structure consisting of data that is stored among many groups of edges and vertices.
 
 ![Graph](https://www.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png)
 
@@ -19,40 +18,30 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 5. size
 
 ## Approach and Efficiency
+1. **addNode** method ->
+- Space Complexity: O(n)
+- Time Complexity: O(1)
 
-1. add vertex
+2. **addEdge** method ->
+- Space Complexity: O(n)
+- Time Complexity: O(1)
 
-    * Time: O(1)
-    * Space: O(1)
+3. **getNodes** method ->
+- Space Complexity: O(n)
+- Time Complexity: O(1)
 
-2. add edge
+4. **getNeighbors** method ->
+- Space Complexity: O(1)
+- Time Complexity: O(1)
 
-    * Time: O(1)
-    * Space: O(1)
-
-3. get Vertices
-
-    * Time: O(1)
-    * Space: O(n) ---> n: is the number of Vertices
-
-4. get neighbors
-
-    * Time: O(1)
-    * Space: O(n) ---> n: is the number of neighbor Vertices
-
-5. size
-
-    * Time: O(n) n: is the number of neighbor Vertices
-    * Space: O(1)
+5. **size** method ->
+- Space Complexity: O(1)
+- Time Complexity: O(1)
 
 ## API
 
-1. `addVertex(String data)`: This method adds a vertex to the graph and it accepts `String` parameter for the value of the vertex.
-
-2. `addEdge(String data1, String data2)`: This method adds a new edge between two Vertices in the graph and it accepts two `String` parameters, The parameters are vertices that will add the edge between each other.
-
-3. `getVertices()`: This method returns all of the nodes in the graph as a collection.
-
-4. `getNeighbors(String data)`: This method returns all the connections of the required vertex as a list.
-
-5. `size()`: This method to get the number of all vertices in the graph.
+1.  **addNode(String value)** ->  Add a node to the graph and returns the added node value.
+2.  **addEdge(String data1, String data2)** -> Adds a new edge between two nodes in the graph.
+3. **getNodes()** -> returns all the nodes in the graph as a set collection.
+4. **getNeighbors()** -> Returns a collection of edges connected to the given node.
+5. **size()** -> Returns the total number of nodes in the graph
