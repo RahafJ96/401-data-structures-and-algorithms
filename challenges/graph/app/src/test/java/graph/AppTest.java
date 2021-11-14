@@ -7,5 +7,95 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+// code challenge 35
+
+    @Test
+    public void addVertex(){
+
+        Graph graph = new Graph();
+
+        graph.addVertex("Rahaf");
+        graph.addVertex("Roaa");
+
+        assertNotNull(graph.getVertices());
+        assertEquals(2,graph.size());
+    }
+
+    @Test
+    public void addEdge(){
+
+        Graph graph = new Graph();
+
+        graph.addVertex("Rahaf");
+        graph.addVertex("Ola");
+        graph.addEdge("Rahaf", "Ola");
+
+        assertEquals("Vertex{label='Ola'}[Vertex{label='Rahaf'}]Vertex{label='Rahaf'}[Vertex{label='Ola'}]", graph.printGraph());
+    }
+
+    @Test
+    public void vertexNeighbors(){
+
+        Graph graph = new Graph();
+
+        graph.addVertex("Rahaf");
+        graph.addVertex("Ola");
+        graph.addVertex("Abdalla");
+        graph.addVertex("Roaa");
+        graph.addEdge("Rahaf", "Abdalla");
+        graph.addEdge("Rahaf", "Ola");
+        graph.addEdge("Roaa", "Ola");
+
+        assertEquals("[Vertex{label='Abdalla'}, Vertex{label='Ola'}]",graph.getNeighbors("Rahaf").toString());
+        assertEquals("[Vertex{label='Ola'}]", graph.getNeighbors("Roaa").toString());
+
+    }
+
+    @Test
+    public void emptyGraph(){
+
+        Graph graph = new Graph();
+        assertEquals(0,graph.size());
+        assertEquals("[]", graph.getVertices().toString());
+    }
+
+    @Test
+    public void removeVertex(){
+
+        Graph graph = new Graph();
+
+        graph.addVertex("Rahaf");
+        graph.addVertex("Roaa");
+        graph.addEdge("Rahaf", "Roaa");
+        assertEquals("Vertex{label='Roaa'}[Vertex{label='Rahaf'}]Vertex{label='Rahaf'}[Vertex{label='Roaa'}]",graph.printGraph());
+        assertEquals(2, graph.size());
+
+        graph.removeVertex("Rahaf");
+        assertEquals("Vertex{label='Roaa'}[]",graph.printGraph());
+        assertEquals(1, graph.size());
+    }
+
+    @Test
+    public void removeEdge(){
+        Graph graph = new Graph();
+
+        graph.addVertex("Rahaf");
+        graph.addVertex("Roaa");
+        graph.addEdge("Rahaf", "Roaa");
+        assertEquals("Vertex{label='Roaa'}[Vertex{label='Rahaf'}]Vertex{label='Rahaf'}[Vertex{label='Roaa'}]",graph.printGraph());
+
+        graph.removeEdge("Roaa", "Rahaf");
+        assertEquals("Vertex{label='Roaa'}[]Vertex{label='Rahaf'}[]", graph.printGraph());
+    }
+
+    @Test
+    public void oneVertexAndOneEdge(){
+        Graph graph = new Graph();
+
+        graph.addVertex("Rahaf");
+        graph.removeEdge("Rahaf","Rahaf");
+
+        assertEquals("Vertex{label='Rahaf'}[]",graph.printGraph());
+    }
 
 }
