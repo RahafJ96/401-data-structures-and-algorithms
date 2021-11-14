@@ -1,4 +1,4 @@
-# Graphs
+# Code Challenge 35 - Graphs
 A graph is data structure consisting of data that is stored among many groups of edges and vertices.
 
 ![Graph](https://www.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png)
@@ -45,3 +45,22 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 3. **getNodes()** -> returns all the nodes in the graph as a set collection.
 4. **getNeighbors()** -> Returns a collection of edges connected to the given node.
 5. **size()** -> Returns the total number of nodes in the graph
+
+---
+
+# Code Challenge 36 - Graph Breadth First
+Create a static method which returns a Set of the Graph vertices in their breadth from a specified root.
+
+## Challenge
+
+Create a method that take a vertex as a parameter as a start point and return a collection of vertices in the order they were visited.
+
+## Whiteboard Process
+
+![graph-breadth-first](images/cc36.jpg)
+
+## Approach and Efficiency
+
+* Time: O(n^2)
+
+* Space: O(n)

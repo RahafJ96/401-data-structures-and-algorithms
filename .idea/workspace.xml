@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/images/cc36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/challenges/hashtable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -158,6 +162,7 @@
       <workItem from="1636381428772" duration="1745000" />
       <workItem from="1636494891444" duration="248000" />
       <workItem from="1636535841398" duration="57000" />
+      <workItem from="1636909925169" duration="161000" />
     </task>
     <servers />
   </component>
