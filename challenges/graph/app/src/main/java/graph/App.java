@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
 
-
+        // Code challenge 35
         Graph graph = new Graph();
 
         graph.addVertex("Rahaf");
@@ -46,6 +46,29 @@ public class App {
 
         System.out.println();
         System.out.println(graph.size());
+
+        // Code challenge 36
+        Graph graph1 = new Graph();
+
+        graph1.addVertex("Pandora");
+        graph1.addVertex("Arendelle");
+        graph1.addVertex("Metroville");
+        graph1.addVertex("Monstroplolis");
+        graph1.addVertex("Narnia");
+        graph1.addVertex("Naboo");
+
+        graph1.addEdge("Pandora", "Arendelle");
+        graph1.addEdge("Arendelle", "Metroville");
+        graph1.addEdge("Arendelle", "Monstroplolis");
+        graph1.addEdge("Metroville", "Narnia");
+        graph1.addEdge("Metroville", "Naboo");
+        graph1.addEdge("Metroville", "Monstroplolis");
+        graph1.addEdge("Monstroplolis", "Naboo");
+        graph1.addEdge("Narnia", "Naboo");
+
+
+        System.out.println(graph1.breadthTraverse( "Pandora"));
+
 
     }
 }

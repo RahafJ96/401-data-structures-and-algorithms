@@ -31,3 +31,6 @@
 |  31      | [hashmap-repeated-word](challenges/hashtable)     | [README 31](challenges/hashtable/app/src/main/java/hashtable/README.md)| [Code 31](challenges/hashtable/app/src/main/java/hashtable/App.java)|
 |  32      | [hashmap-tree-intersection](challenges/hashtable)     | [README 32](challenges/hashtable/app/src/main/java/hashtable/README.md)| [Code 32](challenges/hashtable/app/src/main/java/hashtable/App.java)|
 |  33      | [hashmap-left-join](challenges/hashtable)     | [README 33](challenges/hashtable/app/src/main/java/hashtable/README.md)| [Code 33](challenges/hashtable/app/src/main/java/hashtable/App.java)|
+|  34    | - - - - -     | - - - - - | - - - - - |
+|  35      | [graph](challenges/graph)     | [README 35](challenges/graph/app/src/main/java/graph/README.md)| [Code 35](challenges/graph/app/src/main/java/graph/App.java)|
+|  36      | [graph-breadth-first](challenges/graph)     | [README 36](challenges/graph/app/src/main/java/graph/README.md)| [Code 36](challenges/graph/app/src/main/java/graph/App.java)|
