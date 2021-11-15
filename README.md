@@ -34,3 +34,4 @@
 |  34    | - - - - -     | - - - - - | - - - - - |
 |  35      | [graph](challenges/graph)     | [README 35](challenges/graph/app/src/main/java/graph/README.md)| [Code 35](challenges/graph/app/src/main/java/graph/App.java)|
 |  36      | [graph-breadth-first](challenges/graph)     | [README 36](challenges/graph/app/src/main/java/graph/README.md)| [Code 36](challenges/graph/app/src/main/java/graph/App.java)|
+|  36      | [graph-business-trip](challenges/graph)     | [README 37](challenges/graph/app/src/main/java/graph/README.md)| [Code 37](challenges/graph/app/src/main/java/graph/App.java)|

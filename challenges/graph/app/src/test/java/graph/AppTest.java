@@ -4,6 +4,10 @@
 package graph;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -30,7 +34,7 @@ class AppTest {
         graph.addVertex("Ola");
         graph.addEdge("Rahaf", "Ola");
 
-        assertEquals("Vertex{label='Ola'}[Vertex{label='Rahaf'}]Vertex{label='Rahaf'}[Vertex{label='Ola'}]", graph.printGraph());
+        assertEquals("Vertex{label='Ola', weight=0}[Vertex{label='Rahaf', weight=0}]Vertex{label='Rahaf', weight=0}[Vertex{label='Ola', weight=0}]", graph.printGraph());
     }
 
     @Test
@@ -46,8 +50,8 @@ class AppTest {
         graph.addEdge("Rahaf", "Ola");
         graph.addEdge("Roaa", "Ola");
 
-        assertEquals("[Vertex{label='Abdalla'}, Vertex{label='Ola'}]",graph.getNeighbors("Rahaf").toString());
-        assertEquals("[Vertex{label='Ola'}]", graph.getNeighbors("Roaa").toString());
+        assertEquals("[Vertex{label='Abdalla', weight=0}, Vertex{label='Ola', weight=0}]",graph.getNeighbors("Rahaf").toString());
+        assertEquals("[Vertex{label='Ola', weight=0}]", graph.getNeighbors("Roaa").toString());
 
     }
 
@@ -67,11 +71,11 @@ class AppTest {
         graph.addVertex("Rahaf");
         graph.addVertex("Roaa");
         graph.addEdge("Rahaf", "Roaa");
-        assertEquals("Vertex{label='Roaa'}[Vertex{label='Rahaf'}]Vertex{label='Rahaf'}[Vertex{label='Roaa'}]",graph.printGraph());
+        assertEquals("Vertex{label='Roaa', weight=0}[Vertex{label='Rahaf', weight=0}]Vertex{label='Rahaf', weight=0}[Vertex{label='Roaa', weight=0}]",graph.printGraph());
         assertEquals(2, graph.size());
 
         graph.removeVertex("Rahaf");
-        assertEquals("Vertex{label='Roaa'}[]",graph.printGraph());
+        assertEquals("Vertex{label='Roaa', weight=0}[]",graph.printGraph());
         assertEquals(1, graph.size());
     }
 
@@ -82,10 +86,10 @@ class AppTest {
         graph.addVertex("Rahaf");
         graph.addVertex("Roaa");
         graph.addEdge("Rahaf", "Roaa");
-        assertEquals("Vertex{label='Roaa'}[Vertex{label='Rahaf'}]Vertex{label='Rahaf'}[Vertex{label='Roaa'}]",graph.printGraph());
+        assertEquals("Vertex{label='Roaa', weight=0}[Vertex{label='Rahaf', weight=0}]Vertex{label='Rahaf', weight=0}[Vertex{label='Roaa', weight=0}]",graph.printGraph());
 
         graph.removeEdge("Roaa", "Rahaf");
-        assertEquals("Vertex{label='Roaa'}[]Vertex{label='Rahaf'}[]", graph.printGraph());
+        assertEquals("Vertex{label='Roaa', weight=0}[]Vertex{label='Rahaf', weight=0}[]", graph.printGraph());
     }
 
     @Test
@@ -95,7 +99,78 @@ class AppTest {
         graph.addVertex("Rahaf");
         graph.removeEdge("Rahaf","Rahaf");
 
-        assertEquals("Vertex{label='Rahaf'}[]",graph.printGraph());
+        assertEquals("Vertex{label='Rahaf', weight=0}[]",graph.printGraph());
     }
 
+    // code challenge 37
+    @Test
+    public void businessTripTest(){
+
+        Graph graph2 = new Graph();
+
+        graph2.addVertex("Pandora");
+        graph2.addVertex("Arendelle");
+        graph2.addVertex("Metroville");
+        graph2.addVertex("Monstroplolis");
+
+        graph2.addEdgeWithWeight("Pandora", "Arendelle", 150);
+        graph2.addEdgeWithWeight("Arendelle", "Metroville",99);
+        graph2.addEdgeWithWeight("Arendelle", "Monstroplolis",42);
+
+        List<String> cities1 = new ArrayList<>();
+        cities1.add("Pandora");
+        cities1.add("Arendelle");
+        assertEquals(150, graph2.businessTrip(graph2, cities1));
+
+        List<String> cities2 = new ArrayList<>();
+        cities2.add("Pandora");
+        cities2.add("Arendelle");
+        cities2.add("Monstroplolis");
+        assertEquals(192, graph2.businessTrip(graph2, cities2));
+
+    }
+
+    @Test
+    public void businessTripNoEdge(){
+
+        Graph graph2 = new Graph();
+
+        graph2.addVertex("Pandora");
+        graph2.addVertex("Arendelle");
+        graph2.addVertex("Metroville");
+        graph2.addVertex("Monstroplolis");
+
+        graph2.addEdgeWithWeight("Pandora", "Arendelle", 150);
+        graph2.addEdgeWithWeight("Arendelle", "Metroville",99);
+        graph2.addEdgeWithWeight("Arendelle", "Monstroplolis",42);
+
+        List<String> cities1 = new ArrayList<>();
+        cities1.add("Pandora");
+        cities1.add("Monstroplolis");
+        assertEquals(0, graph2.businessTrip(graph2, cities1));
+    }
+
+    @Test
+    public void businessTripAtLeastOnoEdge(){
+
+        Graph graph2 = new Graph();
+
+        graph2.addVertex("Pandora");
+        graph2.addVertex("Arendelle");
+        graph2.addVertex("Metroville");
+        graph2.addVertex("Monstroplolis");
+        graph2.addVertex("Naboo");
+
+        graph2.addEdgeWithWeight("Pandora", "Arendelle", 150);
+        graph2.addEdgeWithWeight("Arendelle", "Metroville",99);
+        graph2.addEdgeWithWeight("Arendelle", "Monstroplolis",42);
+        graph2.addEdgeWithWeight("Naboo", "Monstroplolis",42);
+
+
+        List<String> cities1 = new ArrayList<>();
+        cities1.add("Pandora");
+        cities1.add("Naboo");
+        cities1.add("Monstroplolis");
+        assertEquals(42, graph2.businessTrip(graph2, cities1));
+    }
 }

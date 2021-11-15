@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="" />
+    <list default="true" id="250d0607-4304-45e8-9c65-97a81d3ec98d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/main/java/graph/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/graph/app/src/test/java/graph/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/graph/app/src/test/java/graph/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,6 +165,7 @@
       <workItem from="1636494891444" duration="248000" />
       <workItem from="1636535841398" duration="57000" />
       <workItem from="1636909925169" duration="602000" />
+      <workItem from="1637012708717" duration="49000" />
     </task>
     <servers />
   </component>
