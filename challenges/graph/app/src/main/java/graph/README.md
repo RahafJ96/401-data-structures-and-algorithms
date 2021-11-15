@@ -1,7 +1,7 @@
 # Code Challenge 35 - Graphs
 A graph is data structure consisting of data that is stored among many groups of edges and vertices.
 
-![Graph](https://www.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png)
+![Graph](https://miro.medium.com/max/823/1*PRSdO4485XYMPbmy7PgHnQ.jpeg)
 
 ## Challenge
 
@@ -58,6 +58,28 @@ Create a method that take a vertex as a parameter as a start point and return a 
 ## Whiteboard Process
 
 ![graph-breadth-first](images/cc36.jpg)
+
+## Approach and Efficiency
+
+* Time: O(n^2)
+
+* Space: O(n)
+
+
+# Code Challenge 37 - Graph Business Trip
+Write a function called business trip that return the cost of the trips between two cities.
+
+# Challenge 
+<!-- Description of the challenge -->
+Write a function called business trip:
+
+    Arguments: graph, array of city names
+    Return: cost or null
+    Determine whether the trip is possible with direct flights, and how much it would cost.
+
+## Whiteboard Process
+
+![graph-business-trip](images/cc37.jpg)
 
 ## Approach and Efficiency
 
