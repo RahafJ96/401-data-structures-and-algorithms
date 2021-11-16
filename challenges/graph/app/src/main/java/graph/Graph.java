@@ -134,16 +134,26 @@ public class Graph {
     }
 
     int totalCost;
-    public Integer businessTrip(Graph graph, List<String> cities){
+    public String businessTrip(Graph graph, List<String> cities){
         totalCost = 0;
         int citiesSize = cities.size();
+        if(cities.size() <= 1) return "null";
 
-        for (int i = 0; i < citiesSize - 1; i ++){
-
-            findPath(cities.get(i), cities.get(i + 1), graph);
+        int findWeight;
+        for (int i = 0; i < cities.size() - 1; i ++){
+          findWeight =  findWeight(graph, cities.get(i),cities.get(i+1));
+          if (findWeight == 0 ) return "False, 0$";
+          totalCost+= findWeight;
         }
-
-        return totalCost;
+        return "True, $" + totalCost;
+    }
+    private int findWeight(Graph graph, String city1, String city2) {
+        for (Vertex vertex : graph.getNeighbors(city1)) {
+            if (Objects.equals(city2, vertex.data)) {
+                return vertex.weight;
+            }
+        }
+        return 0;
     }
 
     private void findPath(String city1, String city2, Graph graph){
@@ -156,5 +166,26 @@ public class Graph {
                 totalCost += vertex.weight;
             }
         }
+    }
+
+    // Code challenge 38
+
+    Set<String> depthFirstTraverse(String root) {
+        Set<String> visited = new LinkedHashSet<>();
+        Stack<String> stack = new Stack<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            String vertex = stack.pop();
+            if (!visited.contains(vertex)) {
+                visited.add(vertex);
+
+                for (Vertex v : getNeighbors(vertex)) {
+                    stack.push(v.data);
+                }
+            }
+        }
+
+        return visited;
     }
 }
