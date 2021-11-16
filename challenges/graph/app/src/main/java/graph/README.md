@@ -66,20 +66,17 @@ Create a method that take a vertex as a parameter as a start point and return a 
 * Space: O(n)
 
 
-# Code Challenge 37 - Graph Business Trip
-Write a function called business trip that return the cost of the trips between two cities.
+# Code Challenge 38 - Graph Depth First
+Create a static method which returns a Set of the Graph vertices in their Depth from a specified root.
 
 # Challenge 
 <!-- Description of the challenge -->
-Write a function called business trip:
+Create a method that take a vertex as a parameter as a start point and return a collection of vertices in the order they were visited.
 
-    Arguments: graph, array of city names
-    Return: cost or null
-    Determine whether the trip is possible with direct flights, and how much it would cost.
 
 ## Whiteboard Process
 
-![graph-business-trip](images/cc37.jpg)
+![graph-depth-first](images/cc38.jpg)
 
 ## Approach and Efficiency
 
